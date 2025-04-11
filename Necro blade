@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Compendium>
+  <Classes>
+    <Class name="Necroblade" hitDie="d10" spellAbility="Intelligence">
+      <Proficiencies>
+        <Armor>Bone armor, Blood armor (light, medium, heavy, shields)</Armor>
+        <Weapons>Bone weapons, Blood weapons (simple, martial)</Weapons>
+        <Tools>None</Tools>
+        <SavingThrows>Constitution, Charisma</SavingThrows>
+        <Skills>
+          <Choose count="2">Athletics, Intimidation, Arcana, History, Medicine, Religion</Choose>
+        </Skills>
+      </Proficiencies>
+      <Features>
+        <Feature name="Undead Resilience" level="1">
+          <Description>
+            Undead Nature: You don’t need to eat, drink, or breathe.
+            Darkvision: You can see in dim light within 60 feet as if it were bright light, and in darkness as if it were dim light.
+            Necrotic Resistance: You have resistance to necrotic damage.
+          </Description>
+        </Feature>
+        <Feature name="Spellcasting" level="2">
+          <Description>
+            You can cast spells using Intelligence as your spellcasting ability. Refer to the Spellcasting table for details.
+          </Description>
+        </Feature>
+        <Feature name="Necromantic Conjurings" level="3">
+          <Description>
+            You learn the Bone Conjuration and Blood Conjuration cantrips.
+          </Description>
+        </Feature>
+        <Feature name="Death Knight's Oath" level="3">
+          <Description>
+            Choose an Oath: Bone Reaver or Blood Keeper.
+          </Description>
+        </Feature>
+        <Feature name="Extra Attack" level="5">
+          <Description>
+            You can attack twice whenever you take the Attack action.
+          </Description>
+        </Feature>
+        <Feature name="Aura of Dread" level="6">
+          <Description>
+            Enemies within 10 feet of you have disadvantage on saving throws against being frightened.
+          </Description>
+        </Feature>
+        <Feature name="Undying Will" level="10">
+          <Description>
+            You gain advantage on saving throws against being charmed and frightened.
+          </Description>
+        </Feature>
+        <Feature name="Reaper's Touch" level="14">
+          <Description>
+            Your weapon attacks with manifested weapons score a critical hit on a roll of 19 or 20.
+          </Description>
+        </Feature>
+        <Feature name="Master of Death" level="18">
+          <Description>
+            When reduced to 0 hit points, you drop to 1 hit point instead. Usable once per long rest.
+          </Description>
+        </Feature>
+        <Feature name="Necrotic Champion" level="20">
+          <Description>
+            For 1 minute, regain 5 hit points each turn, deal extra necrotic damage, and have advantage on saving throws. Usable once per long rest.
+          </Description>
+        </Feature>
+      </Features>
+      <Oaths>
+        <Oath name="Oath of the Bone Reaver">
+          <Description>Focus on bone-based abilities and enhancing necrotic attacks.</Description>
+        </Oath>
+        <Oath name="Oath of the Blood Keeper">
+          <Description>Focus on blood-based abilities and regaining hit points through necrotic damage.</Description>
+        </Oath>
+      </Oaths>
+    </Class>
+  </Classes>
+  <Spells>
+    <Spell name="Bone Conjuration" level="Cantrip">
+      <Description>Conjure bone armor or weapons.</Description>
+    </Spell>
+    <Spell name="Blood Conjuration" level="Cantrip">
+      <Description>Conjure blood armor or weapons.</Description>
+    </Spell>
+    <Spell name="Bloodforged Bolt" level="1">
+      <Description>Infuse arrows with blood to deal necrotic damage.</Description>
+    </Spell>
+    <Spell name="Ossified Arrow" level="1">
+      <Description>Enhance ammunition with bone shards.</Description>
+    </Spell>
+    <!-- Add other spells here -->
+  </Spells>
+</Compendium>
