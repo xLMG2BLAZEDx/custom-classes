@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Apeling</name>
+        <description>5e homebrew</description>
+        <author url="https://www.dandwiki.com/wiki/Apeling_(5e_Race)">D&amp;D Wiki</author>
+        <update version="0.0.2">
+            <file name="race-apeling.xml" url="https://raw.githubusercontent.com/raket44/apeling/refs/heads/main/race-apeling.xml" />
+        </update>
+    </info>
+
+    <element name="Apeling" type="Race" source="D&amp;D Wiki" id="ID_WIKI_RACE_APELING">
+        <description>
+            <h4>PHYSICAL DESCRIPTION</h4>
+            <p>Apelings are a fusion of human and monkey traits. Their fur, 5 feet long tails, ape faces, and most other physical characteristics suggest monkey and thus they are closer to primate than man. However, their intelligence, larger size, and more bipedal posture suggest the influence of human traits. Apelings are closer to the size of a small human yet their strength is more comparable to an orc or dwarf than human. They usually have more defined muscles than monkeys although they are still rather slender, keeping a very athletic appearance. Fur colours range from common black and brown to the more exotic colours such as pink or green. White fur is usually a "sign" of inherent greatness. Apelings age fast, reaching full adulthood in only 12 years. Although apelings only have a slightly longer lifespan than humans, their active nature and lifestyle mean they burn through their years faster than a human, putting their average lifespan at 100 years. Few careful and quieter apelings may live to see 150 and usually hold roles as tribal leaders and chiefs. Despite ageing fast, apelings do not feel the usual effects of old age until months before their death, many still adventuring within the last year of their life.</p>
+            <h4>HISTORY</h4>
+            <p>Apelings are direct descendants from a long forgotten Monkey God. This God was extremely joyful and filled with pride, but was one day challenged by an unknown villain. This challenge would see the disappearance of the Monkey God, but an influx in similar lesser creatures known now as Apelings.</p>
+            <h4>SOCIETY</h4>
+            <p>Apelings are extremely confident, headstrong, and upbeat. Their boastful presence might dismay common folk and be found disrespectful by upper class citizens, however; apelings hold a firm loyalty to those who have proven themselves. Apelings usually live in small, closely held tribal communities. Entire nations or cities of apelings are few and far apart. Leadership roles are often held either by the elders or by the most personally accomplished, however, leaders generally don't have much power as many apelings prefer group decisions over the decisions of one individual. In the traditional sense, apelings do not have "families" and usually have an "all kin are family" mentality. Apelings found outside the normal communities either from being banished or simply wanderlust have an easy time adjusting to the "easy" life of cities. Finding work in such places comes easy due to the general truthfulness and raw strength of the race. Though work as teachers in any form meets a swift end, due to a simple disinterest in treading the same old beaten path. Dwarfs and Apelings get along great establishing trades of not only goods but physical feats. Though the boastful attitude Apelings have can be off-putting, Dwarves have long since grown fond of their attitude. Apelings still have trouble distinguishing male and female dwarves. Through their time with the dwarves, Apelings have adopted similar feelings towards elves. Though contact with elves remain oddly scarce. Most apeling adventurers tend to be more independent than their kin at home, but still hold on a lot to their sense of family and loyalty. Naturally energetic and overtly eager, spending their time standing still is against their nature.</p>
+            <h4>APELING NAMES</h4>
+            <p>Apelings originate from a more oriental part of the world, so while they share similar names to that of humans they are normally of the oriental variety.</p>
+            <p>
+                <span class="feature">Male:</span>An, Ang, Chen, Chi, Fai, Jiang, Jun, Lian, Long, Meng, On, Shan, Shui, Son, Wen<br/>
+                <span class="feature">Female:</span>Bai, Chao, Chichi, Jia, Lei, Mei, Qiao, Shui, Tai<br/>
+            </p>
+            <h4>APELING TRAITS</h4>
+            <p>A race of nimble and strong monkey-like people.</p>
+            <p>
+                <span class="feature">Ability Score Increase.</span> Your Dexterity score increases by 2, and your Charisma score increases by 1.<br/>
+                <span class="feature">Age.</span>Apelings mature faster than humans, reaching adulthood by the age of 12, and commonly live to be around 150 years old.<br/>
+                <span class="feature">Alignment.</span>Apelings' love for adventure and energetic personalities often cause them to be more chaotic.<br/>
+                <span class="feature">Size.</span>Apelings are taller but weigh about as much as most humans. Your size is Medium.<br/>
+                <span class="feature">Speed.</span>Your base walking speed is 35 feet.<br/>
+                <span class="feature">Adept Climbers.</span> Your natural agility allows you to climb at full speed, rather than half. You can also climb across ceilings, but must succeed on either a DC 12 Athletics or Acrobatics check; failing causes you to lose your grip and fall.<br/>
+                <span class="feature">Empty Stomach.</span> You burn through your energy faster than most humanoids and must eat twice as much as a normal human requires each day.<br/>
+                <span class="feature">Heavy Slumber.</span> During a long rest, anyone trying to wake you up must make a DC 10 Charisma ability check. Taking damage will wake you up as will being thrown into or splashed with water.<br/>
+                <span class="feature">Limit Break.</span> Apelings are always striving to push themselves. As a reaction, when you fail Strength, Dexterity or Constitution ability check or saving throw, you can remake the check and take the new result. Once you use this ability, you can't use it again until you complete a long rest.<br/>
+                <span class="feature">Skills of the Primate.</span> Choose one: you gain proficiency in either Acrobatics or Athletics. Additionally, you can use your feet and tail as if they were hands; however, if you use both feet simultaneously for an action, your speed becomes 0 for that action.<br/>
+                <span class="feature">Darkvision.</span> You can see in dim light within 60 feet as if it were bright light, and in darkness as if it were dim (perceiving only shades of gray).<br/>
+                <span class="feature">Languages.</span> You can speak, read and write Common and one other language of your choice.<br/>
+            </p>
+        </description>
+        <sheet display="false" />
+        <setters>
+            <set name="names" type="male">An, Ang, Chen, Chi, Fai, Jiang, Jun, Lian, Long, Meng, On, Shan, Shui, Son, Wen</set>
+            <set name="names" type="female">Bai, Chao, Chichi, Jia, Lei, Mei, Qiao, Shui, Tai</set>
+            <set name="names-format">{{name}}</set>
+        </setters>
+        <rules>
+            <!-- Ability Score Increases -->
+            <stat name="dexterity" value="2"/>
+            <stat name="charisma" value="1"/>
+            
+            <!-- Movement -->
+            <stat name="innate speed" value="35" bonus="base"/>
+            <stat name="climb" value="30" bonus="racial"/>
+            
+            <!-- Vision: Darkvision -->
+            <stat name="darkvision" value="60" bonus="racial"/>
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+            
+            <!-- Grants -->
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+            <select type="Language" name="Language (Apeling)" />
+            
+            <!-- Racial Traits Grants -->
+            <grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_APELING_ADEPT_CLIMBERS" />
+            <grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_APELING_EMPTY_STOMACH" />
+            <grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_APELING_HEAVY_SLUMBER" />
+            <grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_APELING_LIMIT_BREAK" />
+            <grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_APELING_SKILLS_OF_THE_PRIMATE" />
+            <grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_APELING_EAGER_MIND" />
+        </rules>
+    </element>
+
+    <element name="Adept Climbers" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_APELING_ADEPT_CLIMBERS">
+        <description>
+            <p>Your natural agility allows you to climb at full speed, rather than half. You can also climb across ceilings, but must succeed on either a DC 12 Athletics or Acrobatics check; failing causes you to lose your grip and fall.</p>
+        </description>
+        <sheet display="false">
+            <description>Your natural agility allows you to climb at full speed, rather than half. You can also climb across ceilings, but must succeed on either a DC 12 Athletics or Acrobatics check; failing causes you to lose your grip and fall.</description>
+        </sheet>
+    </element>
+    <element name="Empty Stomach" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_APELING_EMPTY_STOMACH">
+        <description>
+            <p>You burn through your energy faster than most humanoids and must eat twice as much as a normal human requires each day.</p>
+        </description>
+        <sheet>
+            <description>You burn through your energy faster than most humanoids and must eat twice as much as a normal human requires each day.</description>
+        </sheet>
+    </element>
+    <element name="Heavy Slumber" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_APELING_HEAVY_SLUMBER">
+        <description>
+            <p>During a long rest, anyone trying to wake you up must make a DC 10 Charisma ability check. Taking damage will wake you up as will being thrown into or splashed with water.</p>
+        </description>
+        <sheet>
+            <description>During a long rest, anyone trying to wake you up must make a DC 10 Charisma ability check. Taking damage will wake you up as will being thrown into or splashed with water.</description>
+        </sheet>
+    </element>
+    <element name="Limit Break" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_APELING_LIMIT_BREAK">
+        <description>
+            <p>Apelings are always striving to push themselves. As a reaction, when you fail Strength, Dexterity or Constitution ability check or saving throw, you can remake the check and take the new result. Once you use this ability, you can't use it again until you complete a long rest.</p>
+        </description>
+        <sheet>
+            <description>Apelings are always striving to push themselves. As a reaction, when you fail Strength, Dexterity or Constitution ability check or saving throw, you can remake the check and take the new result. Once you use this ability, you can't use it again until you complete a long rest.</description>
+        </sheet>
+    </element>
+    <element name="Skills of the Primate" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_APELING_SKILLS_OF_THE_PRIMATE">
+        <description>
+            <![CDATA[
+<p>Choose one: You gain proficiency in either Acrobatics or Athletics. Additionally, you can use your feet and tail as if they were hands; however, if you use both feet simultaneously for an action, your speed becomes 0 for that action.</p>
+            ]]>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Proficiency" name="Skills of the Primate" supports="Skill" number="1">
+                <option>Acrobatics</option>
+                <option>Athletics</option>
+            </select>
+        </rules>
+    </element>
+    <element name="Eager Mind" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_APELING_EAGER_MIND">
+        <description>
+            <p>If you encounter someone with a skill proficiency you lack and they agree to teach you, you can spend a short or long rest to learn that proficiency. However, you lose that proficiency at the end of your next long rest. You may only gain one such proficiency this way at a time.</p>
+        </description>
+        <sheet>
+            <description>If you encounter someone with a skill proficiency you lack and they agree to teach you, you can spend a short or long rest to learn that proficiency. However, you lose that proficiency at the end of your next long rest. You may only gain one such proficiency this way at a time.</description>
+        </sheet>
+    </element>
+</elements>
+
