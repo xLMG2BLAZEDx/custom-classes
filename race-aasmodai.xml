@@ -36,6 +36,14 @@
         <rules>
             <!-- Ability Score Increases -->
             <stat name="constitution" value="2"/>
+            <choice name="Bonus Ability Score" type="stat" quantity="1">
+                <option stat="strength" value="1"/>
+                <option stat="dexterity" value="1"/>
+                <option stat="constitution" value="1"/>
+                <option stat="intelligence" value="1"/>
+                <option stat="wisdom" value="1"/>
+                <option stat="charisma" value="1"/>
+            </choice>
             
             <!-- Movement -->
             <stat name="innate speed" value="30" bonus="base"/>
@@ -94,3 +102,4 @@
         </sheet>
     </element>
 </elements>
+
