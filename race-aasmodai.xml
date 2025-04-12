@@ -3,9 +3,9 @@
     <info>
         <name>Aasmodai</name>
         <description>5e homebrew</description>
-        <author url="https://www.dandwiki.com/wiki/Apeling_(5e_Race)">D&amp;D Wiki</author>
+        <author url="https://github.com/xLMG2BLAZEDx/custom-classes/blob/main/race-aasmodai.xml">xLMG2BLAZEDx</author>
         <update version="0.0.2">
-            <file name="race-apeling.xml" url="https://raw.githubusercontent.com/raket44/apeling/refs/heads/main/race-apeling.xml" />
+            <file name="race-apeling.xml" url="https://raw.githubusercontent.com/xLMG2BLAZEDx//refs/heads/main/race-apeling.xml" />
         </update>
     </info>
 
