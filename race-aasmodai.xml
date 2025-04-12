@@ -15,30 +15,36 @@
             <p>Aasmodai are the offspring of celestial and infernal bloodlines, embodying divine grace and infernal power in one form. With radiant eyes, shadowed wings, and skin that flickers between light and flame, they inspire awe and fear in equal measure. Most Aasmodai stand tall and proud, with glowing tattoos or markings representing their dual nature.</p>
             <h4>SOCIETY</h4>
             <p>Aasmodai are rare and often solitary, not fitting into traditional celestial or fiendish orders. Many are driven by a desire to define their own purpose, often becoming warriors, scholars, or prophets. Their struggle to balance divine judgment and infernal passion defines their worldview.</p>
-            <h4>TRAITS</h4>
+            <h4>AASMODAI TRAITS</h4>
+            <p>Beings born of divine light and hellish flame, straddling both worlds.</p>
             <p>
                 <span class="feature">Ability Score Increase.</span> Your Constitution score increases by 2, and one other ability score of your choice increases by 1.<br/>
-                <span class="feature">Age.</span>Aasmodai mature at a similar rate to humans and live up to 120 years.<br/>
-                <span class="feature">Alignment.</span>Aasmodai tend toward neutrality, pulled between two extremes.<br/>
-                <span class="feature">Size.</span>You are Medium.<br/>
-                <span class="feature">Speed.</span>Your base walking speed is 30 feet.<br/>
-                <span class="feature">Darkvision.</span>You can see in dim light within 60 feet as if it were bright light, and in darkness as if it were dim light.<br/>
-                <span class="feature">Infernal Resilience.</span>You have resistance to necrotic damage.<br/>
-                <span class="feature">Innate Magic.</span>You know the sacred flame and fire bolt cantrips. Constitution is your spellcasting ability for these spells.<br/>
-                <span class="feature">Martial Balance.</span>You are proficient in simple and martial weapons.<br/>
-                <span class="feature">Divine Duality (1/Long Rest each).</span>You can undergo one of two transformations per long rest, each lasting 1 minute:<br/>
-                <b>Angelic Transformation:</b> emit bright light in 60 ft, unarmed strikes deal radiant damage, flying speed of 30 ft, resistance to radiant and necrotic.<br/>
-                <b>Demonic Transformation:</b> breath weapon (15 ft cone, 3d6 fire, Dex save), flying speed of 30 ft, resistance to fire and necrotic.<br/>
-                <span class="feature">Religious Intuition.</span>You are proficient in the Religion skill.<br/>
-                <span class="feature">Languages.</span>You can speak, read, and write Common, Celestial, and Infernal.<br/>
+                <span class="feature">Age.</span> Aasmodai mature at a similar rate to humans and live up to 120 years.<br/>
+                <span class="feature">Alignment.</span> Aasmodai tend toward neutrality, pulled between two extremes.<br/>
+                <span class="feature">Size.</span> You are Medium.<br/>
+                <span class="feature">Speed.</span> Your base walking speed is 30 feet.<br/>
+                <span class="feature">Darkvision.</span> You can see in dim light within 60 feet as if it were bright light, and in darkness as if it were dim light.<br/>
+                <span class="feature">Infernal Resilience.</span> You have resistance to necrotic damage.<br/>
+                <span class="feature">Innate Magic.</span> You know the *sacred flame* and *fire bolt* cantrips. Constitution is your spellcasting ability for these spells.<br/>
+                <span class="feature">Martial Balance.</span> You are proficient in simple and martial weapons.<br/>
+                <span class="feature">Divine Duality.</span> Once per long rest, you can activate one of two transformations for 1 minute: Angelic or Demonic. Each grants unique benefits (see trait description).<br/>
+                <span class="feature">Religious Intuition.</span> You are proficient in the Religion skill.<br/>
+                <span class="feature">Languages.</span> You can speak, read, and write Common, Celestial, and Infernal.<br/>
             </p>
         </description>
         <sheet display="false" />
         <rules>
+            <!-- Ability Score Increases -->
             <stat name="constitution" value="2"/>
+            
+            <!-- Movement -->
             <stat name="innate speed" value="30" bonus="base"/>
+
+            <!-- Vision -->
             <stat name="darkvision" value="60" bonus="racial"/>
             <grant type="Vision" id="ID_VISION_DARKVISION" />
+
+            <!-- Grants -->
             <grant type="Size" id="ID_SIZE_MEDIUM" />
             <grant type="Language" id="ID_LANGUAGE_COMMON" />
             <grant type="Language" id="ID_LANGUAGE_CELESTIAL" />
@@ -46,7 +52,45 @@
             <grant type="Proficiency" id="ID_PROFICIENCY_SIMPLE_WEAPONS" />
             <grant type="Proficiency" id="ID_PROFICIENCY_MARTIAL_WEAPONS" />
             <grant type="Skill Proficiency" id="ID_PROFICIENCY_RELIGION" />
-            <!-- Optional: Cantrip and transformation logic would be added here for tool integration -->
+
+            <!-- Racial Traits -->
+            <grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_AASMODAI_INFERNAL_RESILIENCE" />
+            <grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_AASMODAI_INNATE_MAGIC" />
+            <grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_AASMODAI_DIVINE_DUALITY" />
         </rules>
+    </element>
+
+    <element name="Infernal Resilience" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_AASMODAI_INFERNAL_RESILIENCE">
+        <description>
+            <p>You have resistance to necrotic damage.</p>
+        </description>
+        <sheet>
+            <description>You have resistance to necrotic damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Innate Magic" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_AASMODAI_INNATE_MAGIC">
+        <description>
+            <p>You know the <i>sacred flame</i> and <i>fire bolt</i> cantrips. Constitution is your spellcasting ability for these spells.</p>
+        </description>
+        <sheet>
+            <description>You know the sacred flame and fire bolt cantrips. Constitution is your spellcasting ability for these spells.</description>
+        </sheet>
+    </element>
+
+    <element name="Divine Duality" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_AASMODAI_DIVINE_DUALITY">
+        <description>
+            <![CDATA[
+<p>You can undergo one of two transformations per long rest, each lasting 1 minute:</p>
+<ul>
+<li><b>Angelic Transformation:</b> Emit bright light in a 60-foot radius, your unarmed strikes deal radiant damage, you gain a flying speed of 30 feet, and you gain resistance to radiant and necrotic damage.</li>
+<li><b>Demonic Transformation:</b> Use a breath weapon (15 ft cone, 3d6 fire damage, Dexterity save for half), gain a flying speed of 30 feet, and gain resistance to fire and necrotic damage.</li>
+</ul>
+<p>You can only use one transformation per long rest.</p>
+            ]]>
+        </description>
+        <sheet>
+            <description>You can undergo one of two transformations per long rest for 1 minute: Angelic or Demonic. Each form grants a flying speed and different resistances and abilities.</description>
+        </sheet>
     </element>
 </elements>
