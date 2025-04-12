@@ -2,8 +2,11 @@
 <elements>
     <info>
         <name>Aasmodai</name>
-        <description>5e homebrew race</description>
-        <author>Aasmodai Custom Race</author>
+        <description>5e homebrew</description>
+        <author url="https://github.com/xLMG2BLAZEDx/custom-classes/edit/main/race-aasmodai.xml">xLMG2Blazed</author>
+        <update version="0.0.2">
+            <file name="race-aasmodai.xml" url="https://raw.githubusercontent.com/xLMG2Blazed/custom-classes/refs/heads/main/race-aasmodai.xml" />
+        </update>
     </info>
 
     <element name="Aasmodai" type="Race" source="Homebrew" id="ID_HOMEBREW_RACE_AASMODAI">
