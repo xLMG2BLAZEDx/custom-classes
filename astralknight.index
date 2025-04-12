@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
     <info>
-        <name>D&amp;D Wiki</name>
-        <description>The 5e homebrew content from the D&amp;D Wiki website.</description>
-        <author url="http://www.dandwiki.com/wiki/5e_Homebrew">D&amp;D Wiki</author>
+        <name>xLMG2Blazedx</name>
+        <description>The 5e homebrew content from xLMG2BLAZEDx</description>
+        <author url="https://github.com/xLMG2BLAZEDx/custom-classes/blob/main/astralknight.index">xLMG2BLAZEDx</author>
         <update version="0.0.1">
-            <file name="apeling.index" url="https://raw.githubusercontent.com/raket44/apeling/refs/heads/main/apeling.index" />
+            <file name="astralknight.index" url="https://raw.githubusercontent.com/xLMG2BLAZEDx/custom-classes/refs/heads/main/astralknight.index" />
         </update>
     </info>
     <files>
         <!-- race -->
-        <file name="race-apeling.xml" url="https://raw.githubusercontent.com/raket44/apeling/refs/heads/main/race-apeling.xml" />
+        <file name="class-astralknight-aurora.xml" url="https://raw.githubusercontent.com/xLMG2Blazedx/custom-classes/refs/heads/main/class-astralknight-aurora.xml" />
     </files>
 </index>
