@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<elements>
+  <info>
+    <name>Astral Knight</name>
+    <description>A custom half-caster warrior attuned to cosmic power.</description>
+    <author url="https://github.com/xLMG2BLAZEDx/custom-classes/edit/main/race-aasmodai.xml">xLMG2Blazed</author>
+    <update version="0.0.1">
+      <file name="class-astralknight.xml" url="https://github.com/xLMG2BLAZEDx/custom-classes/blob/main/class-astralknight.xml"/>
+    </update>
+  </info>
+  <element name="Astral Knight" type="Class" source="Homebrew" id="ID_HOMEBREW_CLASS_ASTRAL_KNIGHT">
+    <description>A cosmic warrior who channels radiant power and star-born resilience through magic and might.</description>
+    <supports>Class</supports>
+    <rules>
+      <stat name="hit-die" value="10"/>
+      <grant type="Armor Proficiency" id="ID_PROFICIENCY_ARMOR_LIGHT"/>
+      <grant type="Armor Proficiency" id="ID_PROFICIENCY_ARMOR_MEDIUM"/>
+      <grant type="Armor Proficiency" id="ID_PROFICIENCY_ARMOR_SHIELD"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_SIMPLE"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_MARTIAL"/>
+      <grant type="Saving Throw Proficiency" id="ID_PROFICIENCY_SAVE_STRENGTH"/>
+      <grant type="Saving Throw Proficiency" id="ID_PROFICIENCY_SAVE_WISDOM"/>
+      <select type="Proficiency" name="Astral Knight Skills" supports="Skill" number="2">
+        <option>Acrobatics</option>
+        <option>Arcana</option>
+        <option>Athletics</option>
+        <option>Insight</option>
+        <option>Perception</option>
+        <option>Religion</option>
+      </select>
+    </rules>
+  </element>
+</elements>
