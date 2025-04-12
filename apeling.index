@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+    <info>
+        <name>D&amp;D Wiki</name>
+        <description>The 5e homebrew content from the D&amp;D Wiki website.</description>
+        <author url="http://www.dandwiki.com/wiki/5e_Homebrew">D&amp;D Wiki</author>
+        <update version="0.0.1">
+            <file name="apeling.index" url="https://raw.githubusercontent.com/raket44/apeling/refs/heads/main/apeling.index" />
+        </update>
+    </info>
+    <files>
+        <!-- race -->
+        <file name="race-apeling.xml" url="https://raw.githubusercontent.com/raket44/apeling/refs/heads/main/race-apeling.xml" />
+    </files>
+</index>
