@@ -25,35 +25,30 @@
                 <span class="feature">Speed.</span> Your base walking speed is 30 feet.<br/>
                 <span class="feature">Darkvision.</span> You can see in dim light within 60 feet as if it were bright light, and in darkness as if it were dim light.<br/>
                 <span class="feature">Infernal Resilience.</span> You have resistance to necrotic damage.<br/>
-                <span class="feature">Innate Magic.</span> You know the *sacred flame* and *fire bolt* cantrips. Constitution is your spellcasting ability for these spells.<br/>
+                <span class="feature">Innate Magic.</span> You know the <i>sacred flame</i> and <i>fire bolt</i> cantrips. Constitution is your spellcasting ability for these spells.<br/>
                 <span class="feature">Martial Balance.</span> You are proficient in simple and martial weapons.<br/>
-                <span class="feature">Divine Duality.</span> Once per long rest, you can activate one of two transformations for 1 minute: Angelic or Demonic. Each grants unique benefits (see trait description).<br/>
+                <span class="feature">Divine Duality.</span> Once per long rest, you can activate one of two transformations for 1 minute:<br/>
+                <b>Angelic Form:</b> Emit 60 feet of bright light, your unarmed strikes deal radiant damage, gain a flying speed of 30 ft, and gain resistance to radiant and necrotic damage.<br/>
+                <b>Demonic Form:</b> Use a breath weapon (15 ft cone, 3d6 fire damage, Dexterity save for half), gain a flying speed of 30 ft, and resistance to fire and necrotic damage.<br/>
                 <span class="feature">Religious Intuition.</span> You are proficient in the Religion skill.<br/>
                 <span class="feature">Languages.</span> You can speak, read, and write Common, Celestial, and Infernal.<br/>
             </p>
         </description>
         <sheet display="false" />
         <rules>
-            <!-- Ability Score Increases -->
             <stat name="constitution" value="2"/>
-            
-            <!-- Movement -->
             <stat name="innate speed" value="30" bonus="base"/>
-
-            <!-- Vision -->
             <stat name="darkvision" value="60" bonus="racial"/>
             <grant type="Vision" id="ID_VISION_DARKVISION" />
-
-            <!-- Grants -->
             <grant type="Size" id="ID_SIZE_MEDIUM" />
             <grant type="Language" id="ID_LANGUAGE_COMMON" />
             <grant type="Language" id="ID_LANGUAGE_CELESTIAL" />
             <grant type="Language" id="ID_LANGUAGE_INFERNAL" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_SIMPLE_WEAPONS" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_MARTIAL_WEAPONS" />
-            <grant type="Skill Proficiency" id="ID_PROFICIENCY_RELIGION" />
-
-            <!-- Racial Traits -->
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_SIMPLE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_MARTIAL" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
+            <grant type="Spell" id="ID_SPELL_SACRED_FLAME" />
+            <grant type="Spell" id="ID_SPELL_FIRE_BOLT" />
             <grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_AASMODAI_INFERNAL_RESILIENCE" />
             <grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_AASMODAI_INNATE_MAGIC" />
             <grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_AASMODAI_DIVINE_DUALITY" />
@@ -94,3 +89,4 @@
         </sheet>
     </element>
 </elements>
+
