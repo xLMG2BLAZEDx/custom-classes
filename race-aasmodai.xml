@@ -27,7 +27,7 @@
                 <span class="feature">Infernal Resilience.</span> You have resistance to necrotic damage.<br/>
                 <span class="feature">Innate Magic.</span> You know the *sacred flame* and *fire bolt* cantrips. Constitution is your spellcasting ability for these spells.<br/>
                 <span class="feature">Martial Balance.</span> You are proficient in simple and martial weapons.<br/>
-                <span class="feature">Divine Duality.</span> Once per long rest, you can activate one of two transformations for 1 minute: Angelic or Demonic. Each grants unique benefits (see trait description).<br/>
+                <span class="feature">Divine Duality.</span> Divine Duality (1/Long Rest each)You can undergo one of two transformations per long rest, each lasting 1 minute and ending early if you are incapacitated:Angelic TransformationAs a bonus action, you grow radiant wings and glow with divine energy. While transformed:You shed bright light in a 60-foot radius and dim light for an additional 30 feet.If you are unarmed, your unarmed strikes deal radiant damage instead of bludgeoning.You gain a flying speed of 30 feet.You have resistance to radiant and necrotic damage.Demonic TransformationAs a bonus action, you sprout infernal wings and exude smoldering heat. While transformed:You gain a breath weapon: As an action, exhale fire in a 15-foot cone. Each creature in the area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus) or take 3d6 fire damage, half on a success.You gain a flying speed of 30 feet.You have resistance to fire and necrotic damage..<br/>
                 <span class="feature">Religious Intuition.</span> You are proficient in the Religion skill.<br/>
                 <span class="feature">Languages.</span> You can speak, read, and write Common, Celestial, and Infernal.<br/>
             </p>
@@ -98,7 +98,7 @@
             ]]>
         </description>
         <sheet>
-            <description>You can undergo one of two transformations per long rest for 1 minute: Angelic or Demonic. Each form grants a flying speed and different resistances and abilities.</description>
+            <description>Divine Duality (1/Long Rest each)You can undergo one of two transformations per long rest, each lasting 1 minute and ending early if you are incapacitated:Angelic TransformationAs a bonus action, you grow radiant wings and glow with divine energy. While transformed:You shed bright light in a 60-foot radius and dim light for an additional 30 feet.If you are unarmed, your unarmed strikes deal radiant damage instead of bludgeoning.You gain a flying speed of 30 feet.You have resistance to radiant and necrotic damage.Demonic TransformationAs a bonus action, you sprout infernal wings and exude smoldering heat. While transformed:You gain a breath weapon: As an action, exhale fire in a 15-foot cone. Each creature in the area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus) or take 3d6 fire damage, half on a success.You gain a flying speed of 30 feet.You have resistance to fire and necrotic damage.</description>
         </sheet>
     </element>
 </elements>
