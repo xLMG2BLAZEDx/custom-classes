@@ -2,8 +2,8 @@
 <elements>
   <info>
     <name>Primalbound</name>
+    <description>A primal melee class inspired by weregorillas. Gains bonuses and breath weapon during transformation. No spellcasting.</description>
     <author>William Burruss</author>
-    <description>Martial shapeshifter class inspired by weregorillas. No spellcasting. Gains strength, defenses, and breath weapon while transformed.</description>
     <update version="1.0">
       <file name="class-primalbound.xml" url="https://example.com/class-primalbound.xml" />
     </update>
@@ -11,10 +11,10 @@
 
   <element name="Primalbound" type="Class" source="Homebrew" id="ID_WILLIAM_CLASS_PRIMALBOUND">
     <description>
-      <p>Primalbound are fierce warriors who channel a bestial spirit, unleashing tremendous power and resilience in their transformed state. They specialize in devastating melee attacks, mighty leaps, and unparalleled fortitude.</p>
+      <p>Primalbound are fierce warriors who channel a bestial spirit, unleashing tremendous power and resilience in their transformed state. They specialize in devastating melee attacks, mighty leaps, and primal roars.</p>
     </description>
     <setters>
-      <set name="short">Feral warriors who transform into powerful beasts of rage and resilience.</set>
+      <set name="short">A beastial warrior who transforms in battle and unleashes devastating primal fury.</set>
       <set name="hd">d10</set>
       <set name="spellcasting_ability" value="None" />
     </setters>
@@ -30,40 +30,43 @@
     </rules>
   </element>
 
-  <element name="Burst of Brawn" type="Class Feature" source="Homebrew" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_BURST_OF_BRAWN">
+  <!-- Features -->
+  <element name="Transformation" type="Class Feature" source="Homebrew" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_TRANSFORMATION">
+    <description>
+      <p>You can enter a transformation as a bonus action, similar to rage. While transformed (for 1 minute):</p>
+      <ul>
+        <li>+2 to melee damage rolls</li>
+        <li>+1 AC</li>
+        <li>Resistance to nonmagical bludgeoning, piercing, and slashing</li>
+        <li>Once per transformation: 15-ft cone breath weapon (Dex save, 2d6 damage)</li>
+      </ul>
+      <p>Uses per long rest = proficiency bonus.</p>
+    </description>
+    <rules>
+      <stat name="primalbound transformation:count" value="2" level="1" />
+      <stat name="primalbound transformation:count" value="1" level="3" />
+      <stat name="primalbound transformation:count" value="1" level="6" />
+      <stat name="primalbound transformation:count" value="1" level="12" />
+      <stat name="primalbound transformation:count" value="1" level="17" />
+      <stat name="primalbound transformation:count" value="93" level="20" />
+    </rules>
+  </element>
+
+  <element name="Burst of Brawn" type="Class Feature" source="Homebrew" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_BRAWN">
     <description>
       <p>You gain advantage on Strength checks and saving throws while not wearing heavy armor.</p>
     </description>
   </element>
 
-  <element name="Primal Transformation" type="Class Feature" source="Homebrew" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_PRIMAL_TRANSFORMATION">
+  <element name="Mighty Leap" type="Class Feature" source="Homebrew" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_LEAP">
     <description>
-      <p>As a bonus action, you may transform into a primal beast for 1 minute. While transformed:</p>
-      <ul>
-        <li>Gain +2 to melee damage rolls</li>
-        <li>Gain +1 AC</li>
-        <li>Gain resistance to nonmagical bludgeoning, piercing, and slashing damage</li>
-        <li>Once per transformation, you may use a 15-ft cone breath weapon (Dex save DC = 8 + proficiency + Strength) for 2d6 damage (half on save)</li>
-      </ul>
-      <p>You can transform a number of times equal to your proficiency bonus per long rest.</p>
-    </description>
-  </element>
-
-  <element name="Bestial Resilience" type="Class Feature" source="Homebrew" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_BESTIAL_RESILIENCE">
-    <description>
-      <p>While transformed, you have resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons.</p>
-    </description>
-  </element>
-
-  <element name="Mighty Leap" type="Class Feature" source="Homebrew" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_MIGHTY_LEAP">
-    <description>
-      <p>You can jump three times your normal distance, and take no fall damage from heights less than 40 feet if you land on your feet.</p>
+      <p>Triple your jump distance. You take no fall damage from heights under 40 feet when landing on your feet.</p>
     </description>
   </element>
 
   <element name="Extra Attack" type="Class Feature" source="Homebrew" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_EXTRA_ATTACK">
     <description>
-      <p>Starting at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+      <p>Starting at 5th level, you can attack twice whenever you take the Attack action on your turn.</p>
     </description>
     <rules>
       <stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
@@ -72,48 +75,40 @@
 
   <element name="Advanced Transformation" type="Class Feature" source="Homebrew" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_ADVANCED_TRANSFORMATION">
     <description>
-      <p>At 11th level, while transformed, you regain 5 HP at the start of each of your turns and your melee weapon attacks score a critical hit on a roll of 19–20.</p>
+      <p>At 11th level, gain 5 HP regen per round if below half HP, and score a critical hit on 19–20 while transformed.</p>
     </description>
   </element>
 
-  <element name="Primal Dominance" type="Class Feature" source="Homebrew" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_PRIMAL_DOMINANCE">
+  <element name="Primal Dominance" type="Class Feature" source="Homebrew" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_DOMINANCE">
     <description>
-      <p>At 18th level, your transformation now lasts for 10 minutes. While transformed, you are immune to the frightened and charmed conditions.</p>
+      <p>At 18th level, your transformation lasts 10 minutes. You are immune to fear and charm while transformed.</p>
     </description>
   </element>
 
-  <element name="Ability Score Improvement" type="Class Feature" source="Homebrew" id="ID_WILLIAM_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_PRIMALBOUND">
+  <element name="Ability Score Improvement" type="Class Feature" source="Homebrew" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_ASI">
     <description>
-      <p>Increase one ability score by 2, or two by 1. Cannot exceed 20 in a single ability. Occurs at 4th, 8th, 12th, 16th, and 19th level.</p>
+      <p>Increase one ability score by 2 or two by 1. Maximum of 20.</p>
     </description>
     <rules>
-      <select type="Class Feature" name="Ability Score Improvement, Primalbound" supports="Improvement Option,Primalbound" />
+      <select type="Class Feature" name="ASI (Primalbound)" supports="Improvement Option,Primalbound" />
     </rules>
   </element>
 
-  <element name="Primalbound Level Advancement" type="Class Progression" source="Homebrew" id="ID_WILLIAM_CLASS_PRIMALBOUND_PROGRESSION">
+  <!-- Progression -->
+  <element name="Primalbound Progression" type="Class Progression" source="Homebrew" id="ID_WILLIAM_CLASS_PRIMALBOUND_PROGRESSION">
     <supports>ID_WILLIAM_CLASS_PRIMALBOUND</supports>
     <progression>
-      <level index="1" feature="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_BURST_OF_BRAWN,ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_PRIMAL_TRANSFORMATION" />
-      <level index="2" feature="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_BESTIAL_RESILIENCE" />
-      <level index="3" feature="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_MIGHTY_LEAP" />
-      <level index="4" feature="ID_WILLIAM_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_PRIMALBOUND" />
+      <level index="1" feature="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_TRANSFORMATION,ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_BRAWN" />
+      <level index="2" />
+      <level index="3" feature="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_LEAP" />
+      <level index="4" feature="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_ASI" />
       <level index="5" feature="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_EXTRA_ATTACK" />
-      <level index="6" />
-      <level index="7" />
-      <level index="8" feature="ID_WILLIAM_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_PRIMALBOUND" />
-      <level index="9" />
-      <level index="10" />
+      <level index="8" feature="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_ASI" />
       <level index="11" feature="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_ADVANCED_TRANSFORMATION" />
-      <level index="12" feature="ID_WILLIAM_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_PRIMALBOUND" />
-      <level index="13" />
-      <level index="14" />
-      <level index="15" />
-      <level index="16" feature="ID_WILLIAM_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_PRIMALBOUND" />
-      <level index="17" />
-      <level index="18" feature="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_PRIMAL_DOMINANCE" />
-      <level index="19" feature="ID_WILLIAM_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_PRIMALBOUND" />
-      <level index="20" />
+      <level index="12" feature="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_ASI" />
+      <level index="16" feature="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_ASI" />
+      <level index="18" feature="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_DOMINANCE" />
+      <level index="19" feature="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_ASI" />
     </progression>
   </element>
 </elements>
