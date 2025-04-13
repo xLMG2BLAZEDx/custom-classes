@@ -113,12 +113,5 @@
     </progression>
   </element>
 
-  <!-- Class Registration -->
-  <element name="Classes" type="ClassContainer" source="Homebrew">
-    <element type="Class" id="ID_WILLIAM_CLASS_PRIMALBOUND" />
-  </element>
-</elements>
-
-
 
 
