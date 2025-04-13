@@ -2,11 +2,13 @@
 <elements>
   <info>
     <name>Primalbound</name>
-    <description>Martial shapeshifter class inspired by weregorillas. No spellcasting. Gains strength, defenses, and breath weapon while transformed.</description>
     <author>William Burruss</author>
+    <description>Martial shapeshifter class inspired by weregorillas. No spellcasting. Gains strength, defenses, and breath weapon while transformed.</description>
+    <update version="1.0">
+      <file name="class-primalbound.xml" url="https://example.com/class-primalbound.xml" />
+    </update>
   </info>
 
-  <!-- Class Definition -->
   <element name="Primalbound" type="Class" source="Homebrew" id="ID_WILLIAM_CLASS_PRIMALBOUND">
     <description>
       <p>Primalbound are fierce warriors who channel a bestial spirit, unleashing tremendous power and resilience in their transformed state. They specialize in devastating melee attacks, mighty leaps, and unparalleled fortitude.</p>
@@ -14,6 +16,7 @@
     <setters>
       <set name="short">Feral warriors who transform into powerful beasts of rage and resilience.</set>
       <set name="hd">d10</set>
+      <set name="spellcasting_ability" value="None" />
     </setters>
     <rules>
       <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
@@ -27,10 +30,9 @@
     </rules>
   </element>
 
-  <!-- Class Features -->
   <element name="Burst of Brawn" type="Class Feature" source="Homebrew" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_BURST_OF_BRAWN">
     <description>
-      <p>You gain advantage on Strength checks and Strength saving throws while not wearing heavy armor.</p>
+      <p>You gain advantage on Strength checks and saving throws while not wearing heavy armor.</p>
     </description>
   </element>
 
@@ -89,7 +91,6 @@
     </rules>
   </element>
 
-  <!-- Class Progression -->
   <element name="Primalbound Level Advancement" type="Class Progression" source="Homebrew" id="ID_WILLIAM_CLASS_PRIMALBOUND_PROGRESSION">
     <supports>ID_WILLIAM_CLASS_PRIMALBOUND</supports>
     <progression>
