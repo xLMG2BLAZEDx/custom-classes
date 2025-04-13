@@ -9,7 +9,7 @@
         </update>
     </info>
 
-    <element name="Aasmodai" type="Race" source="Homebrew" id="ID_HOMEBREW_RACE_AASMODAI">
+    <element name="Aasmodai" type="Race" source="Ramsays Homebrew" id="ID_HOMEBREW_RACE_AASMODAI">
         <description>
             <h4>PHYSICAL DESCRIPTION</h4>
             <p>Aasmodai are the offspring of celestial and infernal bloodlines, embodying divine grace and infernal power in one form. With radiant eyes, shadowed wings, and skin that flickers between light and flame, they inspire awe and fear in equal measure. Most Aasmodai stand tall and proud, with glowing tattoos or markings representing their dual nature.</p>
@@ -48,7 +48,7 @@
         </rules>
     </element>
 
-    <element name="Infernal Resilience" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_AASMODAI_INFERNAL_RESILIENCE">
+    <element name="Infernal Resilience" type="Racial Trait" source="Ramsays Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_AASMODAI_INFERNAL_RESILIENCE">
         <description>
             <p>You have resistance to necrotic damage.</p>
         </description>
@@ -57,7 +57,7 @@
         </sheet>
     </element>
 
-    <element name="Innate Magic" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_AASMODAI_INNATE_MAGIC">
+    <element name="Innate Magic" type="Racial Trait" source="Ramsays Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_AASMODAI_INNATE_MAGIC">
         <description>
             <p>You know the <i>sacred flame</i> and <i>fire bolt</i> cantrips. Constitution is your spellcasting ability for these spells.</p>
         </description>
@@ -70,7 +70,7 @@
         </rules>
     </element>
 
-    <element name="Divine Duality" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_AASMODAI_DIVINE_DUALITY">
+    <element name="Divine Duality" type="Racial Trait" source="Ramsays Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_AASMODAI_DIVINE_DUALITY">
         <description>
             <![CDATA[
 <p>You can undergo one of two transformations per long rest, each lasting 1 minute:</p>
