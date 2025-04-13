@@ -3,7 +3,7 @@
   <info>
     <name>Primalbound</name>
     <description>Weregorilla-inspired martial class with rage-driven might and transformation</description>
-    <author>William Burruss</author>
+     <author url="https://github.com/xLMG2BLAZEDx/custom-classes/edit/main/class-primalbound.xml">xLMG2Blazed</author>
     <update version="1.0">
       <file name="class-primalbound.xml" url="https://github.com/xLMG2BLAZEDx/custom-classes/edit/main/class-primalbound.xml" />
     </update>
