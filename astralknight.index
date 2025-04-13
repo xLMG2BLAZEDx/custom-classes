@@ -10,6 +10,6 @@
     </info>
     <files>
         <!-- race -->
-        <file name="class-astralknight-aurora.xml" url="https://raw.githubusercontent.com/xLMG2Blazedx/custom-classes/refs/heads/main/class-astralknight-aurora.xml" />
+        <file name="astral_knight_spells.xml" url="https://raw.githubusercontent.com/xLMG2Blazedx/custom-classes/refs/heads/main/astral_knight_spells.xml" />
     </files>
 </index>
