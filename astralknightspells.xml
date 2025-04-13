@@ -55,9 +55,9 @@ Range: Self
 Components: V
 Duration: Instantaneous
 
-You step through a rift in space, teleporting to an unoccupied space you can see within 60 feet. You can bring along objects as long as their weight doesn’t exceed what you can carry. You can also teleport one willing creature of your size or smaller who is carrying gear up to its carrying capacity. The creature must be within 5 feet of you when you cast this spell, and there must be an unoccupied space within 5 feet of your destination space for the creature to appear in; otherwise, the creature is left behind.</description>
+You step through a rift in space, teleporting to an unoccupied space you can see within 60 feet. You can bring along objects as long as their weight doesn't exceed what you can carry. You can also teleport one willing creature of your size or smaller who is carrying gear up to its carrying capacity. The creature must be within 5 feet of you when you cast this spell, and there must be an unoccupied space within 5 feet of your destination space for the creature to appear in; otherwise, the creature is left behind.</description>
     <sheet>
-      <description>3rd-level Conjuration. You step through a rift in space, teleporting to an unoccupied space you can see within 60 feet. You can bring along objects as long as their weight doesn’t exceed what you can carry. You can also teleport one willing creature of your size or smaller who is carrying gear up to its carrying capacity. The creature must be within 5 feet of you when you cast this spell, and there must be an unoccupied space within 5 feet of your destination space for the creature to appear in; otherwise, the creature is left behind.</description>
+      <description>3rd-level Conjuration. You step through a rift in space, teleporting to an unoccupied space you can see within 60 feet. You can bring along objects as long as their weight doesn't exceed what you can carry. You can also teleport one willing creature of your size or smaller who is carrying gear up to its carrying capacity. The creature must be within 5 feet of you when you cast this spell, and there must be an unoccupied space within 5 feet of your destination space for the creature to appear in; otherwise, the creature is left behind.</description>
     </sheet>
     <setters>
       <set name="level" value="3"/>
@@ -79,9 +79,9 @@ Range: Self
 Components: V, S, M (a piece of meteorite)
 Duration: Concentration, up to 10 minutes
 
-You create a beacon of cosmic light that guides you and your allies. For the duration, you and any allies within 30 feet of you have advantage on Wisdom (Perception) checks and can’t be surprised. Additionally, you can use your reaction to grant an ally within 30 feet advantage on an attack roll or saving throw.</description>
+You create a beacon of cosmic light that guides you and your allies. For the duration, you and any allies within 30 feet of you have advantage on Wisdom (Perception) checks and can't be surprised. Additionally, you can use your reaction to grant an ally within 30 feet advantage on an attack roll or saving throw.</description>
     <sheet>
-      <description>4th-level Divination. You create a beacon of cosmic light that guides you and your allies. For the duration, you and any allies within 30 feet of you have advantage on Wisdom (Perception) checks and can’t be surprised. Additionally, you can use your reaction to grant an ally within 30 feet advantage on an attack roll or saving throw.</description>
+      <description>4th-level Divination. You create a beacon of cosmic light that guides you and your allies. For the duration, you and any allies within 30 feet of you have advantage on Wisdom (Perception) checks and can't be surprised. Additionally, you can use your reaction to grant an ally within 30 feet advantage on an attack roll or saving throw.</description>
     </sheet>
     <setters>
       <set name="level" value="4"/>
