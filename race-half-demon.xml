@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name>Half-Demon</name>
+        <description>5e Homebrew Template - Inspired by Dante (Devil May Cry)</description>
+        <author>Converted by William Burruss</author>
+        <update version="1.0.0">
+            <file name="race-half-demon.xml" url=""/>
+        </update>
+    </info>
+
+    <element name="Half-Demon" type="Race" source="Homebrew" id="ID_HOMEBREW_RACE_HALF_DEMON">
+        <description>
+            <h4>Half-Demon Template</h4>
+            <p>When a mortal bloodline is tainted with the essence of a powerful demon—whether through a pact, inheritance, or infernal experimentation—the result may be a Half-Demon. Agile, powerful, and often wrestling with their inner nature, Half-Demons walk the line between destruction and redemption.</p>
+            <h4>Traits</h4>
+            <p>
+                <span class="feature">Type.</span> You are a Fiend in addition to your original type.<br/>
+                <span class="feature">Ability Score Increase.</span> Your Dexterity or Strength score increases by 2, and your Charisma increases by 1.<br/>
+                <span class="feature">Demonic Resilience.</span> You have resistance to fire damage and nonmagical bludgeoning, piercing, and slashing damage while below half your hit points.<br/>
+                <span class="feature">Demonic Surge.</span> Once per short rest, as a bonus action, you enter a transformed state for 1 minute. Gain temporary hit points equal to your level, +10 ft movement, unarmed strikes deal 1d6 + modifier force damage, extra bonus attack per turn. Attacks count as magical at level 11.<br/>
+                <span class="feature">Fiendish Legacy.</span> You know one Warlock cantrip (Charisma is your spellcasting stat). At 3rd level, cast <i>Hellish Rebuke</i> (1/LR, 2nd level); at 5th, <i>Misty Step</i> (1/LR).<br/>
+                <span class="feature">Agile Devil.</span> Always under <i>feather fall</i>, gain Acrobatics proficiency, and can perform standing jumps as if with a 10-foot running start.<br/>
+                <span class="feature">Languages.</span> You can speak, read, and write Common and Infernal.
+            </p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Size" id="ID_SIZE_MEDIUM"/>
+            <grant type="Language" id="ID_LANGUAGE_COMMON"/>
+            <grant type="Language" id="ID_LANGUAGE_INFERNAL"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS"/>
+            <grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_HALF_DEMON_RESILIENCE"/>
+            <grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_HALF_DEMON_SURGE"/>
+            <grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_HALF_DEMON_LEGACY"/>
+            <grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_HALF_DEMON_AGILE_DEVIL"/>
+        </rules>
+    </element>
+
+    <element name="Demonic Resilience" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_HALF_DEMON_RESILIENCE">
+        <description>
+            <p>You have resistance to fire damage and to nonmagical bludgeoning, piercing, and slashing damage while below half your hit points.</p>
+        </description>
+        <sheet>
+            <description>Resist fire and nonmagical B/P/S damage while below half HP.</description>
+        </sheet>
+    </element>
+
+    <element name="Demonic Surge" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_HALF_DEMON_SURGE">
+        <description>
+            <p>Once per short rest, you can activate your demonic power for 1 minute as a bonus action. You gain temporary HP equal to your level, +10 feet movement, unarmed strikes deal 1d6 + modifier force damage, and an extra weapon/unarmed bonus attack each turn. At 11th level, attacks count as magical.</p>
+        </description>
+        <sheet>
+            <description>Demonic form: temp HP, speed +10, unarmed force dmg, bonus attack. Attacks magical at lvl 11.</description>
+        </sheet>
+    </element>
+
+    <element name="Fiendish Legacy" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_HALF_DEMON_LEGACY">
+        <description>
+            <p>You gain one Warlock cantrip of your choice (Charisma is your spellcasting ability).</p>
+            <p>At 3rd level, you can cast <i>Hellish Rebuke</i> (2nd level) once per long rest.</p>
+            <p>At 5th level, you can cast <i>Misty Step</i> once per long rest.</p>
+        </description>
+        <sheet>
+            <description>Warlock cantrip (Cha). 1/LR Hellish Rebuke (lvl 3), Misty Step (lvl 5).</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="Cantrip (Fiendish Legacy)" supports="Class=Warlock"/>
+            <grant type="Spell" id="ID_PHB_SPELL_HELLISH_REBUKE"/>
+            <grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP"/>
+        </rules>
+    </element>
+
+    <element name="Agile Devil" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_HALF_DEMON_AGILE_DEVIL">
+        <description>
+            <p>You are always under the effect of <i>feather fall</i> (no reaction required), gain proficiency in Acrobatics, and can make standing jumps as though you had a 10-foot running start.</p>
+        </description>
+        <sheet>
+            <description>Feather fall, Acrobatics proficiency, improved standing jumps.</description>
+        </sheet>
+    </element>
+</elements>
