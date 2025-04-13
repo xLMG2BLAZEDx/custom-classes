@@ -9,7 +9,7 @@
         </update>
     </info>
 
-    <element name="Half-Demon" type="Race" source="Homebrew" id="ID_HOMEBREW_RACE_HALF_DEMON">
+    <element name="Half-Demon" type="Race" source="Red's Homebrew" id="ID_HOMEBREW_RACE_HALF_DEMON">
         <description>
             <h4>Half-Demon Template</h4>
             <p>When a mortal bloodline is tainted with the essence of a powerful demon—whether through a pact, inheritance, or infernal experimentation—the result may be a Half-Demon. Agile, powerful, and often wrestling with their inner nature, Half-Demons walk the line between destruction and redemption.</p>
@@ -37,7 +37,7 @@
         </rules>
     </element>
 
-    <element name="Demonic Resilience" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_HALF_DEMON_RESILIENCE">
+    <element name="Demonic Resilience" type="Racial Trait" source="Red's Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_HALF_DEMON_RESILIENCE">
         <description>
             <p>You have resistance to fire damage and to nonmagical bludgeoning, piercing, and slashing damage while below half your hit points.</p>
         </description>
@@ -46,7 +46,7 @@
         </sheet>
     </element>
 
-    <element name="Demonic Surge" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_HALF_DEMON_SURGE">
+    <element name="Demonic Surge" type="Racial Trait" source="Red's Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_HALF_DEMON_SURGE">
         <description>
             <p>Once per short rest, you can activate your demonic power for 1 minute as a bonus action. You gain temporary HP equal to your level, +10 feet movement, unarmed strikes deal 1d6 + modifier force damage, and an extra weapon/unarmed bonus attack each turn. At 11th level, attacks count as magical.</p>
         </description>
@@ -55,7 +55,7 @@
         </sheet>
     </element>
 
-    <element name="Fiendish Legacy" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_HALF_DEMON_LEGACY">
+    <element name="Fiendish Legacy" type="Racial Trait" source="Red's Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_HALF_DEMON_LEGACY">
         <description>
             <p>You gain one Warlock cantrip of your choice (Charisma is your spellcasting ability).</p>
             <p>At 3rd level, you can cast <i>Hellish Rebuke</i> (2nd level) once per long rest.</p>
@@ -71,7 +71,7 @@
         </rules>
     </element>
 
-    <element name="Agile Devil" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_HALF_DEMON_AGILE_DEVIL">
+    <element name="Agile Devil" type="Racial Trait" source="Red's Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_HALF_DEMON_AGILE_DEVIL">
         <description>
             <p>You are always under the effect of <i>feather fall</i> (no reaction required), gain proficiency in Acrobatics, and can make standing jumps as though you had a 10-foot running start.</p>
         </description>
