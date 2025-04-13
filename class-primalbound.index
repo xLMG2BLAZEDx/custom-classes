@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+    <info>
+        <name>xLMG2Blazedx</name>
+        <description>The 5e homebrew content from xLMG2BLAZEDx</description>
+        <author url="https://github.com/xLMG2BLAZEDx/custom-classes/blob/main/class-primalbound.index">xLMG2BLAZEDx</author>
+        <update version="0.0.1">
+            <file name="class-primalbound.index" url="https://raw.githubusercontent.com/xLMG2BLAZEDx/custom-classes/refs/heads/main/class-primalbound.index" />
+        </update>
+    </info>
+    <files>
+        <!-- race -->
+        <file name="class-primalbound.xml" url="https://raw.githubusercontent.com/xLMG2Blazedx/custom-classes/refs/heads/main/class-primalbound.xml" />
+    </files>
+</index>
