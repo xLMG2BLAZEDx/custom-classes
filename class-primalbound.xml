@@ -5,18 +5,21 @@
     <description>Weregorilla-inspired martial class with rage-driven might and transformation</description>
     <author>William Burruss</author>
     <update version="1.0">
-      <file name="class-primalbound.xml" url="https://example.com/weregorilla" />
+      <file name="class-primalbound.xml" url="https://github.com/xLMG2BLAZEDx/custom-classes/edit/main/class-primalbound.xml" />
     </update>
   </info>
+
+  <!-- Class Definition -->
   <element name="Primalbound" type="Class" source="Homebrew" id="ID_WILLIAM_CLASS_PRIMALBOUND">
     <description>
-      <p><b>Primalbound</b> are warriors blessed or cursed with the essence of the Gorilla God, tapping into bestial strength and fury through ancestral rites. Transforming into towering weregorilla forms, they pulverize foes with raw might, channel primal instincts, and resist all but the most enchanted of blows. Though they lack blood curses or mutagens, their transformation is no less terrifying.</p>
+      <p><b>Primalbound</b> are warriors blessed or cursed with the essence of the Gorilla God, tapping into bestial strength and fury through ancestral rites...</p>
     </description>
     <setters>
       <set name="short">Mighty warriors who harness simian rage to transform into monstrous weregorilla forms.</set>
       <set name="hd">d10</set>
     </setters>
     <rules>
+      <!-- Proficiencies -->
       <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
       <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
       <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
@@ -25,77 +28,90 @@
       <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
       <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
       <select type="Proficiency" name="Skill Proficiency (Primalbound)" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_NATURE" number="2"/>
-      <grant type="Class Feature" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_BURST_OF_BRAWN" level="1" />
-      <grant type="Class Feature" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_PRIMAL_TRANSFORMATION" level="1" />
-      <grant type="Class Feature" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_BESTIAL_RESILIENCE" level="2" />
-      <grant type="Class Feature" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_MIGHTY_LEAP" level="3" />
-      <grant type="Class Feature" id="ID_WILLIAM_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_PRIMALBOUND" level="4" />
-      <grant type="Class Feature" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_EXTRA_ATTACK" level="5" />
-      <grant type="Class Feature" id="ID_WILLIAM_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_PRIMALBOUND" level="8" />
-      <grant type="Class Feature" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_ADVANCED_TRANSFORMATION" level="11" />
-      <grant type="Class Feature" id="ID_WILLIAM_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_PRIMALBOUND" level="12" />
-      <grant type="Class Feature" id="ID_WILLIAM_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_PRIMALBOUND" level="16" />
-      <grant type="Class Feature" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_PRIMAL_DOMINANCE" level="18" />
-      <grant type="Class Feature" id="ID_WILLIAM_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_PRIMALBOUND" level="19" />
+      <!-- Features are granted via progression below -->
     </rules>
   </element>
+
+  <!-- Class Features -->
   <element name="Burst of Brawn" type="Class Feature" source="Homebrew" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_BURST_OF_BRAWN">
     <description>
-      <p>You gain advantage on Strength checks and saving throws while not wearing heavy armor. You can use Strength instead of Dexterity for initiative rolls. Your unarmed strikes deal 1d6 bludgeoning damage.</p>
+      <p>You gain advantage on Strength checks and saving throws while not wearing heavy armor...</p>
     </description>
   </element>
+
   <element name="Primal Transformation" type="Class Feature" source="Homebrew" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_PRIMAL_TRANSFORMATION">
     <description>
-      <p>As a bonus action, you can enter your Weregorilla form for 1 minute. You gain the following benefits:
-        <ul>
-          <li>Your size increases to Large if you have space.</li>
-          <li>You gain temporary hit points equal to your level + your Constitution modifier.</li>
-          <li>Your unarmed strikes deal 1d8 + Strength modifier bludgeoning damage and count as magical.</li>
-          <li>You have advantage on melee attack rolls using Strength.</li>
-        </ul>
-        You can use this feature twice per long rest. At 10th level, you gain a third use.
-      </p>
+      <p>As a bonus action, you can enter your Weregorilla form for 1 minute...</p>
     </description>
   </element>
+
   <element name="Bestial Resilience" type="Class Feature" source="Homebrew" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_BESTIAL_RESILIENCE">
     <description>
-      <p>Starting at 2nd level, while transformed, you gain resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons.</p>
+      <p>While transformed, you gain resistance to nonmagical physical damage.</p>
     </description>
   </element>
+
   <element name="Mighty Leap" type="Class Feature" source="Homebrew" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_MIGHTY_LEAP">
     <description>
-      <p>At 3rd level, your jump distance triples. You do not take fall damage from heights less than 40 feet if you end the fall on your feet.</p>
+      <p>Your jump distance triples. No fall damage under 40 feet if you land on your feet.</p>
     </description>
   </element>
+
   <element name="Extra Attack" type="Class Feature" source="Homebrew" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_EXTRA_ATTACK">
     <description>
-      <p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+      <p>Attack twice when taking the Attack action.</p>
     </description>
     <rules>
       <stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
     </rules>
   </element>
+
   <element name="Advanced Transformation" type="Class Feature" source="Homebrew" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_ADVANCED_TRANSFORMATION">
     <description>
-      <p>At 11th level, you may transform as a bonus action and gain the following additional benefits while transformed:
-        <ul>
-          <li>Regain 5 hit points at the start of your turn if you are below half your hit point maximum.</li>
-          <li>Your unarmed strikes score a critical hit on a roll of 19 or 20.</li>
-        </ul>
-      </p>
+      <p>Gain regeneration (5 hp) and crit on 19–20 while transformed.</p>
     </description>
   </element>
+
   <element name="Primal Dominance" type="Class Feature" source="Homebrew" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_PRIMAL_DOMINANCE">
     <description>
-      <p>At 18th level, your transformation lasts 10 minutes. You are immune to being charmed or frightened while transformed, and you can use your reaction to reduce damage from any physical attack by your Constitution modifier + your proficiency bonus.</p>
+      <p>Your transformation lasts 10 minutes and grants immunity to fear and charm.</p>
     </description>
   </element>
+
   <element name="Ability Score Improvement" type="Class Feature" source="Homebrew" id="ID_WILLIAM_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_PRIMALBOUND">
     <description>
-      <p>When you reach certain levels, you can increase one ability score of your choice by 2, or two ability scores by 1. You can’t increase an ability score above 20 using this feature.</p>
+      <p>Increase ability scores by 2 (or two by 1) at certain levels.</p>
     </description>
     <rules>
       <select type="Class Feature" name="Improvement Option (Primalbound)" supports="Improvement Option,Primalbound" />
     </rules>
   </element>
+
+  <!-- Level Progression -->
+  <element name="Primalbound Level Advancement" type="Class Progression" source="Homebrew">
+    <supports>ID_WILLIAM_CLASS_PRIMALBOUND</supports>
+    <progression>
+      <level index="1" feature="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_BURST_OF_BRAWN,ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_PRIMAL_TRANSFORMATION" />
+      <level index="2" feature="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_BESTIAL_RESILIENCE" />
+      <level index="3" feature="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_MIGHTY_LEAP" />
+      <level index="4" feature="ID_WILLIAM_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_PRIMALBOUND" />
+      <level index="5" feature="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_EXTRA_ATTACK" />
+      <level index="6" />
+      <level index="7" />
+      <level index="8" feature="ID_WILLIAM_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_PRIMALBOUND" />
+      <level index="9" />
+      <level index="10" />
+      <level index="11" feature="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_ADVANCED_TRANSFORMATION" />
+      <level index="12" feature="ID_WILLIAM_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_PRIMALBOUND" />
+      <level index="13" />
+      <level index="14" />
+      <level index="15" />
+      <level index="16" feature="ID_WILLIAM_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_PRIMALBOUND" />
+      <level index="17" />
+      <level index="18" feature="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_PRIMAL_DOMINANCE" />
+      <level index="19" feature="ID_WILLIAM_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_PRIMALBOUND" />
+      <level index="20" />
+    </progression>
+  </element>
 </elements>
+
