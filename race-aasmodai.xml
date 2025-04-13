@@ -65,9 +65,8 @@
             <description>You know the sacred flame and fire bolt cantrips. Constitution is your spellcasting ability for these spells.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_SACRED_FLAME"/>
-            <grant type="Spell" id="ID_PHB_SPELL_FIRE_BOLT"/>
-            <grant type="Spellcasting" name="Innate Magic" ability="constitution"/>
+            <select type="Spell" name="Cantrip (Innate Magic)" supports="ID_PHB_SPELL_SACRED_FLAME|ID_PHB_SPELL_FIRE_BOLT"/>
+            <select type="Spell" name="Cantrip (Innate Magic)" supports="ID_PHB_SPELL_SACRED_FLAME|ID_PHB_SPELL_FIRE_BOLT"/>
         </rules>
     </element>
 
