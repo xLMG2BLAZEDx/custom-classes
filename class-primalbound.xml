@@ -3,7 +3,7 @@
   <info>
     <name>Primalbound</name>
     <description>Weregorilla-inspired martial class with rage-driven might and transformation</description>
-     <author url="https://github.com/xLMG2BLAZEDx/custom-classes/edit/main/class-primalbound.xml">xLMG2Blazed</author>
+    <author url="https://github.com/xLMG2BLAZEDx/custom-classes/edit/main/class-primalbound.xml">xLMG2Blazed</author>
     <update version="1.0">
       <file name="class-primalbound.xml" url="https://github.com/xLMG2BLAZEDx/custom-classes/edit/main/class-primalbound.xml" />
     </update>
@@ -28,7 +28,6 @@
       <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
       <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
       <select type="Proficiency" name="Skill Proficiency (Primalbound)" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_NATURE" number="2"/>
-      <!-- Features are granted via progression below -->
     </rules>
   </element>
 
@@ -88,7 +87,7 @@
   </element>
 
   <!-- Level Progression -->
-  <element name="Primalbound Level Advancement" type="Class Progression" source="Homebrew">
+  <element name="Primalbound Level Advancement" type="Class Progression" source="Homebrew" id="ID_WILLIAM_CLASS_PRIMALBOUND_PROGRESSION">
     <supports>ID_WILLIAM_CLASS_PRIMALBOUND</supports>
     <progression>
       <level index="1" feature="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_BURST_OF_BRAWN,ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_PRIMAL_TRANSFORMATION" />
@@ -114,4 +113,5 @@
     </progression>
   </element>
 </elements>
+
 
