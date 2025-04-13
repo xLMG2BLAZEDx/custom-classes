@@ -30,10 +30,10 @@
     </rules>
   </element>
 
-  <!-- Class Features -->
+  <!-- Level-tagged Class Features -->
   <element name="Transformation" type="Class Feature" source="Homebrew" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_TRANSFORMATION" level="1">
     <description>
-      <p>You may transform as a bonus action. While transformed (1 min): +2 melee damage, +1 AC, resistance to nonmagical B/P/S, 15-ft cone breath weapon (2d6 damage, Dex save).</p>
+      <p>Transform as a bonus action. While transformed: +2 melee damage, +1 AC, resistance to nonmagical B/P/S, 15-ft cone breath weapon (Dex save, 2d6 damage).</p>
     </description>
   </element>
 
@@ -45,13 +45,13 @@
 
   <element name="Mighty Leap" type="Class Feature" source="Homebrew" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_LEAP" level="3">
     <description>
-      <p>Triple your jump distance. You take no fall damage from heights under 40 ft when landing on your feet.</p>
+      <p>Triple jump distance. No fall damage from heights under 40 ft if landing on feet.</p>
     </description>
   </element>
 
   <element name="Extra Attack" type="Class Feature" source="Homebrew" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_EXTRA_ATTACK" level="5">
     <description>
-      <p>You can attack twice when you take the Attack action.</p>
+      <p>Attack twice whenever you take the Attack action on your turn.</p>
     </description>
     <rules>
       <stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
@@ -60,43 +60,43 @@
 
   <element name="Advanced Transformation" type="Class Feature" source="Homebrew" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_ADVANCED_TRANSFORMATION" level="11">
     <description>
-      <p>Regain 5 HP per turn if below half HP. Score crits on 19–20 while transformed.</p>
+      <p>While transformed: regain 5 HP/round if below half HP, crits on 19–20.</p>
     </description>
   </element>
 
   <element name="Primal Dominance" type="Class Feature" source="Homebrew" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_DOMINANCE" level="18">
     <description>
-      <p>Transformation lasts 10 minutes. You are immune to frightened and charmed conditions while transformed.</p>
+      <p>Transformation lasts 10 min. Immune to frightened/charmed while transformed.</p>
     </description>
   </element>
 
-  <!-- ASIs -->
+  <!-- ASIs per level -->
   <element name="Ability Score Improvement (4)" type="Class Feature" source="Homebrew" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_ASI_4" level="4">
-    <description><p>Increase one ability score by 2, or two by 1 (max 20).</p></description>
+    <description><p>Increase one ability score by 2 or two by 1 (max 20).</p></description>
     <rules><select type="Class Feature" name="ASI (Primalbound)" supports="Improvement Option,Primalbound" /></rules>
   </element>
 
   <element name="Ability Score Improvement (8)" type="Class Feature" source="Homebrew" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_ASI_8" level="8">
-    <description><p>Increase one ability score by 2, or two by 1 (max 20).</p></description>
+    <description><p>Increase one ability score by 2 or two by 1 (max 20).</p></description>
     <rules><select type="Class Feature" name="ASI (Primalbound)" supports="Improvement Option,Primalbound" /></rules>
   </element>
 
   <element name="Ability Score Improvement (12)" type="Class Feature" source="Homebrew" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_ASI_12" level="12">
-    <description><p>Increase one ability score by 2, or two by 1 (max 20).</p></description>
+    <description><p>Increase one ability score by 2 or two by 1 (max 20).</p></description>
     <rules><select type="Class Feature" name="ASI (Primalbound)" supports="Improvement Option,Primalbound" /></rules>
   </element>
 
   <element name="Ability Score Improvement (16)" type="Class Feature" source="Homebrew" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_ASI_16" level="16">
-    <description><p>Increase one ability score by 2, or two by 1 (max 20).</p></description>
+    <description><p>Increase one ability score by 2 or two by 1 (max 20).</p></description>
     <rules><select type="Class Feature" name="ASI (Primalbound)" supports="Improvement Option,Primalbound" /></rules>
   </element>
 
   <element name="Ability Score Improvement (19)" type="Class Feature" source="Homebrew" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_ASI_19" level="19">
-    <description><p>Increase one ability score by 2, or two by 1 (max 20).</p></description>
+    <description><p>Increase one ability score by 2 or two by 1 (max 20).</p></description>
     <rules><select type="Class Feature" name="ASI (Primalbound)" supports="Improvement Option,Primalbound" /></rules>
   </element>
 
-  <!-- Progression -->
+  <!-- Class Progression -->
   <element name="Primalbound Progression" type="Class Progression" source="Homebrew" id="ID_WILLIAM_CLASS_PRIMALBOUND_PROGRESSION">
     <supports>ID_WILLIAM_CLASS_PRIMALBOUND</supports>
     <progression>
@@ -114,10 +114,11 @@
   </element>
 
   <!-- Class Registration -->
-  <element name="Classes" type="ClassContainer">
+  <element name="Classes" type="ClassContainer" source="Homebrew">
     <element type="Class" id="ID_WILLIAM_CLASS_PRIMALBOUND" />
   </element>
 </elements>
+
 
 
 
