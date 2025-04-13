@@ -3,7 +3,7 @@
     <info>
         <name>Half-Demon</name>
         <update version="1.0.0">
-            <file name="race-half-demon-legacy.xml" url="" />
+            <file name="race-half-demon-legacy.xml" url="https://github.com/xLMG2BLAZEDx/custom-classes/blob/main/half-demon.xml" />
         </update>
     </info>
 
