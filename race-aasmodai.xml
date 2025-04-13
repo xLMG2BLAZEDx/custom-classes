@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <elements>
     <info>
         <name>Aasmodai</name>
         <description>5e homebrew</description>
         <author url="https://github.com/xLMG2BLAZEDx/custom-classes/edit/main/race-aasmodai.xml">xLMG2Blazed</author>
         <update version="0.0.2">
-            <file name="race-aasmodai.xml" url="https://raw.githubusercontent.com/xLMG2BLAZEDx/custom-classes/refs/heads/main/race-aasmodai.xml" />
+            <file name="race-aasmodai.xml" url="https://raw.githubusercontent.com/xLMG2BLAZEDx/custom-classes/refs/heads/main/race-aasmodai.xml"/>
         </update>
     </info>
 
@@ -34,28 +34,22 @@
                 <span class="feature">Languages.</span> You can speak, read, and write Common, Celestial, and Infernal.<br/>
             </p>
         </description>
-        <sheet display="false" />
+        <sheet display="false"/>
         <rules>
-            <stat name="constitution" value="2"/>
+            <select type="Ability Score Improvement" name="Ability Score Improvement Option (Aasmodai)" supports="Custom Ability Score Improvement Option"/>
             <stat name="innate speed" value="30" bonus="base"/>
             <stat name="darkvision" value="60" bonus="racial"/>
-            <grant type="Vision" id="ID_VISION_DARKVISION" />
-            <grant type="Size" id="ID_SIZE_MEDIUM" />
-            <grant type="Language" id="ID_LANGUAGE_COMMON" />
-            <grant type="Language" id="ID_LANGUAGE_CELESTIAL" />
-            <grant type="Language" id="ID_LANGUAGE_INFERNAL" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_SIMPLE" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_MARTIAL" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
-            <grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_AASMODAI_INFERNAL_RESILIENCE" />
-            <grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_AASMODAI_INNATE_MAGIC" />
-            <grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_AASMODAI_DIVINE_DUALITY" />
-            <grant type="Grants">
-                <spellcasting name="Innate Magic" ability="constitution">
-                    <spell name="Sacred Flame"/>
-                    <spell name="Fire Bolt"/>
-                </spellcasting>
-            </grant>
+            <grant type="Vision" id="ID_VISION_DARKVISION"/>
+            <grant type="Size" id="ID_SIZE_MEDIUM"/>
+            <grant type="Language" id="ID_LANGUAGE_COMMON"/>
+            <grant type="Language" id="ID_LANGUAGE_CELESTIAL"/>
+            <grant type="Language" id="ID_LANGUAGE_INFERNAL"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_SIMPLE"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_MARTIAL"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION"/>
+            <grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_AASMODAI_INFERNAL_RESILIENCE"/>
+            <grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_AASMODAI_INNATE_MAGIC"/>
+            <grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_AASMODAI_DIVINE_DUALITY"/>
         </rules>
     </element>
 
@@ -75,6 +69,10 @@
         <sheet>
             <description>You know the sacred flame and fire bolt cantrips. Constitution is your spellcasting ability for these spells.</description>
         </sheet>
+        <rules>
+            <select type="Spell" name="Cantrip (Innate Magic)" supports="ID_PHB_SPELL_SACRED_FLAME|ID_PHB_SPELL_FIRE_BOLT"/>
+            <select type="Racial Trait" name="Spellcasting Ability (Innate Magic)" supports="Aasmodai Innate Magic"/>
+        </rules>
     </element>
 
     <element name="Divine Duality" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_AASMODAI_DIVINE_DUALITY">
@@ -93,4 +91,3 @@
         </sheet>
     </element>
 </elements>
-
