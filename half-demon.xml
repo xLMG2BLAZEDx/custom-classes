@@ -3,7 +3,7 @@
     <info>
         <name>Half-Demon</name>
         <desription>5e homebrew content</description>
-        
+        <author url="https://github.com/xLMG2BLAZEDx/custom-classes/edit/main/half-demon.xml">xLMG2Blazed</author>
         <update version="1.0.0">
             <file name="half-demon.xml" url="https://github.com/xLMG2BLAZEDx/custom-classes/blob/main/half-demon.xml" />
         </update>
