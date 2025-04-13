@@ -69,13 +69,13 @@
     </description>
   </element>
 
-  <!-- ASIs (Barbarian format) -->
+  <!-- ASIs using standard builder format -->
   <element name="Ability Score Improvement" type="Class Feature" source="Homebrew" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_ASI_4" level="4">
     <description>
       <p>When you reach 4th level, you can increase one ability score of your choice by 2, or two by 1. You can’t increase an ability score above 20 using this feature.</p>
     </description>
     <rules>
-      <select type="Class Feature" name="Improvement Option (Primalbound 4)" supports="Improvement Option,Primalbound,4" level="4" />
+      <select type="Class Feature" name="Improvement Option" supports="Improvement Option,Primalbound" />
     </rules>
   </element>
 
@@ -84,7 +84,7 @@
       <p>When you reach 8th level, you can increase one ability score of your choice by 2, or two by 1. You can’t increase an ability score above 20 using this feature.</p>
     </description>
     <rules>
-      <select type="Class Feature" name="Improvement Option (Primalbound 8)" supports="Improvement Option,Primalbound,8" level="8" />
+      <select type="Class Feature" name="Improvement Option" supports="Improvement Option,Primalbound" />
     </rules>
   </element>
 
@@ -93,7 +93,7 @@
       <p>When you reach 12th level, you can increase one ability score of your choice by 2, or two by 1. You can’t increase an ability score above 20 using this feature.</p>
     </description>
     <rules>
-      <select type="Class Feature" name="Improvement Option (Primalbound 12)" supports="Improvement Option,Primalbound,12" level="12" />
+      <select type="Class Feature" name="Improvement Option" supports="Improvement Option,Primalbound" />
     </rules>
   </element>
 
@@ -102,7 +102,7 @@
       <p>When you reach 16th level, you can increase one ability score of your choice by 2, or two by 1. You can’t increase an ability score above 20 using this feature.</p>
     </description>
     <rules>
-      <select type="Class Feature" name="Improvement Option (Primalbound 16)" supports="Improvement Option,Primalbound,16" level="16" />
+      <select type="Class Feature" name="Improvement Option" supports="Improvement Option,Primalbound" />
     </rules>
   </element>
 
@@ -111,7 +111,7 @@
       <p>When you reach 19th level, you can increase one ability score of your choice by 2, or two by 1. You can’t increase an ability score above 20 using this feature.</p>
     </description>
     <rules>
-      <select type="Class Feature" name="Improvement Option (Primalbound 19)" supports="Improvement Option,Primalbound,19" level="19" />
+      <select type="Class Feature" name="Improvement Option" supports="Improvement Option,Primalbound" />
     </rules>
   </element>
 
@@ -132,10 +132,12 @@
     </progression>
   </element>
 
+  <!-- Registration -->
   <element name="Classes" type="ClassContainer" source="Homebrew" id="ID_WILLIAM_CLASS_CONTAINER">
     <element type="Class" id="ID_WILLIAM_CLASS_PRIMALBOUND" />
   </element>
 </elements>
+
 
 
 
