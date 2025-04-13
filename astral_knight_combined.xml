@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<elements><element name="Astral Knight" type="Class" source="Homebrew" id="ID_HOME_CLASS_ASTRAL_KNIGHT">
+<elements><element name="Astral Knight" type="Class" source="Lucian's Homebrew" id="ID_HOME_CLASS_ASTRAL_KNIGHT">
     <description>A cosmic warrior who channels radiant power and star-born resilience through magic and might.</description>
     <supports>Class</supports>
     <sheet display="false"/>
@@ -52,25 +52,25 @@
       <grant type="Class Feature" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_ASTRAL_AVATAR" level="20"/>
     </rules>
   </element>
-  <element name="Astral Smite" type="Class Feature" source="Homebrew" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_ASTRAL_SMITE">
+  <element name="Astral Smite" type="Class Feature" source="Lucian's Homebrew" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_ASTRAL_SMITE">
     <description>This is the Astral Smite class feature gained at level 1.</description>
     <sheet>
       <description>Astral Smite feature (level 1).</description>
     </sheet>
   </element>
-  <element name="Cosmic Ward" type="Class Feature" source="Homebrew" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_COSMIC_WARD">
+  <element name="Cosmic Ward" type="Class Feature" source="Lucian's Homebrew" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_COSMIC_WARD">
     <description>This is the Cosmic Ward class feature gained at level 1.</description>
     <sheet>
       <description>Cosmic Ward feature (level 1).</description>
     </sheet>
   </element>
-  <element name="Fighting Style" type="Class Feature" source="Homebrew" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_FIGHTING_STYLE">
+  <element name="Fighting Style" type="Class Feature" source="Lucian's Homebrew" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_FIGHTING_STYLE">
     <description>This is the Fighting Style class feature gained at level 2.</description>
     <sheet>
       <description>Fighting Style feature (level 2).</description>
     </sheet>
   </element>
-  <element name="Spellcasting" type="Class Feature" source="Homebrew" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_SPELLCASTING">
+  <element name="Spellcasting" type="Class Feature" source="Lucian's Homebrew" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_SPELLCASTING">
     <description>This is the Spellcasting class feature gained at level 2.</description>
     <sheet>
       <description>Spellcasting feature (level 2).</description>
@@ -90,61 +90,61 @@
       <stat name="astralknight:spellcasting:slots:1" value="4" level="17"/>
     </rules>
   </element>
-  <element name="Celestial Path" type="Class Feature" source="Homebrew" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_CELESTIAL_PATH">
+  <element name="Celestial Path" type="Class Feature" source="Lucian's Homebrew" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_CELESTIAL_PATH">
     <description>This is the Celestial Path class feature gained at level 3.</description>
     <sheet>
       <description>Celestial Path feature (level 3).</description>
     </sheet>
   </element>
-  <element name="Ability Score Improvement" type="Class Feature" source="Homebrew" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_ASI">
+  <element name="Ability Score Improvement" type="Class Feature" source="Lucian's Homebrew" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_ASI">
     <description>This is the Ability Score Improvement class feature gained at level 4.</description>
     <sheet>
       <description>Ability Score Improvement feature (level 4).</description>
     </sheet>
   </element>
-  <element name="Extra Attack" type="Class Feature" source="Homebrew" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_EXTRA_ATTACK">
+  <element name="Extra Attack" type="Class Feature" source="Lucian's Homebrew" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_EXTRA_ATTACK">
     <description>This is the Extra Attack class feature gained at level 5.</description>
     <sheet>
       <description>Extra Attack feature (level 5).</description>
     </sheet>
   </element>
-  <element name="Stellar Strikes" type="Class Feature" source="Homebrew" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_STELLAR_STRIKES">
+  <element name="Stellar Strikes" type="Class Feature" source="Lucian's Homebrew" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_STELLAR_STRIKES">
     <description>This is the Stellar Strikes class feature gained at level 6.</description>
     <sheet>
       <description>Stellar Strikes feature (level 6).</description>
     </sheet>
   </element>
-  <element name="Astral Shield" type="Class Feature" source="Homebrew" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_ASTRAL_SHIELD">
+  <element name="Astral Shield" type="Class Feature" source="Lucian's Homebrew" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_ASTRAL_SHIELD">
     <description>This is the Astral Shield class feature gained at level 7.</description>
     <sheet>
       <description>Astral Shield feature (level 7).</description>
     </sheet>
   </element>
-  <element name="Ability Score Improvement" type="Class Feature" source="Homebrew" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_ASI">
+  <element name="Ability Score Improvement" type="Class Feature" source="Lucian's Homebrew" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_ASI">
     <description>This is the Ability Score Improvement class feature gained at level 8.</description>
     <sheet>
       <description>Ability Score Improvement feature (level 8).</description>
     </sheet>
   </element>
-  <element name="Interstellar Knowledge" type="Class Feature" source="Homebrew" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_INTERSTELLAR_KNOWLEDGE">
+  <element name="Interstellar Knowledge" type="Class Feature" source="Lucian's Homebrew" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_INTERSTELLAR_KNOWLEDGE">
     <description>This is the Interstellar Knowledge class feature gained at level 9.</description>
     <sheet>
       <description>Interstellar Knowledge feature (level 9).</description>
     </sheet>
   </element>
-  <element name="Stellar Strikes Improvement" type="Class Feature" source="Homebrew" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_STELLAR_STRIKES_IMPROVEMENT">
+  <element name="Stellar Strikes Improvement" type="Class Feature" source="Lucian's Homebrew" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_STELLAR_STRIKES_IMPROVEMENT">
     <description>This is the Stellar Strikes Improvement class feature gained at level 10.</description>
     <sheet>
       <description>Stellar Strikes Improvement feature (level 10).</description>
     </sheet>
   </element>
-  <element name="Radiant Aura" type="Class Feature" source="Homebrew" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_RADIANT_AURA">
+  <element name="Radiant Aura" type="Class Feature" source="Lucian's Homebrew" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_RADIANT_AURA">
     <description>This is the Radiant Aura class feature gained at level 11.</description>
     <sheet>
       <description>Radiant Aura feature (level 11).</description>
     </sheet>
   </element>
-  <element name="Ability Score Improvement" type="Class Feature" source="Homebrew" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_ASI">
+  <element name="Ability Score Improvement" type="Class Feature" source="Lucian's Homebrew" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_ASI">
     <description>This is the Ability Score Improvement class feature gained at level 12.</description>
     <sheet>
       <description>Ability Score Improvement feature (level 12).</description>
@@ -156,43 +156,43 @@
       <description>Cosmic Might feature (level 13).</description>
     </sheet>
   </element>
-  <element name="Astral Shield Improvement" type="Class Feature" source="Homebrew" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_ASTRAL_SHIELD_IMPROVEMENT">
+  <element name="Astral Shield Improvement" type="Class Feature" source="Lucian's Homebrew" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_ASTRAL_SHIELD_IMPROVEMENT">
     <description>This is the Astral Shield Improvement class feature gained at level 14.</description>
     <sheet>
       <description>Astral Shield Improvement feature (level 14).</description>
     </sheet>
   </element>
-  <element name="Starborne" type="Class Feature" source="Homebrew" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_STARBORNE">
+  <element name="Starborne" type="Class Feature" source="Lucian's Homebrew" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_STARBORNE">
     <description>This is the Starborne class feature gained at level 15.</description>
     <sheet>
       <description>Starborne feature (level 15).</description>
     </sheet>
   </element>
-  <element name="Ability Score Improvement" type="Class Feature" source="Homebrew" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_ASI">
+  <element name="Ability Score Improvement" type="Class Feature" source="Lucian's Homebrew" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_ASI">
     <description>This is the Ability Score Improvement class feature gained at level 16.</description>
     <sheet>
       <description>Ability Score Improvement feature (level 16).</description>
     </sheet>
   </element>
-  <element name="Celestial Conduit" type="Class Feature" source="Homebrew" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_CELESTIAL_CONDUIT">
+  <element name="Celestial Conduit" type="Class Feature" source="Lucian's Homebrew" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_CELESTIAL_CONDUIT">
     <description>This is the Celestial Conduit class feature gained at level 17.</description>
     <sheet>
       <description>Celestial Conduit feature (level 17).</description>
     </sheet>
   </element>
-  <element name="Radiant Aura Improvement" type="Class Feature" source="Homebrew" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_RADIANT_AURA_IMPROVEMENT">
+  <element name="Radiant Aura Improvement" type="Class Feature" source="Lucian's Homebrew" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_RADIANT_AURA_IMPROVEMENT">
     <description>This is the Radiant Aura Improvement class feature gained at level 18.</description>
     <sheet>
       <description>Radiant Aura Improvement feature (level 18).</description>
     </sheet>
   </element>
-  <element name="Ability Score Improvement" type="Class Feature" source="Homebrew" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_ASI">
+  <element name="Ability Score Improvement" type="Class Feature" source="Lucian's Homebrew" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_ASI">
     <description>This is the Ability Score Improvement class feature gained at level 19.</description>
     <sheet>
       <description>Ability Score Improvement feature (level 19).</description>
     </sheet>
   </element>
-  <element name="Astral Avatar" type="Class Feature" source="Homebrew" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_ASTRAL_AVATAR">
+  <element name="Astral Avatar" type="Class Feature" source="Lucian's Homebrew" id="ID_HOME_CLASS_FEATURE_ASTRAL_KNIGHT_ASTRAL_AVATAR">
     <description>This is the Astral Avatar class feature gained at level 20.</description>
     <sheet>
       <description>Astral Avatar feature (level 20).</description>
