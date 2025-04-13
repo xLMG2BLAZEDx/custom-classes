@@ -3,7 +3,7 @@
     <info>
         <name>xLMG2Blazedx</name>
         <description>The 5e homebrew content from xLMG2BLAZEDx</description>
-        <author url="https://github.com/xLMG2BLAZEDx/custom-classes/blob/main/astral_knight.index">xLMG2BLAZEDx</author>
+        <author url="https://github.com/xLMG2BLAZEDx/custom-classes/blob/main/half-demon.index">xLMG2BLAZEDx</author>
         <update version="0.0.1">
             <file name="half-demon.index" url="https://raw.githubusercontent.com/xLMG2BLAZEDx/custom-classes/refs/heads/main/half-demon.index" />
         </update>
