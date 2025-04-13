@@ -2,6 +2,7 @@
 <elements>
     <info>
         <name>Half-Demon</name>
+        <desription>
         <update version="1.0.0">
             <file name="half-demon.xml" url="https://github.com/xLMG2BLAZEDx/custom-classes/blob/main/half-demon.xml" />
         </update>
