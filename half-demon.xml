@@ -5,7 +5,7 @@
         <description>5e homebrew template - inspired by Dante from Devil May Cry</description>
         <author>Red</author>
         <update version="1.0.0">
-            <file name="race-half-demon-template.xml" url="https://raw.githubusercontent.com/RedHomebrew/elements/main/race-half-demon-template.xml" />
+            <file name="half-demon.xml" url="https://raw.githubusercontent.com/RedHomebrew/elements/main/half-demon.xml" />
         </update>
     </info>
 
