@@ -57,7 +57,7 @@
         </sheet>
     </element>
 
-    <element name="Innate Magic" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_AASMODAI_INNATE_MAGIC">
+    <element name="Innate Magic" type="Racial Trait" source="Ramsays Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_AASMODAI_INNATE_MAGIC">
         <description>
             <p>You know the <i>sacred flame</i> and <i>fire bolt</i> cantrips. Constitution is your spellcasting ability for these spells.</p>
         </description>
@@ -70,7 +70,16 @@
             <select type="Racial Trait" name="Spellcasting Ability (Innate Magic)" supports="Aasmodai Innate Magic"/>
         </rules>
     </element>
-
+    <element name="Constitution" type="Racial Trait" source="Ramsays Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_AASMODAI_INNATE_MAGIC">
+<compendium display="false"/>
+<supports>Homebrew Innate Magic</supports>
+<description>
+<p>Your spellcasting ability for chosen cantrip is Constitution.</p>
+</description>
+<sheet alt="Innate Magic">
+<description>Your spellcasting ability for chosen cantrip is Constitution.</description>
+</sheet>
+</element>
     <element name="Divine Duality" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_AASMODAI_DIVINE_DUALITY">
         <description>
             <![CDATA[
