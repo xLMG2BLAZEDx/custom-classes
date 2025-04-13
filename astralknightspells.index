@@ -5,11 +5,11 @@
         <description>The 5e homebrew content from xLMG2BLAZEDx</description>
         <author url="https://github.com/xLMG2BLAZEDx/custom-classes/blob/main/astralknight.index">xLMG2BLAZEDx</author>
         <update version="0.0.1">
-            <file name="astralknight.index" url="https://raw.githubusercontent.com/xLMG2BLAZEDx/custom-classes/refs/heads/main/astralknight.index" />
+            <file name="astralknightspells.index" url="https://raw.githubusercontent.com/xLMG2BLAZEDx/custom-classes/refs/heads/main/astralknightspells.index" />
         </update>
     </info>
     <files>
         <!-- race -->
-        <file name="astral_knight_spells.xml" url="https://raw.githubusercontent.com/xLMG2Blazedx/custom-classes/refs/heads/main/astral_knight_spells.xml" />
+        <file name="astralknightspells.xml" url="https://raw.githubusercontent.com/xLMG2Blazedx/custom-classes/refs/heads/main/astralknightspells.xml" />
     </files>
 </index>
