@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <elements>
   <info>
     <name>Primalbound</name>
@@ -69,75 +69,40 @@
     </description>
   </element>
 
-  <!-- ASIs using standard builder format -->
-  <element name="Ability Score Improvement" type="Class Feature" source="Homebrew" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_ASI_4" level="4">
+  <!-- Corrected ASI using Barbarian format -->
+  <element name="Ability Score Improvement" type="Class Feature" source="Homebrew" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_ASI">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PRIMALBOUND_ABILITY_SCORE_IMPROVEMENT</requirements>
+    <compendium display="false" />
     <description>
-      <p>When you reach 4th level, you can increase one ability score of your choice by 2, or two by 1. You can’t increase an ability score above 20 using this feature.</p>
+      <p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
     </description>
+    <sheet display="false" />
     <rules>
-      <select type="Class Feature" name="Improvement Option" supports="Improvement Option,Primalbound" />
+      <select type="Class Feature" name="Improvement Option (Primalbound 4)" supports="Improvement Option,Primalbound,4" level="4" />
+      <select type="Class Feature" name="Improvement Option (Primalbound 8)" supports="Improvement Option,Primalbound,8" level="8" />
+      <select type="Class Feature" name="Improvement Option (Primalbound 12)" supports="Improvement Option,Primalbound,12" level="12" />
+      <select type="Class Feature" name="Improvement Option (Primalbound 16)" supports="Improvement Option,Primalbound,16" level="16" />
+      <select type="Class Feature" name="Improvement Option (Primalbound 19)" supports="Improvement Option,Primalbound,19" level="19" />
     </rules>
   </element>
 
-  <element name="Ability Score Improvement" type="Class Feature" source="Homebrew" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_ASI_8" level="8">
-    <description>
-      <p>When you reach 8th level, you can increase one ability score of your choice by 2, or two by 1. You can’t increase an ability score above 20 using this feature.</p>
-    </description>
-    <rules>
-      <select type="Class Feature" name="Improvement Option" supports="Improvement Option,Primalbound" />
-    </rules>
-  </element>
-
-  <element name="Ability Score Improvement" type="Class Feature" source="Homebrew" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_ASI_12" level="12">
-    <description>
-      <p>When you reach 12th level, you can increase one ability score of your choice by 2, or two by 1. You can’t increase an ability score above 20 using this feature.</p>
-    </description>
-    <rules>
-      <select type="Class Feature" name="Improvement Option" supports="Improvement Option,Primalbound" />
-    </rules>
-  </element>
-
-  <element name="Ability Score Improvement" type="Class Feature" source="Homebrew" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_ASI_16" level="16">
-    <description>
-      <p>When you reach 16th level, you can increase one ability score of your choice by 2, or two by 1. You can’t increase an ability score above 20 using this feature.</p>
-    </description>
-    <rules>
-      <select type="Class Feature" name="Improvement Option" supports="Improvement Option,Primalbound" />
-    </rules>
-  </element>
-
-  <element name="Ability Score Improvement" type="Class Feature" source="Homebrew" id="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_ASI_19" level="19">
-    <description>
-      <p>When you reach 19th level, you can increase one ability score of your choice by 2, or two by 1. You can’t increase an ability score above 20 using this feature.</p>
-    </description>
-    <rules>
-      <select type="Class Feature" name="Improvement Option" supports="Improvement Option,Primalbound" />
-    </rules>
-  </element>
-
-  <!-- Class Progression -->
   <element name="Primalbound Progression" type="Class Progression" source="Homebrew" id="ID_WILLIAM_CLASS_PRIMALBOUND_PROGRESSION">
     <supports>ID_WILLIAM_CLASS_PRIMALBOUND</supports>
     <progression>
       <level index="1" feature="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_TRANSFORMATION,ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_BRAWN" />
       <level index="3" feature="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_LEAP" />
-      <level index="4" feature="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_ASI_4" />
+      <level index="4" feature="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_ASI" />
       <level index="5" feature="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_EXTRA_ATTACK" />
-      <level index="8" feature="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_ASI_8" />
+      <level index="8" feature="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_ASI" />
       <level index="11" feature="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_ADVANCED_TRANSFORMATION" />
-      <level index="12" feature="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_ASI_12" />
-      <level index="16" feature="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_ASI_16" />
+      <level index="12" feature="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_ASI" />
+      <level index="16" feature="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_ASI" />
       <level index="18" feature="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_DOMINANCE" />
-      <level index="19" feature="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_ASI_19" />
+      <level index="19" feature="ID_WILLIAM_CLASS_FEATURE_PRIMALBOUND_ASI" />
     </progression>
   </element>
 
-  <!-- Registration -->
   <element name="Classes" type="ClassContainer" source="Homebrew" id="ID_WILLIAM_CLASS_CONTAINER">
     <element type="Class" id="ID_WILLIAM_CLASS_PRIMALBOUND" />
   </element>
 </elements>
-
-
-
-
