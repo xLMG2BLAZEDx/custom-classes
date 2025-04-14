@@ -50,8 +50,8 @@
     <sheet display="false">
       <description>You augment your martial prowess with necromantic and divination spellcasting.</description>
     </sheet>
-    <spellcasting name="Necroblade" ability="Intelligence" prepare="false" allowReplace="true">
-      <list>Wizard,Cleric,(Necromancy||Divination)</list>
+   <spellcasting name="Necroblade" ability="Intelligence" prepare="false" allowReplace="true">
+      <list>Wizard,Cleric,(Necromancy||Divination||Evocation)</list>
     </spellcasting>
     <rules>
       <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
@@ -64,19 +64,19 @@
       <stat name="necroblade:spellcasting:slots:3" value="3" level="16" />
       <stat name="necroblade:spellcasting:slots:4" value="1" level="19" />
 
-      <select type="Spell" name="Cantrip (Necroblade)" supports="(Necromancy||Divination), 0" level="3" number="2" spellcasting="Necroblade" />
-      <select type="Spell" name="Cantrip (Necroblade)" supports="(Necromancy||Divination), 0" level="10" number="1" spellcasting="Necroblade" />
-      <select type="Spell" name="Spellcasting (Necroblade)" supports="(Necromancy||Divination), 1" level="3" number="3" spellcasting="Necroblade" />
-      <select type="Spell" name="Spellcasting (Necroblade)" supports="(Necromancy||Divination), $(spellcasting:slots)" level="4" spellcasting="Necroblade"/>
-      <select type="Spell" name="Spellcasting (Necroblade)" supports="(Necromancy||Divination), $(spellcasting:slots)" level="7" spellcasting="Necroblade"/>
-      <select type="Spell" name="Spellcasting (Necroblade)" supports="(Necromancy||Divination), $(spellcasting:slots)" level="8" spellcasting="Necroblade"/>
-      <select type="Spell" name="Spellcasting (Necroblade)" supports="(Necromancy||Divination), $(spellcasting:slots)" level="10" spellcasting="Necroblade"/>
-      <select type="Spell" name="Spellcasting (Necroblade)" supports="(Necromancy||Divination), $(spellcasting:slots)" level="11" spellcasting="Necroblade"/>
-      <select type="Spell" name="Spellcasting (Necroblade)" supports="(Necromancy||Divination), $(spellcasting:slots)" level="13" spellcasting="Necroblade"/>
-      <select type="Spell" name="Spellcasting (Necroblade)" supports="(Necromancy||Divination), $(spellcasting:slots)" level="14" spellcasting="Necroblade"/>
-      <select type="Spell" name="Spellcasting (Necroblade)" supports="(Necromancy||Divination), $(spellcasting:slots)" level="16" spellcasting="Necroblade"/>
-      <select type="Spell" name="Spellcasting (Necroblade)" supports="(Necromancy||Divination), $(spellcasting:slots)" level="19" spellcasting="Necroblade"/>
-      <select type="Spell" name="Spellcasting (Necroblade)" supports="(Necromancy||Divination), $(spellcasting:slots)" level="20" spellcasting="Necroblade"/>
+      <select type="Spell" name="Cantrip (Necroblade)" supports="(Necromancy||Divination||Evocation), 0" level="3" number="2" spellcasting="Necroblade" />
+      <select type="Spell" name="Cantrip (Necroblade)" supports="(Necromancy||Divination||Evocation), 0" level="10" number="1" spellcasting="Necroblade" />
+      <select type="Spell" name="Spellcasting (Necroblade)" supports="(Necromancy||Divination||Evocation), 1" level="3" number="3" spellcasting="Necroblade" />
+      <select type="Spell" name="Spellcasting (Necroblade)" supports="(Necromancy||Divination||Evocation), $(spellcasting:slots)" level="4" spellcasting="Necroblade"/>
+      <select type="Spell" name="Spellcasting (Necroblade)" supports="(Necromancy||Divination||Evocation), $(spellcasting:slots)" level="7" spellcasting="Necroblade"/>
+      <select type="Spell" name="Spellcasting (Necroblade)" supports="(Necromancy||Divination||Evocation), $(spellcasting:slots)" level="8" spellcasting="Necroblade"/>
+      <select type="Spell" name="Spellcasting (Necroblade)" supports="(Necromancy||Divination||Evocation), $(spellcasting:slots)" level="10" spellcasting="Necroblade"/>
+      <select type="Spell" name="Spellcasting (Necroblade)" supports="(Necromancy||Divination||Evocation), $(spellcasting:slots)" level="11" spellcasting="Necroblade"/>
+      <select type="Spell" name="Spellcasting (Necroblade)" supports="(Necromancy||Divination||Evocation), $(spellcasting:slots)" level="13" spellcasting="Necroblade"/>
+      <select type="Spell" name="Spellcasting (Necroblade)" supports="(Necromancy||Divination||Evocation), $(spellcasting:slots)" level="14" spellcasting="Necroblade"/>
+      <select type="Spell" name="Spellcasting (Necroblade)" supports="(Necromancy||Divination||Evocation), $(spellcasting:slots)" level="16" spellcasting="Necroblade"/>
+      <select type="Spell" name="Spellcasting (Necroblade)" supports="(Necromancy||Divination||Evocation), $(spellcasting:slots)" level="19" spellcasting="Necroblade"/>
+      <select type="Spell" name="Spellcasting (Necroblade)" supports="(Necromancy||Divination||Evocation), $(spellcasting:slots)" level="20" spellcasting="Necroblade"/>
     </rules>
   </element>
 </elements>
