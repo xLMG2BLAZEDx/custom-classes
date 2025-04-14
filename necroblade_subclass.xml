@@ -5,6 +5,7 @@
     <author>Ramsay Thornberry</author>
   </update>
 </info>
+
 <elements>
   <element name="Necroblade" type="Archetype" source="Ramsay's Homebrew" id="ID_CUSTOM_ARCHETYPE_FIGHTER_NECROBLADE">
     <supports>Martial Archetype</supports>
