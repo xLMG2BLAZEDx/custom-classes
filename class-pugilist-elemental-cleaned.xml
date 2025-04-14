@@ -1284,7 +1284,7 @@ spell (no spell required, once per turn).
 
 <element name="Mercy Hands" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_FEATURE_MERCY_HANDS">
     <description>
-        <p>At 3rd level, you learn how to patch up your allies using speed and pressure-point tactics. You gain proficiency in the Medicine skill. As a bonus action, you can spend 1 moxie point to touch a creature within 5 feet and restore hit points equal to your Fisticuffs die + your Constitution modifier.</p>
+        <p>At 3rd level, you learn how to patch up your allies using speed and pressure-point tactics. You gain proficiency in the Medicine skill. As a bonus action, you can touch a creature within 5 feet and restore hit points equal to your Fisticuffs die + your Constitution modifier.</p>
         <p>You can use this feature a number of times equal to your Constitution modifier (minimum 1), regaining expended uses after a long rest.</p>
     </description>
     <sheet usage="{{constitution:modifier}}/Long Rest" action="Bonus Action">
