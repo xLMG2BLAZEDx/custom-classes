@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
+<info>
+  <update version="1.0.0">
+    <file name="necroblade_subclass.xml" url="https://github.com/xLMG2BLAZEDx/custom-classes/edit/main/necroblade_subclass.xml" />
+    <author>Ramsay Thornberry</author>
+  </update>
+</info>
 <elements>
   <element name="Necroblade" type="Archetype" source="Ramsay's Homebrew" id="ID_CUSTOM_ARCHETYPE_FIGHTER_NECROBLADE">
     <supports>Martial Archetype</supports>
