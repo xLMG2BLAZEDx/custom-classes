@@ -1116,11 +1116,12 @@
             <li>Your Strength increases by +2 (up to a maximum of 22).</li>
             <li>You gain advantage on Strength (Athletics) checks and Strength saving throws.</li>
             <li>Your unarmed strikes deal an additional 1d4 damage and count as magical weapons.</li>
+	    <li>If you are meduim, you grow to large. If you are large, you do not grow, but still transform.
         </ul>
         <p>You can use this transformation once per short or long rest.</p>
     </description>
     <sheet usage="1/Short Rest" action="Bonus Action">
-        <description>Transform into a weregorilla for 1 minute, gaining +2 Strength (max 22), advantage on Strength checks/saves, +1d4 damage on unarmed strikes, and attacks count as magical.</description>
+        <description>Transform into a weregorilla for 1 minute, gaining +2 Strength (max 22), advantage on Strength checks/saves, +1d4 damage on unarmed strikes, and attacks count as magical.If you are meduim, you grow to large. If you are large, you do not grow, but still transform.</description>
     </sheet>
 </element><element name="Primal Pummel" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_FEATURE_PRIMAL_PUMMEL">
     <description>
@@ -1131,11 +1132,11 @@
     </sheet>
 </element><element name="Territorial Roar" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_FEATURE_TERRITORIAL_ROAR">
     <description>
-        <p>At 11th level, you can unleash a deafening roar as an action while transformed. Each enemy within 15 feet that can hear you must make a Wisdom saving throw (DC = 8 + your proficiency bonus + your Strength modifier) or be frightened until the end of your next turn.</p>
+        <p>At 11th level, you can unleash a deafening roar as an action while transformed. Each enemy within 15 feet that can hear you must make a Wisdom saving throw (DC = 8 + your proficiency bonus + your Strength modifier) or be frightened until the end of your next turn. Wether you are medium or large, you become huge upon transformation.</p>
         <p>You may use this feature once per short or long rest.</p>
     </description>
     <sheet usage="1/Short Rest" action="Action">
-        <description>Roar while transformed. Each enemy within 15 feet must make a Wisdom save (DC 8 + prof + Str mod) or be frightened until end of your next turn.</description>
+        <description>Roar while transformed. Each enemy within 15 feet must make a Wisdom save (DC 8 + prof + Str mod) or be frightened until end of your next turn. Wether you are medium or large, you become huge upon transformation.</description>
     </sheet>
 </element><element name="Alpha Dominance" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_FEATURE_ALPHA_DOMINANCE">
     <description>
