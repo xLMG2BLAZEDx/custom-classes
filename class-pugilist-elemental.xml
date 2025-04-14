@@ -1115,12 +1115,12 @@
         <ul>
             <li>Your Strength increases by +2 (up to a maximum of 22).</li>
             <li>You gain advantage on Strength (Athletics) checks and Strength saving throws.</li>
-            <li>Your unarmed strikes deal an additional 1d4 damage and count as silvered weapons.</li>
+            <li>Your unarmed strikes deal an additional 1d4 damage and count as magical weapons.</li>
         </ul>
         <p>You can use this transformation once per short or long rest.</p>
     </description>
     <sheet usage="1/Short Rest" action="Bonus Action">
-        <description>Transform into a weregorilla for 1 minute, gaining +2 Strength (max 22), advantage on Strength checks/saves, +1d4 damage on unarmed strikes, and attacks count as silvered.</description>
+        <description>Transform into a weregorilla for 1 minute, gaining +2 Strength (max 22), advantage on Strength checks/saves, +1d4 damage on unarmed strikes, and attacks count as magical.</description>
     </sheet>
 </element><element name="Primal Pummel" type="Archetype Feature" source="The Pugilist Class" id="ID_CUSTOM_PUGL_FEATURE_PRIMAL_PUMMEL">
     <description>
@@ -1139,7 +1139,7 @@
     </sheet>
 </element><element name="Alpha Dominance" type="Archetype Feature" source="The Pugilist Class" id="ID_CUSTOM_PUGL_FEATURE_ALPHA_DOMINANCE">
     <description>
-        <p>At 17th level, your weregorilla form becomes a paragon of primal strength. While transformed, you gain resistance to bludgeoning, piercing, and slashing damage from non-magical weapons and your unarmed strikes score a critical hit on a roll of 19 or 20.</p>
+        <p>At 17th level, your weregorilla form becomes a paragon of primal strength. While transformed, you gain resistance to bludgeoning, piercing, and slashing damage from non-silvered weapons and your unarmed strikes score a critical hit on a roll of 18 to 20.</p>
     </description>
     <sheet>
         <description>While transformed, gain resistance to non-magical B/P/S damage and crit on unarmed strikes on 19-20.</description>
