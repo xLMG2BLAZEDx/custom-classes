@@ -1313,43 +1313,43 @@ spell (no spell required, once per turn).
 
 <element name="Field Medic Frenzy" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_FEATURE_FIELD_MEDIC_FRENZY">
     <description>
-        <p>At 17th level, your healing instincts pulse outward when you brace yourself. When you use your Brace Up moxie feature, all allies within 30 feet of you (excluding yourself) regain hit points equal to your Fisticuffs die + your Constitution modifier.</p>
+        <p>At 17th level, your healing instincts pulse outward when you brace yourself. When you use your Brace Up moxie feature, all allies within 30 feet of you regain hit points equal to your Fisticuffs die + your Constitution modifier.</p>
         <p>You can use this group healing a number of times equal to your Constitution modifier (minimum 1), regaining all expended uses after a long rest.</p>
     </description>
     <sheet usage="{{constitution:modifier}}/Long Rest">
-        <description>When you use Brace Up, all allies within 30 feet regain 1d{{fisticuff:die}} + Con HP. (Excludes yourself.)</description>
+        <description>When you use Brace Up, all allies within 30 feet regain 1d{{fisticuff:die}} + Con HP.</description>
     </sheet>
   </element>
-	<element name="Circle of the Verdant Veil" type="Archetype" source="Ramsay's Homebrew" id="ID_CUSTOM_DRUID_ARCHETYPE_VERDANT_VEIL">
+	<element name="Circle of the Verdant Veil" type="Archetype" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_ARCHETYPE_VERDANT_VEIL">
     <supports>Circle</supports>
     <description>
-        <p>Druids of the Circle of the Verdant Veil act as caretakers of sacred borders — places where the material world brushes against the Feywild, Shadowfell, and the realm of spirits. These druids draw upon ancient groves and half-hidden glades where spectral fauna and luminous vines mark the edges of reality. Though peaceful at heart, they unleash nature’s wrath when balance is threatened, guided by veiled ancestral protectors who echo through the trees.</p>
-        <div element="ID_CUSTOM_DRUID_FEATURE_VEIL_MAGIC"/>
-        <div element="ID_CUSTOM_DRUID_FEATURE_SPIRIT_VINE"/>
-        <div element="ID_CUSTOM_DRUID_FEATURE_VEIL_STEP"/>
-        <div element="ID_CUSTOM_DRUID_FEATURE_LIVING_GROVE"/>
-        <div element="ID_CUSTOM_DRUID_FEATURE_ETHEREAL_RESURGENCE"/>
+        <p>Pugilists of the Circle of the Verdant Veil act as caretakers of sacred borders — places where the material world brushes against the Feywild, Shadowfell, and the realm of spirits. These pugilists draw upon ancient groves and half-hidden glades where spectral fauna and luminous vines mark the edges of reality. Though peaceful at heart, they unleash nature’s wrath when balance is threatened, guided by veiled ancestral protectors who echo through the trees.</p>
+        <div element="ID_CUSTOM_PUGL_FEATURE_VEIL_MAGIC"/>
+        <div element="ID_CUSTOM_PUGL_FEATURE_SPIRIT_VINE"/>
+        <div element="ID_CUSTOM_PUGL_FEATURE_VEIL_STEP"/>
+        <div element="ID_CUSTOM_PUGL_FEATURE_LIVING_GROVE"/>
+        <div element="ID_CUSTOM_PUGL_FEATURE_ETHEREAL_RESURGENCE"/>
     </description>
     <sheet display="false">
         <description>Druids of the Verdant Veil safeguard mystical thresholds and command nature's unseen forces to protect and heal.</description>
     </sheet>
     <rules>
-        <grant type="Archetype Feature" id="ID_CUSTOM_DRUID_FEATURE_VEIL_MAGIC" level="2"/>
-        <grant type="Archetype Feature" id="ID_CUSTOM_DRUID_FEATURE_SPIRIT_VINE" level="2"/>
-        <grant type="Archetype Feature" id="ID_CUSTOM_DRUID_FEATURE_VEIL_STEP" level="6"/>
-        <grant type="Archetype Feature" id="ID_CUSTOM_DRUID_FEATURE_LIVING_GROVE" level="10"/>
-        <grant type="Archetype Feature" id="ID_CUSTOM_DRUID_FEATURE_ETHEREAL_RESURGENCE" level="16"/>
+        <grant type="Archetype Feature" id="ID_CUSTOM_PUGL_FEATURE_VEIL_MAGIC" level="2"/>
+        <grant type="Archetype Feature" id="ID_CUSTOM_PUGL_FEATURE_SPIRIT_VINE" level="2"/>
+        <grant type="Archetype Feature" id="ID_CUSTOM_PUGL_FEATURE_VEIL_STEP" level="6"/>
+        <grant type="Archetype Feature" id="ID_CUSTOM_PUGL_FEATURE_LIVING_GROVE" level="10"/>
+        <grant type="Archetype Feature" id="ID_CUSTOM_PUGL_FEATURE_ETHEREAL_RESURGENCE" level="16"/>
     </rules>
 </element>
 
-<element name="Veil Magic" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_DRUID_FEATURE_VEIL_MAGIC">
+<element name="Veil Magic" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_FEATURE_VEIL_MAGIC">
     <description>
-        <p>Starting at 2nd level, your connection to the edge-realms enhances your spellcasting. You learn the <i>bless</i> and <i>cause fear</i> spells, which count as druid spells for you and do not count against your number of druid spells known. At 5th level, you also learn <i>misty step</i>. You can cast <i>misty step</i> once without expending a spell slot, and regain the ability to do so when you finish a short or long rest.</p>
+        <p>Starting at 2nd level, your connection to the edge-realms enhances your spellcasting. You learn the <i>bless</i> and <i>cause fear</i> spells, which count as druid spells for you. At 5th level, you also learn <i>misty step</i>. You can cast <i>misty step</i> once without expending a spell slot, and regain the ability to do so when you finish a short or long rest.</p>
     </description>
     <sheet>
         <description>You always know <i>bless</i> and <i>cause fear</i>. At 5th level, you can cast <i>misty step</i> once per short rest without using a spell slot.</description>
     </sheet>
-    <spellcasting name="Veil Magic" ability="Wisdom">
+    <spellcasting name="Veil Magic" ability="Constitution">
         <list>Verdant Veil</list>
     </spellcasting>
     <rules>
@@ -1359,48 +1359,48 @@ spell (no spell required, once per turn).
     </rules>
 </element>
 
-<element name="Spirit Vine" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_DRUID_FEATURE_SPIRIT_VINE">
+<element name="Spirit Vine" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_FEATURE_SPIRIT_VINE">
     <description>
-        <p>Also at 2nd level, spectral vines surround you as a manifestation of your guardianship. As a bonus action, you can extend a spirit vine to a creature within 30 feet. That creature gains temporary hit points equal to your druid level + your Wisdom modifier.</p>
+        <p>Also at 2nd level, spectral vines surround you as a manifestation of your guardianship. As a bonus action, you can extend a spirit vine to a creature within 30 feet. That creature gains temporary hit points equal to your pugilist level + your Con modifier.</p>
         <p>You can use this feature a number of times equal to your proficiency bonus, regaining all expended uses on a long rest.</p>
     </description>
     <sheet usage="{{proficiency}}/Long Rest" action="Bonus Action">
-        <description>As a bonus action, grant temp HP to a creature within 30 ft equal to Druid level + Wis mod.</description>
+        <description>As a bonus action, grant temp HP to a creature within 30 ft equal to Pugilist level + Con mod.</description>
     </sheet>
 </element>
 
-<element name="Veil Step" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_DRUID_FEATURE_VEIL_STEP">
+<element name="Veil Step" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_FEATURE_VEIL_STEP">
     <description>
-        <p>At 6th level, you can vanish into shimmering mist when threatened. When a creature hits you with an attack, you can use your reaction to teleport up to 30 feet to an unoccupied space you can see. You can use this feature a number of times equal to your Wisdom modifier (minimum 1), regaining all uses after a long rest.</p>
+        <p>At 6th level, you can vanish into shimmering mist when threatened. When a creature hits you with an attack, you can use your reaction to teleport up to 30 feet to an unoccupied space you can see. You can use this feature a number of times equal to your Constitution modifier (minimum 1), regaining all uses after a long rest.</p>
     </description>
     <sheet usage="{{wisdom:modifier}}/Long Rest" action="Reaction">
         <description>When hit by an attack, use your reaction to teleport up to 30 ft to an unoccupied space you can see.</description>
     </sheet>
 </element>
 
-<element name="Living Grove" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_DRUID_FEATURE_LIVING_GROVE">
+<element name="Living Grove" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_FEATURE_LIVING_GROVE">
     <description>
         <p>Starting at 10th level, you can summon the spirit of a verdant guardian to watch over your allies. As an action, you summon a 15-foot-radius ethereal grove centered on yourself that lasts for 1 minute. While in the grove:</p>
         <ul>
-            <li>You and your allies regain hit points equal to your Wisdom modifier at the start of each of your turns.</li>
+            <li>You and your allies regain hit points equal to your Constitution modifier at the start of each of your turns.</li>
             <li>Enemies treat the area as difficult terrain.</li>
             <li>You can cast <i>entangle</i> once without expending a spell slot as part of this action.</li>
         </ul>
         <p>You can use this feature once per long rest.</p>
     </description>
     <sheet usage="1/Long Rest" action="Action">
-        <description>Summon a 15-ft radius grove (1 min): Allies heal Wis mod each turn. Enemies treat it as difficult terrain. You may also cast <i>entangle</i> as part of the same action.</description>
+        <description>Summon a 15-ft radius grove (1 min): Allies heal Constitution mod each turn. Enemies treat it as difficult terrain. You may also cast <i>entangle</i> as part of the same action.</description>
     </sheet>
 </element>
 
-<element name="Ethereal Resurgence" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_DRUID_FEATURE_ETHEREAL_RESURGENCE">
+<element name="Ethereal Resurgence" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_FEATURE_ETHEREAL_RESURGENCE">
     <description>
         <p>At 16th level, the ancestral spirits that guide you manifest more powerfully in times of need. When you or an ally within 30 feet is reduced to 0 hit points but not killed outright, you can use your reaction to cause a spectral guardian to intervene.</p>
-        <p>The ally instead drops to 1 hit point and immediately gains temporary hit points equal to your druid level + your Wisdom modifier. The guardian then fades into mist.</p>
+        <p>The ally instead drops to 1 hit point and immediately gains temporary hit points equal to your Pugilist level + your Wisdom modifier. The guardian then fades into mist.</p>
         <p>You can use this feature once per long rest.</p>
     </description>
     <sheet usage="1/Long Rest" action="Reaction">
-        <description>When a creature within 30 ft drops to 0 HP, use your reaction to reduce them to 1 HP and give them temp HP equal to Druid level + Wis mod.</description>
+        <description>When a creature within 30 ft drops to 0 HP, use your reaction to reduce them to 1 HP and give them temp HP equal to Pugilist level + Wis mod.</description>
     </sheet>
   </element>
 	<element name="Iron Instinct" type="Archetype" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_ARCHETYPE_IRON_INSTINCT">
