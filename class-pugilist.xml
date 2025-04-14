@@ -771,6 +771,93 @@
 			<description>When you use your Salty Salute feature, you can choose to target {{level:pugilist}} creatures within 60 feet who can see or hear you instead of a single creature. You gain 1 moxie point (up to your maximum) the first time each creature targeted in this way hits you with an attack before the start of your next turn.</description>
 		</sheet>
 	</element>
+       
+	<!--  Furybound Primal Archetype  -->
+<element name="Furybound Primal" type="Archetype" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_ARCHETYPE_PUGILIST_FURYBOUND_PRIMAL">
+<supports>Fight Club</supports>
+<description>
+<p>In the heart of your spirit pulses an ancient primal force—the raw strength of a towering beast that once ruled the wilds. This feral power now lives in you. Whether a gift or a curse, you’ve embraced this bond, allowing your body to shift into a monstrous, weregorilla-like form, capable of tremendous feats of might and savagery.</p>
+<div element="ID_CUSTOM_PUGL_ARCHETYPE_FEATURE_PRIMAL_TRANSFORMATION"/>
+<div element="ID_CUSTOM_PUGL_ARCHETYPE_FEATURE_PRIMAL_HAND"/>
+<div element="ID_CUSTOM_PUGL_ARCHETYPE_FEATURE_PRIMAL_SURGE"/>
+<div element="ID_CUSTOM_PUGL_ARCHETYPE_FEATURE_PRIMAL_GROWTH"/>
+<div element="ID_CUSTOM_PUGL_ARCHETYPE_FEATURE_PRIMAL_EXECUTION"/>
+</description>
+<sheet display="false">
+<description>In the heart of your spirit pulses an ancient primal force—the raw strength of a towering beast that once ruled the wilds.</description>
+</sheet>
+<rules>
+<grant type="Archetype Feature" id="ID_CUSTOM_PUGL_ARCHETYPE_FEATURE_PRIMAL_TRANSFORMATION" level="3"/>
+<grant type="Archetype Feature" id="ID_CUSTOM_PUGL_ARCHETYPE_FEATURE_PRIMAL_HAND" level="3"/>
+<grant type="Archetype Feature" id="ID_CUSTOM_PUGL_ARCHETYPE_FEATURE_PRIMAL_SURGE" level="6"/>
+<grant type="Archetype Feature" id="ID_CUSTOM_PUGL_ARCHETYPE_FEATURE_PRIMAL_GROWTH" level="11"/>
+<grant type="Archetype Feature" id="ID_CUSTOM_PUGL_ARCHETYPE_FEATURE_PRIMAL_EXECUTION" level="17"/>
+</rules>
+</element>
+<element name="Primal Transformation" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_ARCHETYPE_FEATURE_PRIMAL_TRANSFORMATION">
+<description>
+<p>When you choose this fight club at 3rd level, your inner beast begins to stir. You gain an instinctual combat flow and heightened resilience.</p>
+<p class="indent">In addition, you gain a primal language of your choice: Giant, Beast Speech, or Druidic, reflecting your growing attunement with raw nature.</p>
+</description>
+<sheet display="false">
+<description>You gain a primal language and embrace the beast within.</description>
+</sheet>
+<rules>
+<select type="Language" name="Language (Furybound Primal)" supports="ID_LANGUAGE_GIANT|ID_LANGUAGE_DRUIDIC|ID_LANGUAGE_BEAST_SPEECH"/>
+</rules>
+</element>
+<element name="Feral Hand" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_ARCHETYPE_FEATURE_PRIMAL_HAND">
+<description>
+<p>Also at 3rd level, you can use a bonus action on your turn to trigger a partial transformation. Your arms bulge and your muscles surge with bestial fury for 1 minute.</p>
+<ul>
+<li>When you roll a 1 on a damage die for an unarmed strike attack you made, you can reroll the die and must use the new roll.</li>
+<li>The first time you miss with an unarmed strike attack each turn you can make an additional unarmed strike attack as part of the same action.</li>
+<li>Immediately after you take the Attack action on your turn, you can spend 2 moxie points to make three unarmed strikes as a bonus action.</li>
+</ul>
+<p class="indent">You must finish a short or long rest before you can use this feature again.</p>
+</description>
+<sheet usage="1/Short Rest" action="Bonus Action">
+<description>Enter a partial primal transformation. While active, reroll 1s on unarmed damage, gain a bonus strike on first miss each turn, and spend 2 moxie to make three bonus unarmed strikes after taking the Attack action.</description>
+</sheet>
+</element>
+<element name="Primal Surge" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_ARCHETYPE_FEATURE_PRIMAL_SURGE">
+<description>
+<p>Starting at 6th level, your primal essence deepens. You may choose two primal combat traits from a list chosen by your GM or reflavored eldritch invocations that represent feral might. When you gain a level, you may replace one of them.</p>
+</description>
+<sheet display="false"/>
+<rules>
+<select type="Class Feature" name="Primal Surge" supports="Eldritch Invocation" level="6" number="2"/>
+</rules>
+</element>
+<element name="Primal Growth" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_ARCHETYPE_FEATURE_PRIMAL_GROWTH">
+<description>
+<p>At 11th level, when you activate your Feral Hand feature you can choose to grow into a massive simian form for 1 minute. When you do, your size increases by one category. If there isn’t enough room to grow to that size, you grow to the maximum possible. While enlarged:</p>
+<ul>
+<li>You have advantage on Strength checks and saving throws.</li>
+<li>Your reach becomes 10 feet.</li>
+<li>Your melee weapon attacks deal 1d4 extra damage.</li>
+</ul>
+<p class="indent">After the effect ends, you suffer one level of exhaustion.</p>
+</description>
+<sheet>
+<description>Grow into a massive simian form: enlarge, reach +10 ft, +1d4 melee damage, advantage on Strength checks/saves. Gain 1 level of exhaustion after it ends.</description>
+</sheet>
+</element>
+<element name="Brutal Execution" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_ARCHETYPE_FEATURE_PRIMAL_EXECUTION">
+<description>
+<p>At 17th level, you can use an action and expend 6 moxie points to unleash a feral finishing blow on a creature within reach. The target must make a Strength saving throw (DC = 8 + your proficiency bonus + your Strength modifier). On a failed save, it takes 100 bludgeoning damage. On a success, it takes half as much.</p>
+<p class="indent">If this reduces the target to 0 hit points, you deliver a primal roar that causes each creature within 30 feet who can hear you to make a Wisdom saving throw (DC equal to 8 + your proficiency bonus + your Strength modifier) or be frightened for 1 minute. A frightened creature can repeat the save at the end of each of its turns to end the effect early.</p>
+<p class="indent">Once you use this feature, you must finish a long rest before you can use it again.</p>
+</description>
+<sheet action="Action">
+<description>Spend 6 moxie to execute a creature within reach. Strength save (DC 8 + prof + STR). On fail: 100 bludgeoning damage. If target dies, roar frightens nearby enemies (Wis save or frightened).</description>
+</sheet>
+<rules>
+<stat name="brutal execution:save" value="8"/>
+<stat name="brutal execution:save" value="proficiency"/>
+<stat name="brutal execution:save" value="strength:modifier"/>
+</rules>
+</element>
 
 	<!-- The Squared Circle Archetype -->
 	<element name="The Squared Circle" type="Archetype" source="The Pugilist Class" id="ID_DMSG_PUGL_ARCHETYPE_PUGILIST_SQUARED">
