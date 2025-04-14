@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+<info>
+<name>Nightmare Roguish Archetype</name>
+<update version="0.0.1">
+<file name="rogue-nightmare.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/rogue-nightmare.xml"/>
+</update>
+</info>
+<element id="ID_AEYANA_ATLAS_ARCHETYPE_ROGUE_NIGHTMARE" name="Shapeshifter" source="Ramsay's Homebrew" type="Archetype">
+<supports>Roguish Archetype</supports>
+<description>
+<p>Rogues of the Shapeshifter archetype are masters of fluid identity. Able to seamlessly alter their appearance, voice, and even posture, they slip past guards, impersonate targets, and sow confusion wherever they go. Whether by innate power or secret training, they shift from face to face and form to form as naturally as breathing. These rogues often work as infiltrators, spies, or uncanny assassins.</p>
+<div element="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_NIGHTMARE_COVER_OF_NIGHT"/>
+<div element="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_NIGHTMARE_AFRAID_OF_THE_DARK"/>
+<div element="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_NIGHTMARE_MASK_OF_DARKNESS"/>
+<div element="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_NIGHTMARE_INSTILL_DREAD"/>
+<div element="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_NIGHTMARE_STRIKE_FEAR"/>
+</description>
+<sheet display="false">
+<description/>
+</sheet>
+<rules>
+<grant id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_NIGHTMARE_COVER_OF_NIGHT" level="3" type="Archetype Feature"/>
+<grant id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_NIGHTMARE_AFRAID_OF_THE_DARK" level="3" type="Archetype Feature"/>
+<grant id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_NIGHTMARE_MASK_OF_DARKNESS" level="9" type="Archetype Feature"/>
+<grant id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_NIGHTMARE_INSTILL_DREAD" level="13" type="Archetype Feature"/>
+<grant id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_NIGHTMARE_STRIKE_FEAR" level="17" type="Archetype Feature"/>
+</rules>
+</element>
+<element id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_NIGHTMARE_COVER_OF_NIGHT" name="Cloak of the Wilds" source="Ramsay's Homebrew" type="Archetype Feature">
+<description>
+<p>Starting at 3rd level, you can subtly alter your form to better blend with your surroundings. As a bonus action while in dim light or darkness, you may shift your appearance. Until the end of your next turn, if you make a DC 10 Dexterity (Stealth) check as part of your attack, you may use Sneak Attack without needing advantage.</p>
+<p class="indent">Additionally, while shifted in this way, dim light or darkness does not affect your passive Perception or Investigation.</p>
+</description>
+<sheet>
+<description>You don’t need advantage on your attack roll to use your Sneak Attack if you attack while in dim light or darkness. All the other rules for the Sneak Attack class feature still apply to you. Additionally, being in dim light or darkness does not have a negative effect on your passive Perception or passive Investigation.</description>
+</sheet>
+</element>
+<element id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_NIGHTMARE_AFRAID_OF_THE_DARK" name="Predator’s Veil" source="Ramsay's Homebrew" type="Archetype Feature">
+<description>
+<p>At 3rd level, you can shift your form to mimic a creature or humanoid of your size. As an action, you can make a Charisma (Deception) check contested by a creature’s Wisdom (Insight). On a success, you can impersonate the target’s appearance and general demeanor. This form lasts until you choose to end it or are revealed. This ability does not grant memories, voice, or languages.</p>
+<p class="indent">If a creature loses sight of you while you're disguised, they may become suspicious of any similar forms they see.</p>
+<p class="indent">A creature that interacts with your form may repeat their Insight check if given a reason to suspect you.</p>
+</description>
+<sheet>
+<description>Whenever you deal damage with your Sneak Attack to a creature while you are in dim light or darkness, you can force it to make a Wisdom saving throw (save DC {{afraid-of-the-dark:save-dc}}) or become frightened of you for 1 minute. A creature is immune to this effect if it has darkvision. If the creature loses sight of you, it instead becomes frightened of all areas that are in complete darkness until it can see you again. If the creature ends its turn in bright light, it can repeat the saving throw, ending the effect on a success.</description>
+</sheet>
+<rules>
+<stat name="afraid-of-the-dark:save-dc" value="8"/>
+<stat name="afraid-of-the-dark:save-dc" value="proficiency"/>
+<stat name="afraid-of-the-dark:save-dc" value="charisma:modifier"/>
+</rules>
+</element>
+<element id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_NIGHTMARE_MASK_OF_DARKNESS" name="Shifting Guise" source="Ramsay's Homebrew" type="Archetype Feature">
+<description>At 9th level, your shifting skills become refined. While mimicking another form, you gain advantage on Charisma (Deception) and Dexterity (Stealth) checks. You can also subtly change specific features—eye color, hair, height—allowing advantage on attempts to hide, escape bonds, or pass as someone familiar.</description>
+<sheet>
+<description>You have advantage on Charisma (Deception) and Charisma (Intimidation) checks made while in dim light or darkness.</description>
+</sheet>
+</element>
+<element id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_NIGHTMARE_INSTILL_DREAD" name="Unnerving Howl" source="Ramsay's Homebrew" type="Archetype Feature">
+<description>
+<p>At 13th level, you can briefly adopt a monstrous or alien form. As a bonus action, you force one creature within 60 feet that can see or hear you to make a Wisdom saving throw (DC = 8 + proficiency + Charisma modifier). On a failed save, it becomes frightened of you for 1 minute. The transformation is cosmetic but disturbing—featuring twisted limbs, glowing eyes, or other horrific traits.</p>
+<p class="indent">The creature can repeat the saving throw at the end of each of its turns, ending the effect on a success.</p>
+</description>
+<sheet action="Bonus Action">
+<description>You can speak words of terror and force a creature within 60 feet of you that can’t see you to make a Wisdom saving throw (save DC {{afraid-of-the-dark:save-dc}}). The target must be able to hear and understand you. If you are hidden, doing this does not give away your position. On a failed save, the target becomes frightened of all areas that are heavily obscured from it for 1 minute, or until it sees you. The target can repeat the saving throw at the end of each of its turns, ending the effect on a success.</description>
+</sheet>
+</element>
+<element id="ID_AEYANA_ATLAS_ARCHETYPE_FEATURE_NIGHTMARE_STRIKE_FEAR" name="Mindrend Talons" source="Ramsay's Homebrew" type="Archetype Feature">
+<description>At 17th level, your strikes exploit the mental weakness of your deceived or terrified foes. Whenever you hit a creature that is frightened of you or one that you are successfully impersonating, you deal an extra 2d6 psychic damage as their mind reels from the dissonance of your form.</description>
+<sheet>
+<description>Whenever you hit a creature that is frightened of you with an attack, the creature takes an extra 2d6 psychic damage.</description>
+</sheet>
+</element>
+</elements>
