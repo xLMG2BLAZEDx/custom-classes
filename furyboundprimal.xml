@@ -1,4 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
 <elements>
+    <info>
+        <name>Fury Bound Primal</name>
+        <description>5e homebrew template</description>
+        <author>Red</author>
+        <update version="1.0.0">
+            <file name="furyboundprimal.xml" url="https://raw.githubusercontent.com/RedHomebrew/elements/main/furyboundprimal.xml" />
+        </update>
+    </info>
+	
 	<element name="Furybound Primal" type="Archetype" source="Lost Knights Homebrew" id="ID_CUSTOM_PUGL_ARCHETYPE_FURYBOUND_PRIMAL">
 		<supports>Fight Club</supports>
 		<description>
