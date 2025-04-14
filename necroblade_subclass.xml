@@ -1,10 +1,14 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<info>
-  <update version="1.0.0">
-    <file name="necroblade_subclass.xml" url="https://github.com/xLMG2BLAZEDx/custom-classes/edit/main/necroblade_subclass.xml" />
-    <author>Ramsay Thornberry</author>
-  </update>
-</info>
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name>Necroblade</name>
+        <description>5e homebrew</description>
+        <author url="https://github.com/xLMG2BLAZEDx/custom-classes/edit/main/necroblade_subclass.xml">xLMG2Blazed</author>
+        <update version="0.0.2">
+            <file name="necroblade_sublass.xml" url="https://raw.githubusercontent.com/xLMG2BLAZEDx/custom-classes/refs/heads/main/necroblade_subclass.xml"/>
+        </update>
+    </info>
+
 
   <element name="Necroblade" type="Archetype" source="Ramsay's Homebrew" id="ID_CUSTOM_ARCHETYPE_FIGHTER_NECROBLADE">
     <supports>Martial Archetype</supports>
