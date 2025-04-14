@@ -1262,4 +1262,62 @@ spell (no spell required, once per turn).
 <stat name="veil of terror:dc" value="constitution:modifier"/>
 </rules>
 </element>
+	<element name="Hands of Mercy" type="Archetype" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_ARCHETYPE_HANDS_MERCY">
+    <supports>Fight Club</supports>
+    <description>
+        <p>Members of the Hands of Mercy fight club walk the fine line between bone-breaking and bone-setting. Trained in alleyway triage and fueled by sheer determination, these pugilists don't just fight to win — they fight to keep others standing. Whether rescuing allies from the brink or stitching wounds between blows, a Hands of Mercy brawler is always ready with a knuckle sandwich in one hand and a healing salve in the other.</p>
+        <div element="ID_CUSTOM_PUGL_FEATURE_MERCY_HANDS"/>
+        <div element="ID_CUSTOM_PUGL_FEATURE_TOUGHLOVE"/>
+        <div element="ID_CUSTOM_PUGL_FEATURE_REVIVE_SMACK"/>
+        <div element="ID_CUSTOM_PUGL_FEATURE_FIELD_MEDIC_FRENZY"/>
+    </description>
+    <sheet display="false">
+        <description>Pugilists who join the Hands of Mercy fight club blend healing and hard-hitting blows to keep their allies in the fight.</description>
+    </sheet>
+    <rules>
+        <grant type="Archetype Feature" id="ID_CUSTOM_PUGL_FEATURE_MERCY_HANDS" level="3"/>
+        <grant type="Archetype Feature" id="ID_CUSTOM_PUGL_FEATURE_TOUGHLOVE" level="6"/>
+        <grant type="Archetype Feature" id="ID_CUSTOM_PUGL_FEATURE_REVIVE_SMACK" level="11"/>
+        <grant type="Archetype Feature" id="ID_CUSTOM_PUGL_FEATURE_FIELD_MEDIC_FRENZY" level="17"/>
+    </rules>
+</element>
+
+<element name="Mercy Hands" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_FEATURE_MERCY_HANDS">
+    <description>
+        <p>At 3rd level, you learn how to patch up your allies using speed and pressure-point tactics. You gain proficiency in the Medicine skill. As a bonus action, you can spend 1 moxie point to touch a creature within 5 feet and restore hit points equal to your Fisticuffs die + your Constitution modifier.</p>
+        <p>You can use this feature a number of times equal to your Constitution modifier (minimum 1), regaining expended uses after a long rest.</p>
+    </description>
+    <sheet usage="{{constitution:modifier}}/Long Rest" action="Bonus Action">
+        <description>Spend 1 moxie point to heal an ally within 5 ft for 1d{{fisticuff:die}} + Con.</description>
+    </sheet>
+</element>
+
+<element name="Tough Love" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_FEATURE_TOUGHLOVE">
+    <description>
+        <p>Starting at 6th level, when a creature you can see within 30 feet takes damage that would reduce it to 0 hit points, you can use your reaction and spend 1 moxie point to let them drop to 1 hit point instead.</p>
+        <p>Additionally, when you heal a creature using your Mercy Hands, they gain advantage on the next saving throw they make before the end of their next turn.</p>
+    </description>
+    <sheet action="Reaction">
+        <description>Use reaction + 1 moxie to reduce a nearby ally to 1 HP instead of 0. Healed creatures also gain advantage on next saving throw.</description>
+    </sheet>
+</element>
+
+<element name="Revive Smack" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_FEATURE_REVIVE_SMACK">
+    <description>
+        <p>At 11th level, when a creature within 5 feet of you is unconscious but not dead, you can spend 2 moxie points to restore them to consciousness with hit points equal to twice your Fisticuffs die. This ability works even if they are at 0 HP and stabilized.</p>
+    </description>
+    <sheet action="Action">
+        <description>Spend 2 moxie to restore an unconscious (but alive) ally to consciousness with 2d{{fisticuff:die}} HP.</description>
+    </sheet>
+</element>
+
+<element name="Field Medic Frenzy" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_FEATURE_FIELD_MEDIC_FRENZY">
+    <description>
+        <p>At 17th level, your healing instincts pulse outward when you brace yourself. When you use your Brace Up moxie feature, all allies within 30 feet of you (excluding yourself) regain hit points equal to your Fisticuffs die + your Constitution modifier.</p>
+        <p>You can use this group healing a number of times equal to your Constitution modifier (minimum 1), regaining all expended uses after a long rest.</p>
+    </description>
+    <sheet usage="{{constitution:modifier}}/Long Rest">
+        <description>When you use Brace Up, all allies within 30 feet regain 1d{{fisticuff:die}} + Con HP. (Excludes yourself.)</description>
+    </sheet>
+  </element>
 </elements>
