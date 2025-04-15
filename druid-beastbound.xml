@@ -31,7 +31,7 @@
 
 	<element name="Beastbound Bond" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_ARCHETYPE_FEATURE_BEASTBOUND_BOND">
 		<description>
-			<p>At 2nd level when you choose this circle, you form a mystical bond with a beast companion. Choose a beast with a CR of 1/4 or lower that is not a swarm and has no flying or swimming speed. The beast is friendly to you and obeys your commands.</p>
+			<p>At 2nd level when you choose this circle, you form a mystical bond with a beast companion. Choose a beast with a CR of 1/2 or lower that is not a swarm and has no flying or swimming speed. The beast is friendly to you and obeys your commands.</p>
 			<p class="indent">You add your proficiency bonus to the beast’s AC, attack rolls, and damage rolls, as well as to any saving throws and skills it is proficient in. Its hit point maximum equals the hit points of a beast of its kind or four times your druid level, whichever is higher.</p>
 			<p class="indent">The beast acts on your initiative. It can move and use its reaction on its own, but it only takes the Dodge action unless you use your bonus action to command it to take another action. If you are incapacitated or absent, the beast acts on its own to protect you.</p>
 		</description>
