@@ -1522,4 +1522,84 @@ spell (no spell required, once per turn).
         <description>Spend 3 moxie to cause all creatures in 30 ft to make Dex save (DC = 8 + prof + Con). Fail: 6d6 force. Success: Half.</description>
     </sheet>
   </element>
+ <element name="Hands of the Ungeon" type="Archetype" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_ARCHETYPE_UNGEON">
+    <supports>Fight Club</supports>
+    <description>
+        <p>The Hands of the Ungeon fight club draws their strength from the deep arcane mysteries of the Ungeon, a liminal space of living stone and whispering walls. These pugilists strike with fists imbued with reality-warping magic, using raw force twisted through dimensional flux to pummel foes and phase through harm. As they grow in power, their connection to the Ungeon manifests in punches that blur the line between flesh and spell.</p>
+        <div element="ID_CUSTOM_PUGL_FEATURE_UNGEON_FRACTURE_STRIKE"/>
+        <div element="ID_CUSTOM_PUGL_FEATURE_UNGEON_PHASESTEP_JAUNT"/>
+        <div element="ID_CUSTOM_PUGL_FEATURE_UNGEON_GRAVITY_KNOT"/>
+        <div element="ID_CUSTOM_PUGL_FEATURE_UNGEON_DISJOINTED_BLOWS"/>
+        <div element="ID_CUSTOM_PUGL_FEATURE_UNGEON_TWIN_REALITY"/>
+        <div element="ID_CUSTOM_PUGL_FEATURE_UNGEON_PARADOX_ENGINE"/>
+    </description>
+    <sheet display="false">
+        <description>Draws raw planar magic from the Ungeon to augment their fists with paradoxical power.</description>
+    </sheet>
+    <rules>
+        <grant type="Archetype Feature" id="ID_CUSTOM_PUGL_FEATURE_UNGEON_FRACTURE_STRIKE" level="3"/>
+        <grant type="Archetype Feature" id="ID_CUSTOM_PUGL_FEATURE_UNGEON_PHASESTEP_JAUNT" level="7"/>
+        <grant type="Archetype Feature" id="ID_CUSTOM_PUGL_FEATURE_UNGEON_GRAVITY_KNOT" level="11"/>
+        <grant type="Archetype Feature" id="ID_CUSTOM_PUGL_FEATURE_UNGEON_DISJOINTED_BLOWS" level="13"/>
+        <grant type="Archetype Feature" id="ID_CUSTOM_PUGL_FEATURE_UNGEON_TWIN_REALITY" level="17"/>
+        <grant type="Archetype Feature" id="ID_CUSTOM_PUGL_FEATURE_UNGEON_PARADOX_ENGINE" level="19"/>
+    </rules>
+</element>
+
+<element name="Fracture Strike" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_FEATURE_UNGEON_FRACTURE_STRIKE">
+    <description>
+        <p>At 3rd level, your strikes tear at the seams of reality. When you hit a creature with an unarmed strike, you can choose to deal an additional 1d4 force damage. This damage increases to 1d6 at 10th level and 1d8 at 17th level.</p>
+        <p>Once per turn, when you deal this damage, the target must succeed on a Strength saving throw (DC = 8 + your proficiency bonus + your Constitution modifier) or be pushed 10 feet in a direction of your choice.</p>
+    </description>
+    <sheet>
+        <description>On hit, add 1d4 force damage (1d6 at lvl 10, 1d8 at lvl 17) and push target 10 ft on failed Strength save (DC = 8 + prof + Con).</description>
+    </sheet>
+</element>
+
+<element name="Phasestep Jaunt" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_FEATURE_UNGEON_PHASESTEP_JAUNT">
+    <description>
+        <p>At 7th level, your connection to the Ungeon allows you to flicker between unseen gaps in space. When you take damage, you can use your reaction and spend 1 moxie point to phase 15 feet to an unoccupied space you can see. You leave behind a shimmer of your presence, causing all attack rolls against you to have disadvantage until the start of your next turn.</p>
+    </description>
+    <sheet action="Reaction">
+        <description>Spend 1 moxie when damaged to teleport 15 ft. Attacks against you have disadvantage until your next turn.</description>
+    </sheet>
+</element>
+
+<element name="Gravity Knot" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_FEATURE_UNGEON_GRAVITY_KNOT">
+    <description>
+        <p>At 11th level, when you hit a creature with two or more unarmed strikes in the same turn, you can spend 1 moxie point to bend gravity around them. That creature must succeed on a Strength saving throw (DC = 8 + your proficiency bonus + your Constitution modifier) or be restrained until the end of its next turn, as loops of shimmering energy bind them in place.</p>
+    </description>
+    <sheet>
+        <description>On 2+ unarmed hits, spend 1 moxie to restrain target (Str save, DC = 8 + prof + Con) until end of next turn.</description>
+    </sheet>
+</element>
+
+<element name="Disjointed Blows" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_FEATURE_UNGEON_DISJOINTED_BLOWS">
+    <description>
+        <p>At 13th level, your punches echo through misaligned spaces. Once per turn, when you miss with an unarmed strike, you can choose to have that strike phase through the battlefield and hit a different creature within 10 feet of your original target. Make a new attack roll against that creature.</p>
+    </description>
+    <sheet>
+        <description>Once per turn, if an unarmed strike misses, you can redirect it to a new target within 10 ft of original. Make a new attack roll.</description>
+    </sheet>
+</element>
+
+<element name="Twin Reality" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_FEATURE_UNGEON_TWIN_REALITY">
+    <description>
+        <p>At 17th level, you split your form between nearby timelines. As a bonus action, you create a duplicate of yourself that lasts for 1 minute. This illusion occupies your space and mimics your attacks. When you make an unarmed strike, you can make an additional unarmed strike from the illusion's position within 10 feet of you.</p>
+        <p>You can use this feature once per long rest. You must maintain concentration on this effect (as if concentrating on a spell).</p>
+    </description>
+    <sheet usage="1/Long Rest" action="Bonus Action">
+        <description>Create a mirror form for 1 minute (concentration). Each time you punch, you may make an additional unarmed strike from the clone's space within 10 ft.</description>
+    </sheet>
+</element>
+
+<element name="Paradox Engine" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_FEATURE_UNGEON_PARADOX_ENGINE">
+    <description>
+        <p>At 19th level, you are a living conduit of unstable reality. When you score a critical hit with an unarmed strike, you can force the target to make a Constitution saving throw (DC = 8 + your proficiency bonus + your Constitution modifier). On a failure, the target takes an additional 6d10 force damage and is stunned until the end of your next turn. On a success, it takes half damage and is not stunned.</p>
+        <p>You can use this feature a number of times equal to your Constitution modifier (minimum 1), regaining all uses after a long rest.</p>
+    </description>
+    <sheet usage="{{constitution:modifier}}/Long Rest">
+        <description>On crit with unarmed strike, target must make Con save (DC = 8 + prof + Con). On fail: 6d10 force + stunned. On success: half damage, no stun.</description>
+    </sheet>
+  </element>
 </elements>
