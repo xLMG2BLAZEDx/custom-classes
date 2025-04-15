@@ -6,15 +6,15 @@
         <author url="https://github.com/xLMG2BLAZEDx/custom-classes/blob/main/ramsayshomebrew.index">xLMG2BLAZEDx</author>
         <update version="0.0.1">
             <file name="ramsayshomebrew.index" url="https://raw.githubusercontent.com/xLMG2BLAZEDx/custom-classes/refs/heads/main/ramsayshomebrew.index" />
-          </info>
-         <files>
-            <file name="barbarian-path-of-the-hollowed-veil.index" url="https://raw.githubusercontent.com/xLMG2BLAZEDx/custom-classes/refs/heads/main/barbarian-path-of-the-hollowed-veil.index" />
-            <file name="bloodhunter-orderoftheungeonblood-Full.index" url="https://raw.githubusercontent.com/xLMG2BLAZEDx/custom-classes/refs/heads/main/bloodhunter-orderoftheungeonblood-Full.index" />
-            <file name="class-pugilist-homebrew.index" url="https://raw.githubusercontent.com/xLMG2BLAZEDx/custom-classes/refs/heads/main/class-pugilist-homebrew.index" />
-            <file name="fighter-underknight.index" url="https://raw.githubusercontent.com/xLMG2BLAZEDx/custom-classes/refs/heads/main/fighter-underknight.index" />
-            <file name="rogue-shapeshifter.index" url="https://raw.githubusercontent.com/xLMG2BLAZEDx/custom-classes/refs/heads/main/rogue-shapeshifter.index" />
-            <file name="warlock-boundlessone-ravyn.index" url="https://raw.githubusercontent.com/xLMG2BLAZEDx/custom-classes/refs/heads/main/warlock-boundlessone-ravyn.index" />
-            <file name="aasmodai.index" url="https://raw.githubusercontent.com/xLMG2BLAZEDx/custom-classes/refs/heads/main/aasmodai.index" />
-       </update>
+        </update>
+    </info>
+    <files>
+        <file name="barbarian-path-of-the-hollowed-veil.index" url="https://raw.githubusercontent.com/xLMG2BLAZEDx/custom-classes/refs/heads/main/barbarian-path-of-the-hollowed-veil.index" />
+        <file name="bloodhunter-orderoftheungeonblood-Full.index" url="https://raw.githubusercontent.com/xLMG2BLAZEDx/custom-classes/refs/heads/main/bloodhunter-orderoftheungeonblood-Full.index" />
+        <file name="class-pugilist-homebrew.index" url="https://raw.githubusercontent.com/xLMG2BLAZEDx/custom-classes/refs/heads/main/class-pugilist-homebrew.index" />
+        <file name="fighter-underknight.index" url="https://raw.githubusercontent.com/xLMG2BLAZEDx/custom-classes/refs/heads/main/fighter-underknight.index" />
+        <file name="rogue-shapeshifter.index" url="https://raw.githubusercontent.com/xLMG2BLAZEDx/custom-classes/refs/heads/main/rogue-shapeshifter.index" />
+        <file name="warlock-boundlessone-ravyn.index" url="https://raw.githubusercontent.com/xLMG2BLAZEDx/custom-classes/refs/heads/main/warlock-boundlessone-ravyn.index" />
+        <file name="aasmodai.index" url="https://raw.githubusercontent.com/xLMG2BLAZEDx/custom-classes/refs/heads/main/aasmodai.index" />
     </files>
 </index>
