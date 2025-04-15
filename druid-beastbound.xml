@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="druid-beastbound.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/druid-beastbound.xml" />
+		</update>
+	</info>
+
+	<element name="Circle of the Beastbound" type="Archetype" source="Ramsay's Homebrew" id="ID_CUSTOM_ARCHETYPE_CIRCLEOFTHEBEASTBOUND">
+		<supports>Druid Circle</supports>
+		<description>
+			<p>Druids of the Circle of the Beastbound form mystical bonds with the beasts of the world, protecting and growing alongside their companions. These druids act as guardians of natural harmony through connection rather than transformation.</p>
+			<p class="indent">Rather than becoming the beast, the Beastbound walk beside them. With a chosen companion at their side, they travel the wilds, defend the balance of nature, and act as emissaries between civilization and the animal world.</p>
+			<div element="ID_CUSTOM_ARCHETYPE_FEATURE_BEASTBOUND_BOND" />
+			<div element="ID_CUSTOM_ARCHETYPE_FEATURE_BEASTBOUND_COMMAND" />
+			<div element="ID_CUSTOM_ARCHETYPE_FEATURE_BEASTBOUND_EMPOWERED_STRIKES" />
+			<div element="ID_CUSTOM_ARCHETYPE_FEATURE_BEASTBOUND_PRIMAL_AVATAR" />
+			<div element="ID_CUSTOM_ARCHETYPE_FEATURE_BEASTBOUND_SPIRIT_BOND" />
+		</description>
+		<sheet display="false">
+			<description>Druids of the Circle of the Beastbound form mystical bonds with beast companions.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_CUSTOM_ARCHETYPE_FEATURE_BEASTBOUND_BOND" level="2" />
+			<grant type="Archetype Feature" id="ID_CUSTOM_ARCHETYPE_FEATURE_BEASTBOUND_COMMAND" level="2" />
+			<grant type="Archetype Feature" id="ID_CUSTOM_ARCHETYPE_FEATURE_BEASTBOUND_EMPOWERED_STRIKES" level="6" />
+			<grant type="Archetype Feature" id="ID_CUSTOM_ARCHETYPE_FEATURE_BEASTBOUND_PRIMAL_AVATAR" level="10" />
+			<grant type="Archetype Feature" id="ID_CUSTOM_ARCHETYPE_FEATURE_BEASTBOUND_SPIRIT_BOND" level="14" />
+		</rules>
+	</element>
+
+	<element name="Beastbound Bond" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_ARCHETYPE_FEATURE_BEASTBOUND_BOND">
+		<description>
+			<p>At 2nd level when you choose this circle, you form a mystical bond with a beast companion. Choose a beast with a CR of 1/4 or lower that is not a swarm and has no flying or swimming speed. The beast is friendly to you and obeys your commands.</p>
+			<p class="indent">You add your proficiency bonus to the beast’s AC, attack rolls, and damage rolls, as well as to any saving throws and skills it is proficient in. Its hit point maximum equals the hit points of a beast of its kind or four times your druid level, whichever is higher.</p>
+			<p class="indent">The beast acts on your initiative. It can move and use its reaction on its own, but it only takes the Dodge action unless you use your bonus action to command it to take another action. If you are incapacitated or absent, the beast acts on its own to protect you.</p>
+		</description>
+		<sheet>
+			<description>Gain a bonded beast companion. Add your proficiency bonus to its stats. It acts on your initiative and can be commanded as a bonus action.</description>
+		</sheet>
+	</element>
+
+	<element name="Commanding Roar" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_ARCHETYPE_FEATURE_BEASTBOUND_COMMAND">
+		<description>
+			<p>Also at 2nd level, you can communicate telepathically with your beast companion while you are within 100 feet of each other. As a bonus action, you can command it to Dash, Disengage, Help, Hide, or make an Attack.</p>
+			<p class="indent">In addition, your beast companion gains a special reaction. When a creature provokes an opportunity attack from it, your beast can use its reaction to impose disadvantage on the provoking creature’s next attack roll.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>Command your companion to take an action (Attack, Dash, Disengage, Help, or Hide). It can also react to impose disadvantage on attackers.</description>
+		</sheet>
+	</element>
+
+	<element name="Empowered Strikes" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_ARCHETYPE_FEATURE_BEASTBOUND_EMPOWERED_STRIKES">
+		<description>
+			<p>Beginning at 6th level, your beast companion’s attacks count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+			<p class="indent">Additionally, when your beast hits a creature with a melee attack, you can use your reaction to have the target make a Strength saving throw (DC = 8 + your proficiency bonus + your Wisdom modifier). On a failed save, the target is knocked prone or pushed 10 feet away (your choice).</p>
+		</description>
+		<sheet>
+			<description>Your beast’s attacks count as magical. You can use your reaction to force enemies hit by your beast to make a Strength save or be knocked prone or pushed.</description>
+		</sheet>
+	</element>
+
+	<element name="Primal Avatar" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_ARCHETYPE_FEATURE_BEASTBOUND_PRIMAL_AVATAR">
+		<description>
+			<p>At 10th level, your connection with your beast companion strengthens. You can cast the *enhance ability* spell on yourself or your companion without expending a spell slot, once per long rest.</p>
+			<p class="indent">Additionally, when you cast a spell that targets only you, you can also have it affect your beast companion if it is within 30 feet.</p>
+		</description>
+		<sheet>
+			<description>Cast enhance ability on yourself or your companion once per long rest without a spell slot. Share single-target spells with your companion if within 30 feet.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_ENHANCE_ABILITY" spellcasting="Druid" />
+		</rules>
+	</element>
+
+	<element name="Spirit Bond" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_ARCHETYPE_FEATURE_BEASTBOUND_SPIRIT_BOND">
+		<description>
+			<p>At 14th level, your beast companion becomes a spiritual extension of your will. As a bonus action, you can merge your essence with it for 1 minute. While merged, you and the beast share hit points and resist all damage.</p>
+			<p class="indent">During this time, you can cast spells through your beast as if it were the point of origin, and your companion’s attacks deal an extra 1d8 force damage. Once you use this feature, you can’t use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>Merge with your companion for 1 minute: shared hit points, damage resistance, spellcasting through companion, and +1d8 force damage on its attacks. Once per long rest.</description>
+		</sheet>
+	</element>
+</elements>
