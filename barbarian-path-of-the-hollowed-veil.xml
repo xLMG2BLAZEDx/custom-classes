@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name>Path of the Hollowed Veil</name>
+        <author url="https://ramsayshomebrew.example">Ramsay</author>
+        <update version="1.0">
+            <file name="barbarian-path-of-the-hollowed-veil.xml" url="https://ramsayshomebrew.example/hollowedveil" />
+        </update>
+    </info>
+
+    <element name="Path of the Hollowed Veil" type="Archetype" source="Ramsay's Homebrew" id="ID_RAMSAY_HOMEBREW_ARCHETYPE_PRIMAL_PATH_HOLLOWED_VEIL">
+        <supports>Primal Path</supports>
+        <description>
+            <p>The Path of the Hollowed Veil marks a barbarian touched by the ancient, warping magic of the Ungeon. Their fury no longer burns hot with primal rage alone—it pulses with unstable arcane resonance that distorts space and self. These barbarians phase through reality during their rages, lashing out with distortions of flesh and shadow as the Veil between realms thins around them.</p>
+            <p class="indent">Barbarians of the Hollowed Veil are both feared and pitied. They lose part of themselves to the Ungeon each time they rage, but gain unpredictable power in return. Eldritch echoes ripple from their wounds, and space folds oddly around their furious form.</p>
+            <div element="ID_RAMSAY_HOMEBREW_ARCHETYPE_FEATURE_HOLLOWED_VEIL_UNGEON_ECHO" />
+            <div element="ID_RAMSAY_HOMEBREW_ARCHETYPE_FEATURE_HOLLOWED_VEIL_SPATIAL_WRATH" />
+            <div element="ID_RAMSAY_HOMEBREW_ARCHETYPE_FEATURE_HOLLOWED_VEIL_DISSONANT_SENSE" />
+            <div element="ID_RAMSAY_HOMEBREW_ARCHETYPE_FEATURE_HOLLOWED_VEIL_RIFTBOUND" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_RAMSAY_HOMEBREW_ARCHETYPE_FEATURE_HOLLOWED_VEIL_UNGEON_ECHO" level="3" />
+            <grant type="Archetype Feature" id="ID_RAMSAY_HOMEBREW_ARCHETYPE_FEATURE_HOLLOWED_VEIL_SPATIAL_WRATH" level="6" />
+            <grant type="Archetype Feature" id="ID_RAMSAY_HOMEBREW_ARCHETYPE_FEATURE_HOLLOWED_VEIL_DISSONANT_SENSE" level="10" />
+            <grant type="Archetype Feature" id="ID_RAMSAY_HOMEBREW_ARCHETYPE_FEATURE_HOLLOWED_VEIL_RIFTBOUND" level="14" />
+        </rules>
+    </element>
+
+    <element name="Ungeon Echo" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_RAMSAY_HOMEBREW_ARCHETYPE_FEATURE_HOLLOWED_VEIL_UNGEON_ECHO">
+        <description>
+            <p>At 3rd level, when you enter a rage, you partially phase into the space-warped halls of the Ungeon. As a bonus action, you can choose a creature within 30 feet to anchor your echo. For the duration of your rage, whenever that creature deals damage to you, it takes force damage equal to 1d4 + half your barbarian level. You also deal this force damage to it when you hit it with a melee weapon attack.</p>
+            <p class="indent">If the creature is reduced to 0 hit points before your rage ends, you can anchor to another creature as a bonus action on a future turn.</p>
+        </description>
+        <sheet>
+            <description>When you enter a rage, you can choose a creature within 30 feet to anchor your echo. While raging, when that creature damages you, it takes 1d4 + {{level:barbarian:half}} force damage. You also deal this damage when you hit it. Re-anchor with a bonus action if it dies.</description>
+        </sheet>
+    </element>
+
+    <element name="Spatial Wrath" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_RAMSAY_HOMEBREW_ARCHETYPE_FEATURE_HOLLOWED_VEIL_SPATIAL_WRATH">
+        <description>
+            <p>At 6th level, your connection to the Ungeon allows your rage to bend space. When below half your hit point maximum, you may teleport up to 10 feet to an unoccupied space you can see immediately after making a melee weapon attack. You can use this feature a number of times equal to your Constitution modifier (minimum once), regaining all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet>
+            <description>Below half HP, after a melee attack, teleport up to 10 ft to an unoccupied space you can see. Uses = CON mod (min 1). Regain all on long rest.</description>
+        </sheet>
+    </element>
+
+    <element name="Dissonant Sense" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_RAMSAY_HOMEBREW_ARCHETYPE_FEATURE_HOLLOWED_VEIL_DISSONANT_SENSE">
+        <description>
+            <p>Starting at 10th level, the whispers of the Veil sharpen your instincts. You gain tremorsense out to 30 feet and can sense invisible or ethereal creatures within that range while raging. In addition, you gain advantage on saving throws against being charmed or frightened while raging.</p>
+        </description>
+        <sheet>
+            <description>While raging, gain 30 ft tremorsense and can sense invisible or ethereal creatures within range. Advantage on saves vs. charm/fright.</description>
+        </sheet>
+    </element>
+
+    <element name="Riftbound" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_RAMSAY_HOMEBREW_ARCHETYPE_FEATURE_HOLLOWED_VEIL_RIFTBOUND">
+        <description>
+            <p>At 14th level, your rages tear unstable rifts in space. While raging, when a creature within 5 feet of you hits you with a melee attack, you can force them to make a Constitution saving throw (DC = 8 + your proficiency bonus + your Constitution modifier). On a failed save, the attacker is teleported to an unoccupied space you can see within 30 feet and takes force damage equal to your Barbarian level. On a success, they resist the teleportation but still take half damage.</p>
+        </description>
+        <sheet>
+            <description>When hit in melee while raging, force attacker to CON save (DC = 8 + prof + CON). Fail: teleport within 30 ft and take damage = Barbarian level. Success: half damage, no teleport.</description>
+        </sheet>
+    </element>
+</elements>

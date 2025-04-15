@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>The Boundless One</name>
+        <description>The Boundless One archetype.</description>
+        <author url="http://your-homebrew-hub.example">Homebrew Conversion by William Burruss</author>
+        <update version="1.0.0">
+            <file name="warlock-boundlessone.xml" url="https://your-storage-link.example/warlock-boundlessone.xml" />
+        </update>
+    </info>
+
+    <element name="The Boundless One" type="Archetype" source="Ramsay's Homebrew" id="ID_UNGEON_ARCHETYPE_WARLOCK_BOUNDLESS_ONE">
+        <supports>Otherworldly Patron</supports>
+        <description>
+            <p>In the infinite halls of the Ungeon, where knowledge carves reality and shadows whisper truths, dwells an ancient being of thought incarnate: Ravyn, the Boundless One. A deity of insight and memory, Ravyn preserves the secrets of forgotten empires and the blueprints of stars. To enter a pact with this spectral archivist is to swear fealty to the written word, the mystery of the labyrinthine, and the boundless possibility of understanding.</p>
+            <p class="indent">Those chosen by Ravyn are warped by cryptic wisdom. Their magic takes on the form of radiant glyphs and shimmering illusions, with spells that reshape perception and pull truth from veils. They are guardians of arcane memory and sentinels of the Ungeon’s halls.</p>
+            <div element="ID_UNGEON_ARCHETYPE_FEATURE_BOUNDLESS_ONE_SPELL_LIST" />
+            <div element="ID_UNGEON_ARCHETYPE_FEATURE_BOUNDLESS_ONE_ASTRAL_VISAGE" />
+            <div element="ID_UNGEON_ARCHETYPE_FEATURE_BOUNDLESS_ONE_GRASPING_GLYPHS" />
+            <div element="ID_UNGEON_ARCHETYPE_FEATURE_BOUNDLESS_ONE_HALLBOUND_MIND" />
+            <div element="ID_UNGEON_ARCHETYPE_FEATURE_BOUNDLESS_ONE_LIVING_SCRIPTURE" />
+        </description>
+        <sheet>
+            <description>Those chosen by Ravyn are warped by cryptic wisdom and become sentinels of the Ungeon’s halls.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_UNGEON_ARCHETYPE_FEATURE_BOUNDLESS_ONE_SPELL_LIST" level="1" />
+            <grant type="Archetype Feature" id="ID_UNGEON_ARCHETYPE_FEATURE_BOUNDLESS_ONE_ASTRAL_VISAGE" level="1" />
+            <grant type="Archetype Feature" id="ID_UNGEON_ARCHETYPE_FEATURE_BOUNDLESS_ONE_GRASPING_GLYPHS" level="6" />
+            <grant type="Archetype Feature" id="ID_UNGEON_ARCHETYPE_FEATURE_BOUNDLESS_ONE_HALLBOUND_MIND" level="10" />
+            <grant type="Archetype Feature" id="ID_UNGEON_ARCHETYPE_FEATURE_BOUNDLESS_ONE_LIVING_SCRIPTURE" level="14" />
+        </rules>
+    </element>
+
+    <element name="Expanded Spell List" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_UNGEON_ARCHETYPE_FEATURE_BOUNDLESS_ONE_SPELL_LIST">
+        <description>
+            <p>Your pact with Ravyn grants access to spells from the vast lexicon of the Ungeon. These spells distort space, reveal truth, and command knowledge itself.</p>
+            <h5>Boundless One Expanded Spells</h5>
+            <table>
+                <thead><tr><td>Spell Level</td><td>Spells</td></tr></thead>
+                <tr><td>1st</td><td><em>detect magic, dissonant whispers</em></td></tr>
+                <tr><td>2nd</td><td><em>mirror image, mind spike</em></td></tr>
+                <tr><td>3rd</td><td><em>clairvoyance, tongues</em></td></tr>
+                <tr><td>4th</td><td><em>phantasmal killer, arcane eye</em></td></tr>
+                <tr><td>5th</td><td><em>modify memory, wall of force</em></td></tr>
+            </table>
+        </description>
+        <sheet display="false">
+            <description>Your pact with Ravyn grants access to an expanded list of arcane spells.</description>
+        </sheet>
+        <spellcasting name="Warlock" extend="true">
+            <extend>ID_PHB_SPELL_DETECT_MAGIC</extend>
+            <extend>ID_PHB_SPELL_DISSONANT_WHISPERS</extend>
+            <extend>ID_XGE_SPELL_MIND_SPIKE</extend>
+            <extend>ID_PHB_SPELL_MIRROR_IMAGE</extend>
+            <extend>ID_PHB_SPELL_CLAIRVOYANCE</extend>
+            <extend>ID_PHB_SPELL_TONGUES</extend>
+            <extend>ID_PHB_SPELL_ARCANE_EYE</extend>
+            <extend>ID_PHB_SPELL_PHANTASMAL_KILLER</extend>
+            <extend>ID_PHB_SPELL_MODIFY_MEMORY</extend>
+            <extend>ID_PHB_SPELL_WALL_OF_FORCE</extend>
+        </spellcasting>
+    </element>
+
+    <element name="Astral Visage" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_UNGEON_ARCHETYPE_FEATURE_BOUNDLESS_ONE_ASTRAL_VISAGE">
+        <description>
+            <p>At 1st level, as a bonus action, you may shroud yourself in Ravyn’s image. Veins of light trace across your skin like ancient ink, your eyes glow with mnemonic fire, and spectral glyphs orbit your form. This form lasts 1 minute or until you dismiss it (no action).</p>
+            <ul>
+                <li>Your AC becomes 13 + your Charisma modifier.</li>
+                <li>Your voice echoes unnaturally, granting advantage on Charisma (Intimidation) and (Deception) checks.</li>
+                <li>Once per turn, when you hit a creature with a weapon or spell attack, you can deal additional force damage equal to your Charisma modifier.</li>
+                <li>You gain temporary hit points equal to your warlock level when you activate this form.</li>
+            </ul>
+            <p>You can use this feature twice, regaining all expended uses after a short or long rest.</p>
+        </description>
+        <sheet>
+            <description>As a bonus action, you assume an astral form marked by Ravyn's glyphs. For 1 minute:
+            AC becomes 13 + Charisma modifier.
+            Advantage on Intimidation and Deception checks.
+            Add {{astralvisage:dmg}} force damage once per turn.
+            Gain {{astralvisage:temp}} temporary hit points.</description>
+        </sheet>
+        <rules>
+            <stat name="astralvisage:dmg" value="charisma:modifier" />
+            <stat name="astralvisage:temp" value="level:warlock" />
+        </rules>
+    </element>
+
+    <element name="Grasping Glyphs" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_UNGEON_ARCHETYPE_FEATURE_BOUNDLESS_ONE_GRASPING_GLYPHS">
+        <description>
+            <p>Starting at 6th level, when a hostile creature hits an ally within 30 feet of you, you can use your reaction to inscribe arcane glyphs midair. The attacker must succeed a Dexterity saving throw against your spell save DC or be restrained by radiant glyph chains for 1 round.</p>
+            <p class="indent">You can use this feature once per short or long rest.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>When a hostile creature hits an ally within 30 feet, you may use your reaction to bind it in radiant glyphs. It must succeed a Dexterity save or be restrained for 1 round.</description>
+        </sheet>
+    </element>
+
+    <element name="Hallbound Mind" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_UNGEON_ARCHETYPE_FEATURE_BOUNDLESS_ONE_HALLBOUND_MIND">
+        <description>
+            <p>Starting at 10th level, your mind becomes one with the Ungeon. You are immune to being charmed or frightened. While your Astral Visage is active:</p>
+            <ul>
+                <li>You regain 5 + Charisma modifier temporary hit points at the start of each of your turns.</li>
+                <li>You have advantage on saving throws against illusion and enchantment spells.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You are immune to charm and fear. While your Astral Visage is active:
+            Gain {{hallbound:hp}} temp HP at the start of each turn.
+            Advantage on saves vs. illusion and enchantment spells.</description>
+        </sheet>
+        <rules>
+            <stat name="hallbound:hp" value="5" />
+            <stat name="hallbound:hp" value="charisma:modifier" />
+        </rules>
+    </element>
+
+    <element name="Living Scripture" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_UNGEON_ARCHETYPE_FEATURE_BOUNDLESS_ONE_LIVING_SCRIPTURE">
+        <description>
+            <p>Beginning at 14th level, while Astral Visage is active, glyphs swirl protectively around you. You gain resistance to bludgeoning, piercing, and slashing damage from nonmagical sources, and once per turn when you are hit, you can force the attacker to make an Intelligence saving throw or become stunned until the end of their next turn.</p>
+        </description>
+        <sheet>
+            <description>While Astral Visage is active:
+            You gain resistance to nonmagical physical damage.
+            Once per turn when hit, attacker must make an Intelligence save or be stunned until end of their next turn.</description>
+        </sheet>
+    </element>
+</elements>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name>Ungeonblade</name>
+        <description>5e homebrew</description>
+        <author url="https://github.com/xLMG2BLAZEDx/custom-classes/edit/main/necroblade_subclass.xml">xLMG2Blazed</author>
+        <update version="0.0.3">
+            <file name="ungeonblade_subclass.xml" url="https://raw.githubusercontent.com/xLMG2BLAZEDx/custom-classes/refs/heads/main/ungeonblade_subclass.xml"/>
+        </update>
+    </info>
+
+    <element name="Ungeonblade" type="Archetype" source="Ramsay's Homebrew" id="ID_CUSTOM_ARCHETYPE_FIGHTER_UNGEONBLADE">
+        <supports>Martial Archetype</supports>
+        <description>
+            <p>The Ungeonblade is a death-bound warrior shaped by the labyrinthine echoes of the Ungeon — a realm of forgotten halls and necrotic magic. These fighters channel unearthly energy into martial skill, commanding spells tied to undeath and the arcane entropy of the deep.</p>
+            <div element="ID_CUSTOM_FEATURE_UNGEONBLADE_SPELLCASTING"/>
+            <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_WEAPON_BOND"/>
+            <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_WAR_MAGIC"/>
+            <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_ELDRITCH_STRIKE"/>
+            <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_ARCANE_CHARGE"/>
+            <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_IMPROVED_WAR_MAGIC"/>
+        </description>
+        <sheet display="false">
+            <description>A death-bound warrior drawing arcane entropy from the Ungeon’s depths.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_CUSTOM_FEATURE_UNGEONBLADE_SPELLCASTING" level="3"/>
+            <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_WEAPON_BOND" level="3"/>
+            <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_WAR_MAGIC" level="7"/>
+            <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_ELDRITCH_STRIKE" level="10"/>
+            <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_ARCANE_CHARGE" level="15"/>
+            <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_IMPROVED_WAR_MAGIC" level="18"/>
+        </rules>
+    </element>
+
+    <element name="Spellcasting" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_FEATURE_UNGEONBLADE_SPELLCASTING">
+        <description>
+            <p>Beginning at 3rd level, you enhance your martial prowess with spells stolen from death and decay. Your magic is drawn from the necrotic whispers and arcane shadows of the Ungeon.</p>
+            <p class="indent"><strong><em>Cantrips.</em></strong> You learn two cantrips of your choice from the necromancy or evocation schools. You learn an additional cantrip at 10th level.</p>
+            <p class="indent"><strong><em>Spell Slots.</em></strong> The Ungeonblade Spellcasting table shows how many spell slots you have. You regain all expended spell slots when you finish a long rest.</p>
+            <p class="indent"><strong><em>Spells Known of 1st-Level and Higher.</em></strong> You know three 1st-level spells, chosen from the necromancy or evocation schools (e.g., <em>arms of Hadar</em>, <em>false life</em>). As you gain levels, you learn more spells, as shown in the table.</p>
+            <p class="indent">Spells learned at 8th, 14th, and 20th level may come from any school.</p>
+            <p class="indent"><strong><em>Spellcasting Ability.</em></strong> Intelligence is your spellcasting ability.</p>
+            <center>
+                <p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</p>
+                <p><strong>Spell attack modifier</strong> = your proficiency bonus + your Intelligence modifier</p>
+            </center>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fighter Level</th>
+                        <th>Cantrips Known</th>
+                        <th>1st</th>
+                        <th>2nd</th>
+                        <th>3rd</th>
+                        <th>4th</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>3rd</td><td>2</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+                    <tr><td>4th</td><td>2</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+                    <tr><td>7th</td><td>2</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
+                    <tr><td>10th</td><td>3</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
+                    <tr><td>13th</td><td>3</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
+                    <tr><td>16th</td><td>3</td><td>3</td><td>3</td><td>3</td><td>—</td></tr>
+                    <tr><td>19th</td><td>3</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
+                </tbody>
+            </table>
+        </description>
+        <sheet display="false">
+            <description>Channel the Ungeon's necrotic and arcane forces into spellcasting.</description>
+        </sheet>
+        <spellcasting name="Ungeonblade" ability="Intelligence" prepare="false" allowReplace="true">
+            <list>Wizard,Cleric,(Necromancy||Evocation)</list>
+        </spellcasting>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+            <stat name="ungeonblade:spellcasting:slots:1" value="2" level="3" />
+            <stat name="ungeonblade:spellcasting:slots:1" value="3" level="4" />
+            <stat name="ungeonblade:spellcasting:slots:1" value="3" level="7" />
+            <stat name="ungeonblade:spellcasting:slots:2" value="2" level="7" />
+            <stat name="ungeonblade:spellcasting:slots:2" value="3" level="10" />
+            <stat name="ungeonblade:spellcasting:slots:3" value="2" level="13" />
+            <stat name="ungeonblade:spellcasting:slots:3" value="3" level="16" />
+            <stat name="ungeonblade:spellcasting:slots:4" value="1" level="19" />
+
+            <select type="Spell" name="Cantrip (Ungeonblade)" supports="(Necromancy||Evocation), 0" level="3" number="2" spellcasting="Ungeonblade" />
+            <select type="Spell" name="Cantrip (Ungeonblade)" supports="(Necromancy||Evocation), 0" level="10" number="1" spellcasting="Ungeonblade" />
+            <select type="Spell" name="Spellcasting (Ungeonblade)" supports="(Necromancy||Evocation), 1" level="3" number="3" spellcasting="Ungeonblade" />
+            <select type="Spell" name="Spellcasting (Ungeonblade)" supports="(Necromancy||Evocation), $(spellcasting:slots)" level="4" spellcasting="Ungeonblade"/>
+            <select type="Spell" name="Spellcasting (Ungeonblade)" supports="(Necromancy||Evocation), $(spellcasting:slots)" level="7" spellcasting="Ungeonblade"/>
+            <select type="Spell" name="Spellcasting (Ungeonblade)" supports="(Necromancy||Evocation), $(spellcasting:slots)" level="8" spellcasting="Ungeonblade"/>
+            <select type="Spell" name="Spellcasting (Ungeonblade)" supports="(Necromancy||Evocation), $(spellcasting:slots)" level="10" spellcasting="Ungeonblade"/>
+            <select type="Spell" name="Spellcasting (Ungeonblade)" supports="(Necromancy||Evocation), $(spellcasting:slots)" level="11" spellcasting="Ungeonblade"/>
+            <select type="Spell" name="Spellcasting (Ungeonblade)" supports="(Necromancy||Evocation), $(spellcasting:slots)" level="13" spellcasting="Ungeonblade"/>
+            <select type="Spell" name="Spellcasting (Ungeonblade)" supports="(Necromancy||Evocation), $(spellcasting:slots)" level="14" spellcasting="Ungeonblade"/>
+            <select type="Spell" name="Spellcasting (Ungeonblade)" supports="(Necromancy||Evocation), $(spellcasting:slots)" level="16" spellcasting="Ungeonblade"/>
+            <select type="Spell" name="Spellcasting (Ungeonblade)" supports="(Necromancy||Evocation), $(spellcasting:slots)" level="19" spellcasting="Ungeonblade"/>
+            <select type="Spell" name="Spellcasting (Ungeonblade)" supports="(Necromancy||Evocation), $(spellcasting:slots)" level="20" spellcasting="Ungeonblade"/>
+        </rules>
+    </element>
+</elements>
