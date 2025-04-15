@@ -16,6 +16,7 @@
 			<div element="ID_CUSTOM_ARCHETYPE_FEATURE_BEASTBOUND_EMPOWERED_STRIKES" />
 			<div element="ID_CUSTOM_ARCHETYPE_FEATURE_BEASTBOUND_PRIMAL_AVATAR" />
 			<div element="ID_CUSTOM_ARCHETYPE_FEATURE_BEASTBOUND_SPIRIT_BOND" />
+			<div element="ID_CUSTOM_ARCHETYPE_FEATURE_BEASTBOUND_UNDYING_BEAST" />
 		</description>
 		<sheet display="false">
 			<description>Druids of the Circle of the Beastbound form mystical bonds with beast companions.</description>
@@ -26,6 +27,7 @@
 			<grant type="Archetype Feature" id="ID_CUSTOM_ARCHETYPE_FEATURE_BEASTBOUND_EMPOWERED_STRIKES" level="6" />
 			<grant type="Archetype Feature" id="ID_CUSTOM_ARCHETYPE_FEATURE_BEASTBOUND_PRIMAL_AVATAR" level="10" />
 			<grant type="Archetype Feature" id="ID_CUSTOM_ARCHETYPE_FEATURE_BEASTBOUND_SPIRIT_BOND" level="14" />
+			<grant type="Archetype Feature" id="ID_CUSTOM_ARCHETYPE_FEATURE_BEASTBOUND_UNDYING_BEAST" level="17" />
 		</rules>
 	</element>
 
@@ -62,7 +64,7 @@
 
 	<element name="Primal Avatar" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_ARCHETYPE_FEATURE_BEASTBOUND_PRIMAL_AVATAR">
 		<description>
-			<p>At 10th level, your connection with your beast companion strengthens. You can cast the *enhance ability* spell on yourself or your companion without expending a spell slot, once per long rest. At this level your beast can be a CR1.</p>
+			<p>At 10th level, your connection with your beast companion strengthens. You can cast the <i>enhance ability</i> spell on yourself or your companion without expending a spell slot, once per long rest. At this level your beast can be a CR1.</p>
 			<p class="indent">Additionally, when you cast a spell that targets only you, you can also have it affect your beast companion if it is within 30 feet.</p>
 		</description>
 		<sheet>
@@ -82,16 +84,15 @@
 			<description>Merge with your companion for 1 minute: shared hit points, damage resistance, spellcasting through companion, and +1d8 force damage on its attacks. Once per long rest.</description>
 		</sheet>
 	</element>
-	
+
 	<element name="Undying Beast" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_ARCHETYPE_FEATURE_BEASTBOUND_UNDYING_BEAST">
-	<description>
-		<p>At 17th level, your beast companion becomes effectively unkillable. It may now be a beast with a challenge rating of up to 2. Whenever your beast companion would be killed outright, it instead drops to 1 hit point and falls unconscious.</p>
-	</description>
-	<sheet>
-		<action type="Reaction" name="Undying Beast">
-			<description>When your beast companion would be killed, it instead drops to 1 HP and is rendered unconscious. This effect can occur even if the attack would normally reduce it to 0 HP instantly. Your beast may now be a CR 2 creature.</description>
-		</action>
-	</sheet>
-</element>
+		<description>
+			<p>At 17th level, your beast companion becomes effectively unkillable. It may now be a beast with a challenge rating of up to 2. Whenever your beast companion would be killed outright, it instead drops to 1 hit point and falls unconscious.</p>
+		</description>
+		<sheet>
+			<description>Your beast may now be CR 2. If it would be killed, it instead drops to 1 HP and becomes unconscious. This effect can occur even if it would otherwise die instantly.</description>
+		</sheet>
+	</element>
 
 </elements>
+
