@@ -3,9 +3,9 @@
     <info>
         <name>xLMG2Blazedx</name>
         <description>The 5e homebrew content from xLMG2BLAZEDx</description>
-        <author url="https://github.com/xLMG2BLAZEDx/custom-classes/blob/main/aasmodai.index">xLMG2BLAZEDx</author>
+        <author url="https://github.com/xLMG2BLAZEDx/custom-classes/blob/main/ramsayshomebrew.index">xLMG2BLAZEDx</author>
         <update version="0.0.1">
-            <file name="aasmodai.index" url="https://raw.githubusercontent.com/xLMG2BLAZEDx/custom-classes/refs/heads/main/aasmodai.index" />
+            <file name="ramsayshomebrew.index" url="https://raw.githubusercontent.com/xLMG2BLAZEDx/custom-classes/refs/heads/main/ramsayshomebrew.index" />
         </update>
     </info>
     <files>
