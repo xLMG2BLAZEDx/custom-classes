@@ -84,11 +84,14 @@
 	</element>
 	
 	<element name="Undying Beast" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_ARCHETYPE_FEATURE_BEASTBOUND_UNDYING_BEAST">
-		<description>
-			<p>At 17th level, you may have a CR2 beast, your beast companion becomes unkillable, Anytime your beast would be outright killed, it instead drops to 1hp and is rendered unconcious.</p>
-		</description>	
-		<sheet action="Reaction">
-			<description>When your beast would be killed, it is instead reduced to 1hp and is rendered unconcious. Beast can be a CR2.</description>
-		</sheet>
-	</element>
+	<description>
+		<p>At 17th level, your beast companion becomes effectively unkillable. It may now be a beast with a challenge rating of up to 2. Whenever your beast companion would be killed outright, it instead drops to 1 hit point and falls unconscious.</p>
+	</description>
+	<sheet>
+		<action type="Reaction" name="Undying Beast">
+			<description>When your beast companion would be killed, it instead drops to 1 HP and is rendered unconscious. This effect can occur even if the attack would normally reduce it to 0 HP instantly. Your beast may now be a CR 2 creature.</description>
+		</action>
+	</sheet>
+</element>
+
 </elements>
