@@ -1460,4 +1460,66 @@ spell (no spell required, once per turn).
         <description>When reduced to 0 HP, spend 2 moxie to drop to 1 HP instead and gain temp HP equal to your level. Usable once per long rest.</description>
     </sheet>
   </element>
+	<element name="Arcane Pistoleer" type="Archetype" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_ARCHETYPE_ARCANE_PISTOLEER">
+    <supports>Fight Club</supports>
+    <description>
+        <p>Pugilists in the Arcane Pistoleer fight club shape arcane force into spectral pistols, blending magic with raw physicality. Their summoned weapons strike with deadly precision, growing more volatile as their connection to magic deepens. Some Pistoleers were artificers once, others war mages — all have learned how to channel magic into gunfire.</p>
+        <div element="ID_CUSTOM_PUGL_FEATURE_SUMMON_PISTOLS"/>
+        <div element="ID_CUSTOM_PUGL_FEATURE_ARCANE_SHOTS"/>
+        <div element="ID_CUSTOM_PUGL_FEATURE_ENHANCED_MANA_BURST"/>
+        <div element="ID_CUSTOM_PUGL_FEATURE_OVERDRIVE_VOLLEY"/>
+    </description>
+    <sheet display="false">
+        <description>Arcane Pistoleers shape arcane energy into summoned pistols, delivering deadly magic-infused attacks and explosive damage.</description>
+    </sheet>
+    <rules>
+        <grant type="Archetype Feature" id="ID_CUSTOM_PUGL_FEATURE_SUMMON_PISTOLS" level="3"/>
+        <grant type="Archetype Feature" id="ID_CUSTOM_PUGL_FEATURE_ARCANE_SHOTS" level="6"/>
+        <grant type="Archetype Feature" id="ID_CUSTOM_PUGL_FEATURE_ENHANCED_MANA_BURST" level="11"/>
+        <grant type="Archetype Feature" id="ID_CUSTOM_PUGL_FEATURE_OVERDRIVE_VOLLEY" level="17"/>
+    </rules>
+</element>
+
+<element name="Summon Arcane Pistols" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_FEATURE_SUMMON_PISTOLS">
+    <description>
+        <p>At 3rd level, you can use a bonus action to summon two spectral pistols made of pure arcane energy into your hands. These count as pugilist weapons with the ranged property (range 60 ft), deal force damage equal to your Fisticuff die, and use your Constitution modifier for attack and damage rolls. They vanish if you drop them or become unconscious.</p>
+        <p>While wielding both pistols, you may make ranged attacks using your Extra Attack feature, and they count as unarmed strikes for the purposes of your moxie features.</p>
+    </description>
+    <sheet action="Bonus Action">
+        <description>Summon two pistols made of arcane energy (range 60 ft, force damage equal to Fisticuff die, use Con for attack/damage). Count as pugilist/unarmed weapons.</description>
+    </sheet>
+</element>
+
+<element name="Arcane Shots" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_FEATURE_ARCANE_SHOTS">
+    <description>
+        <p>At 6th level, when you hit with an attack using your arcane pistols, you can expend 1 moxie point to deal an additional 1d8 force damage and apply one of the following effects:</p>
+        <ul>
+            <li><strong>Stagger:</strong> Target must succeed on a Strength saving throw (DC = 8 + your proficiency bonus + your Constitution modifier) or be pushed 10 feet back.</li>
+            <li><strong>Jolt:</strong> Target must succeed on a Constitution saving throw or lose its reaction until the start of its next turn.</li>
+            <li><strong>Rend:</strong> The target takes an additional 1d6 force damage at the start of its next turn.</li>
+        </ul>
+    </description>
+    <sheet>
+        <description>Spend 1 moxie when hitting with pistol: deal +1d8 force and apply Stagger, Jolt, or Rend effect (save DC = 8 + prof + Con).</description>
+    </sheet>
+</element>
+
+<element name="Enhanced Mana Burst" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_FEATURE_ENHANCED_MANA_BURST">
+    <description>
+        <p>At 11th level, you may add your proficiency bonus to the damage of any attack made with your arcane pistols. Additionally, when you use your Old One-Two moxie ability with pistols, you may make a third attack as part of the bonus action.</p>
+    </description>
+    <sheet>
+        <description>Add proficiency bonus to pistol damage. Old One-Two allows 3 attacks if using arcane pistols.</description>
+    </sheet>
+</element>
+
+<element name="Overdrive Volley" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_FEATURE_OVERDRIVE_VOLLEY">
+    <description>
+        <p>At 17th level, you can enter an overcharged state of magical assault. As an action, you may spend 3 moxie points to fire a barrage of arcane shots at enemies within 30 feet of you. Each creature of your choice in the area must make a Dexterity saving throw (DC = 8 + your proficiency bonus + your Constitution modifier). On a failed save, they take 6d6 force damage, or half as much on a success.</p>
+        <p>Once you use this feature, you must complete a short or long rest before using it again.</p>
+    </description>
+    <sheet usage="1/Short Rest" action="Action">
+        <description>Spend 3 moxie to cause all creatures in 30 ft to make Dex save (DC = 8 + prof + Con). Fail: 6d6 force. Success: Half.</description>
+    </sheet>
+  </element>
 </elements>
