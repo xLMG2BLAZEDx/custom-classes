@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <elements>
-  <element name="Dwarven Defender" type="Archetype" source="Homebrew" id="ID_HB_ARCHETYPE_FIGHTER_DWARVEN_DEFENDER">
+  <element name="Dwarven Defender" type="Archetype" source="Ramsay's Homebrew" id="ID_HB_ARCHETYPE_FIGHTER_DWARVEN_DEFENDER">
     <supports>Martial Archetype</supports>
     <description>
       <p>Among the greatest of dwarven warriors are those trained to stand unyielding against any threat. The Dwarven Defenders form the immovable bulwark at the heart of dwarven defense lines, shield in hand, braced shoulder to shoulder with their brethren. Forged in stone keeps and honed in tunnel wars, they hold the line while others fall back. Their skill with shields and steadfast nature make them legendary protectors of dwarven strongholds.</p>
@@ -20,7 +20,7 @@
     </rules>
   </element>
 
-  <element name="Warding Formation" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_DEFENDER_WARDING_FORMATION">
+  <element name="Warding Formation" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_HB_ARCHETYPE_FEATURE_DEFENDER_WARDING_FORMATION">
     <description>
       <p>Starting when you choose this archetype at 3rd level, you can use a bonus action to initiate your Warding Formation. You may use this ability once, and regain it after a long rest.</p>
       <p class="indent"><b><i>Warding Formation.</i></b> For 1 minute, you and allies within 5 feet who can see or hear you gain +2 AC if adjacent to another shield-wielding ally. Additionally, all affected gain +1 AC from their shields. This does not stack with itself.</p>
@@ -30,7 +30,7 @@
     </sheet>
   </element>
 
-  <element name="Hammer Mastery" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_DEFENDER_HAMMER_MASTERY">
+  <element name="Hammer Mastery" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_HB_ARCHETYPE_FEATURE_DEFENDER_HAMMER_MASTERY">
     <description>
       <p>At 7th level, your skill with warhammers, mauls, and similar weapons increases. Their damage dice increase to d8 (d10 with two hands), and you gain 10-foot reach with melee attacks. When you make an attack with one, you may use a bonus action to strike with the haft or pommel, dealing 1d4 bludgeoning damage.</p>
     </description>
@@ -39,7 +39,7 @@
     </sheet>
   </element>
 
-  <element name="Interpose" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_DEFENDER_INTERPOSE">
+  <element name="Interpose" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_HB_ARCHETYPE_FEATURE_DEFENDER_INTERPOSE">
     <description>
       <p>At 10th level, you become adept at using your shield to guard allies. When a creature attacks an ally within 5 feet of you, you can use your reaction to add your proficiency bonus to their AC until your next turn. You must be wielding a shield.</p>
     </description>
@@ -48,7 +48,7 @@
     </sheet>
   </element>
 
-  <element name="Riposting Crush" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_DEFENDER_RIPOSTING_CRUSH">
+  <element name="Riposting Crush" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_HB_ARCHETYPE_FEATURE_DEFENDER_RIPOSTING_CRUSH">
     <description>
       <p>At 15th level, your critical strikes come with bone-shattering force. You score a critical hit on a 19 or 20. When you do, if your target has a shield, it is knocked 10 feet away. If not, they take an additional 1d6 bludgeoning damage.</p>
     </description>
@@ -57,7 +57,7 @@
     </sheet>
   </element>
 
-  <element name="Unyielding Bastion" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_DEFENDER_UNYIELDING_BASTION">
+  <element name="Unyielding Bastion" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_HB_ARCHETYPE_FEATURE_DEFENDER_UNYIELDING_BASTION">
     <description>
       <p>At 18th level, you embody the heart of the stone halls. When you take the Attack action, you may forgo one attack to make a separate melee attack against each creature within 5 feet. Roll separately for each target.</p>
     </description>
