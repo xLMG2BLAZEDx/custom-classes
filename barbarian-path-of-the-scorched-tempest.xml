@@ -33,17 +33,17 @@
 
     <element name="Magic Aura" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_RAMSAY_HOMEBREW_ARCHETYPE_FEATURE_SCORCHED_TEMPEST_MAGIC_AURA">
         <description>
-            <p>At 3rd level, when you enter a rage, a searing magical aura erupts around you. At the start of each of your turns while raging, each creature of your choice within 5 feet takes fire or lightning damage (your choice when you rage) equal to 1d4 + half your barbarian level.</p>
+            <p>At 3rd level, when you enter a rage, a searing magical aura erupts around you. At the start of each of your turns while raging, each creature within 5 feet takes fire or lightning damage (your choice when you rage) equal to 1d4 + half your barbarian level.</p>
             <p class="indent">If a creature ends its turn within 5 feet of you, it also takes this damage unless it succeeds on a Constitution saving throw (DC = 8 + your proficiency bonus + your Constitution modifier).</p>
         </description>
         <sheet>
-            <description>When you rage, erupt with aura. Start of turn: 1d4 + half level fire or lightning damage to creatures of choice within 5 ft. End of their turn: same damage unless CON save (DC = 8 + prof + CON).</description>
+            <description>When you rage, erupt with aura. Start of turn: 1d4 + half level fire or lightning damage to creatures within 5 ft. End of their turn: same damage unless CON save (DC = 8 + prof + CON).</description>
         </sheet>
     </element>
 
     <element name="Arcane Surge" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_RAMSAY_HOMEBREW_ARCHETYPE_FEATURE_SCORCHED_TEMPEST_ARCANE_SURGE">
         <description>
-            <p>At 6th level, when you reduce a creature to 0 hit points while raging, magical energy flares outward. All creatures of your choice within 10 feet must succeed on a Dexterity saving throw (DC = 8 + your proficiency bonus + your Constitution modifier) or take damage equal to your Constitution modifier (minimum 1) of the same type as your aura.</p>
+            <p>At 6th level, when you reduce a creature to 0 hit points while raging, magical energy flares outward. All creatures within 10 feet must succeed on a Dexterity saving throw (DC = 8 + your proficiency bonus + your Constitution modifier) or take damage equal to your Constitution modifier (minimum 1) of the same type as your aura.</p>
             <p class="indent">You can use this feature a number of times equal to your Constitution modifier (minimum once), regaining all expended uses when you finish a long rest.</p>
         </description>
         <sheet>
@@ -71,7 +71,7 @@
 
     <element name="Arcane Cataclysm" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_RAMSAY_HOMEBREW_ARCHETYPE_FEATURE_SCORCHED_TEMPEST_ARCANE_CATACLYSM">
         <description>
-            <p>At 17th level, your rage becomes a cataclysmic explosion of arcane power. Once per rage, as an action, you can unleash an Arcane Cataclysm centered on yourself. Each creature of your choice within 20 feet must make a Constitution saving throw (DC = 8 + your proficiency bonus + your Constitution modifier).</p>
+            <p>At 17th level, your rage becomes a cataclysmic explosion of arcane power. Once per rage, as an action, you can unleash an Arcane Cataclysm centered on yourself. Each creature within 20 feet must make a Constitution saving throw (DC = 8 + your proficiency bonus + your Constitution modifier).</p>
             <p class="indent">On a failed save, a creature takes 8d6 damage of your aura’s type and is blinded until the end of its next turn. On a successful save, the creature takes half damage and is not blinded. This damage bypasses resistance to fire or lightning.</p>
         </description>
         <sheet>
