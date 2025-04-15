@@ -62,7 +62,7 @@
 
 	<element name="Primal Avatar" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_ARCHETYPE_FEATURE_BEASTBOUND_PRIMAL_AVATAR">
 		<description>
-			<p>At 10th level, your connection with your beast companion strengthens. You can cast the *enhance ability* spell on yourself or your companion without expending a spell slot, once per long rest.</p>
+			<p>At 10th level, your connection with your beast companion strengthens. You can cast the *enhance ability* spell on yourself or your companion without expending a spell slot, once per long rest. At this level your beast can be a CR1.</p>
 			<p class="indent">Additionally, when you cast a spell that targets only you, you can also have it affect your beast companion if it is within 30 feet.</p>
 		</description>
 		<sheet>
@@ -80,6 +80,15 @@
 		</description>
 		<sheet action="Bonus Action">
 			<description>Merge with your companion for 1 minute: shared hit points, damage resistance, spellcasting through companion, and +1d8 force damage on its attacks. Once per long rest.</description>
+		</sheet>
+	</element>
+	
+	<element name="Undying Beast" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_ARCHETYPE_FEATURE_BEASTBOUND_UNDYING_BEAST">
+		<description>
+			<p>At 17th level, you may have a CR2 beast, your beast companion becomes unkillable, Anytime your beast would be outright killed, it instead drops to 1hp and is rendered unconcious.</p>
+		</description>	
+		<sheet action="Reaction">
+			<description>When your beast would be killed, it is instead reduced to 1hp and is rendered unconcious.</description>
 		</sheet>
 	</element>
 </elements>
