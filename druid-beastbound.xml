@@ -66,7 +66,7 @@
 			<p class="indent">Additionally, when you cast a spell that targets only you, you can also have it affect your beast companion if it is within 30 feet.</p>
 		</description>
 		<sheet>
-			<description>Cast enhance ability on yourself or your companion once per long rest without a spell slot. Share single-target spells with your companion if within 30 feet.</description>
+			<description>Cast enhance ability on yourself or your companion once per long rest without a spell slot. Share single-target spells with your companion if within 30 feet. Beast can be a CR1.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_ENHANCE_ABILITY" spellcasting="Druid" />
@@ -88,7 +88,7 @@
 			<p>At 17th level, you may have a CR2 beast, your beast companion becomes unkillable, Anytime your beast would be outright killed, it instead drops to 1hp and is rendered unconcious.</p>
 		</description>	
 		<sheet action="Reaction">
-			<description>When your beast would be killed, it is instead reduced to 1hp and is rendered unconcious.</description>
+			<description>When your beast would be killed, it is instead reduced to 1hp and is rendered unconcious. Beast can be a CR2.</description>
 		</sheet>
 	</element>
 </elements>
