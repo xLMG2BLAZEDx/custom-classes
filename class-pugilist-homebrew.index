@@ -5,11 +5,11 @@
         <description>The 5e homebrew content from xLMG2BLAZEDx</description>
         <author url="https://github.com/xLMG2BLAZEDx/custom-classes/blob/main/class-pugilist.index">xLMG2BLAZEDx</author>
         <update version="0.0.1">
-            <file name="class-pugilist.index" url="https://raw.githubusercontent.com/xLMG2BLAZEDx/custom-classes/refs/heads/main/class-pugilist.index" />
+            <file name="class-pugilist-homebrew.index" url="https://raw.githubusercontent.com/xLMG2BLAZEDx/custom-classes/refs/heads/main/class-pugilist-homebrew.index" />
         </update>
     </info>
     <files>
         <!-- race -->
-        <file name="class-pugilist.xml" url="https://raw.githubusercontent.com/xLMG2Blazedx/custom-classes/refs/heads/main/class-pugilist.xml" />
+        <file name="class-pugilist-homebrew.xml" url="https://raw.githubusercontent.com/xLMG2Blazedx/custom-classes/refs/heads/main/class-pugilist-homebrew.xml" />
     </files>
 </index>
