@@ -11,5 +11,11 @@
     <files>
         <!-- race -->
         <file name="race-aasmodai.xml" url="https://raw.githubusercontent.com/xLMG2Blazedx/custom-classes/refs/heads/main/race-aasmodai.xml" />
+        <file name="barbarian-path-of-the-hollowed-veil.xml" url="https://raw.githubusercontent.com/xLMG2Blazedx/custom-classes/refs/heads/main/barbarian-path-of-the-hollowed-veil.xml" />
+        <file name="bloodhunter-orderoftheungeonblood.xml" url="https://raw.githubusercontent.com/xLMG2Blazedx/custom-classes/refs/heads/main/bloodhunter-orderoftheungeonblood.xml" />
+        <file name="class-pugilist-homebrew.xml" url="https://raw.githubusercontent.com/xLMG2Blazedx/custom-classes/refs/heads/main/class-pugilist-homebrew.xml" />
+        <file name="fighter-underknight.xml" url="https://raw.githubusercontent.com/xLMG2Blazedx/custom-classes/refs/heads/main/fighter-underknight.xml" />
+        <file name="rogue-shapeshifter.xml" url="https://raw.githubusercontent.com/xLMG2Blazedx/custom-classes/refs/heads/main/rogue-shapeshifter.xml" />
+        <file name="warlock-boundlessone-ravyn.xml" url="https://raw.githubusercontent.com/xLMG2Blazedx/custom-classes/refs/heads/main/warlock-boundlessone-ravyn.xml" />
     </files>
 </index>
