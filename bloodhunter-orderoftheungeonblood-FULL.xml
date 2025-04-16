@@ -253,7 +253,7 @@
             <stat name="blood curse howl:dc" value="wisdom:modifier"/>
         </rules>
     </element>
-<element name="Order of the Ungeonblood" type="Archetype" source="Homebrew" id="ID_HOMEBREW_ARCHETYPE_BLOOD_HUNTER_ORDER_OF_THE_UNGEONBLOOD">
+<element name="Order of the Ungeonblood" type="Archetype" source="Ungeon Masters Guild" id="ID_HOMEBREW_ARCHETYPE_BLOOD_HUNTER_ORDER_OF_THE_UNGEONBLOOD">
     <supports>Blood Hunter Order</supports>
     <description>
         <p>The Order of the Ungeonblood draws its power from the strange, mutable energies of the Ungeon—an ever-shifting labyrinth where reality blurs. These blood hunters willingly expose themselves to its chaotic depths, binding their essence to the entropy of the place. Their bodies and minds are scarred and transformed, warped into conduits of dimensional instability. Yet with this instability comes unparalleled adaptability and arcane potency.</p>
@@ -273,42 +273,42 @@
         <grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_UNGEONBLOOD_PARADOX_FORM" level="15"/>
         <grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_UNGEONBLOOD_FRACTURED_SELF" level="18"/>
     </rules>
-</element><element name="Echo Sense" type="Archetype Feature" source="Homebrew" id="ID_HOMEBREW_ARCHETYPE_FEATURE_UNGEONBLOOD_ECHO_SENSE">
+</element><element name="Echo Sense" type="Archetype Feature" source="Ungeon Masters Guild" id="ID_HOMEBREW_ARCHETYPE_FEATURE_UNGEONBLOOD_ECHO_SENSE">
         <description>
             <p>When you choose this archetype at 3rd level, your connection to the Ungeon grants you bizarre sensory echoes. You gain blindsight out to 10 feet, and you can sense the presence of extraplanar creatures within 30 feet, even through walls or obstacles.</p>
         </description>
         <sheet>
             <description>You gain 10 ft. blindsight and can sense extraplanar creatures within 30 ft.</description>
         </sheet>
-    </element><element name="Spatial Reverberation" type="Archetype Feature" source="Homebrew" id="ID_HOMEBREW_ARCHETYPE_FEATURE_UNGEONBLOOD_SPATIAL_REVERBERATION">
+    </element><element name="Spatial Reverberation" type="Archetype Feature" source="Ungeon Masters Guild" id="ID_HOMEBREW_ARCHETYPE_FEATURE_UNGEONBLOOD_SPATIAL_REVERBERATION">
         <description>
             <p>At 3rd level, you learn to channel distortions of space into your strikes. Once per turn when you hit a creature with a weapon attack, you can teleport to an unoccupied space within 10 feet of the target before or after the attack resolves.</p>
         </description>
         <sheet>
             <description>Once per turn, teleport within 10 ft. of your target before or after a hit.</description>
         </sheet>
-    </element><element name="Dimensional Lash" type="Archetype Feature" source="Homebrew" id="ID_HOMEBREW_ARCHETYPE_FEATURE_UNGEONBLOOD_DIMENSIONAL_LASH">
+    </element><element name="Dimensional Lash" type="Archetype Feature" source="Ungeon Masters Guild" id="ID_HOMEBREW_ARCHETYPE_FEATURE_UNGEONBLOOD_DIMENSIONAL_LASH">
         <description>
             <p>At 7th level, you can strike across rifts in space. When you use your crimson rite, the damage die of the rite increases by one step (e.g. 1d4 becomes 1d6). In addition, once per turn when you deal rite damage, you can cause the target to make a Strength saving throw (DC = 8 + your proficiency bonus + your Wisdom modifier) or be pulled up to 10 feet in a direction of your choice.</p>
         </description>
         <sheet>
             <description>Crimson Rite damage die increases by one step. Once per turn, pull target 10 ft. on failed Strength save.</description>
         </sheet>
-    </element><element name="Reality Glitch" type="Archetype Feature" source="Homebrew" id="ID_HOMEBREW_ARCHETYPE_FEATURE_UNGEONBLOOD_REALITY_GLITCH">
+    </element><element name="Reality Glitch" type="Archetype Feature" source="Ungeon Masters Guild" id="ID_HOMEBREW_ARCHETYPE_FEATURE_UNGEONBLOOD_REALITY_GLITCH">
         <description>
             <p>At 11th level, you can briefly twist reality. When you are targeted by an attack, you can use your reaction to impose disadvantage on the roll and teleport up to 15 feet to an unoccupied space you can see. You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and regain all uses on a long rest.</p>
         </description>
         <sheet>
             <description>Impose disadvantage on an attack and teleport 15 ft. (Uses: Wis mod/Long Rest)</description>
         </sheet>
-    </element><element name="Paradox Form" type="Archetype Feature" source="Homebrew" id="ID_HOMEBREW_ARCHETYPE_FEATURE_UNGEONBLOOD_PARADOX_FORM">
+    </element><element name="Paradox Form" type="Archetype Feature" source="Ungeon Masters Guild" id="ID_HOMEBREW_ARCHETYPE_FEATURE_UNGEONBLOOD_PARADOX_FORM">
         <description>
             <p>At 15th level, you can blur your position in space. As a bonus action, you can enter a paradox form for 1 minute. While in this form, you have resistance to all damage except force, and when a creature misses you with an attack, it takes force damage equal to your Wisdom modifier. You can use this feature once per long rest.</p>
         </description>
         <sheet>
             <description>1/minute resistance to all but force damage. Attackers that miss take force damage = Wis mod. (1/Long Rest)</description>
         </sheet>
-    </element><element name="Fractured Self" type="Archetype Feature" source="Homebrew" id="ID_HOMEBREW_ARCHETYPE_FEATURE_UNGEONBLOOD_FRACTURED_SELF">
+    </element><element name="Fractured Self" type="Archetype Feature" source="Ungeon Masters Guild" id="ID_HOMEBREW_ARCHETYPE_FEATURE_UNGEONBLOOD_FRACTURED_SELF">
         <description>
             <p>At 18th level, your body exists in multiple potential realities. When you roll initiative, you can summon a translucent echo of yourself. This echo lasts for 1 minute, mimics your actions, and can make one weapon attack on your turn (no action required). The echo is immune to damage and cannot be targeted. You can summon this echo once per long rest.</p>
         </description>
