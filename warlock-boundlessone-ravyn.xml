@@ -9,7 +9,7 @@
         </update>
     </info>
 
-    <element name="The Boundless One" type="Archetype" source="Ramsay's Homebrew" id="ID_UNGEON_ARCHETYPE_WARLOCK_BOUNDLESS_ONE">
+    <element name="The Boundless One" type="Archetype" source="Ungeon Masters Guild" id="ID_UNGEON_ARCHETYPE_WARLOCK_BOUNDLESS_ONE">
         <supports>Otherworldly Patron</supports>
         <description>
             <p>In the infinite halls of the Ungeon, where knowledge carves reality and shadows whisper truths, dwells an ancient being of thought incarnate: Ravyn, the Boundless One. A deity of insight and memory, Ravyn preserves the secrets of forgotten empires and the blueprints of stars. To enter a pact with this spectral archivist is to swear fealty to the written word, the mystery of the labyrinthine, and the boundless possibility of understanding.</p>
