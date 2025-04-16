@@ -6,7 +6,7 @@
 		</update>
 	</info>
 
-	<element name="Circle of the Beastbound" type="Archetype" source="Ramsay's Homebrew" id="ID_CUSTOM_ARCHETYPE_CIRCLEOFTHEBEASTBOUND">
+	<element name="Circle of the Beastbound" type="Archetype" source="Ungeon Masters Guild" id="ID_CUSTOM_ARCHETYPE_CIRCLEOFTHEBEASTBOUND">
 		<supports>Druid Circle</supports>
 		<description>
 			<p>Druids of the Circle of the Beastbound form mystical bonds with the beasts of the world, protecting and growing alongside their companions. These druids act as guardians of natural harmony through connection rather than transformation.</p>
