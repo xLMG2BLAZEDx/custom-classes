@@ -7,7 +7,7 @@
         </update>
     </info>
 
-    <element name="College of Echoes" type="Archetype" source="Ungeon Player’s Compendium" id="ID_UNGEON_ARCHETYPE_BARD_COLLEGE_OF_ECHOES">
+    <element name="College of Echoes" type="Archetype" source="Ungeon Masters Guild" id="ID_UNGEON_ARCHETYPE_BARD_COLLEGE_OF_ECHOES">
         <supports>Bard College</supports>
         <description>
             <p>Bards of the College of Echoes weave the strange, resonant energies of the Ungeon into their performances. These bards learn to manipulate ambient sound and memory, pulling haunting reverberations from the walls themselves and sculpting reality through sonic illusion.</p>
@@ -31,7 +31,7 @@
         </rules>
     </element>
 
-    <element name="Resonant Chamber" type="Archetype Feature" source="Ungeon Player’s Compendium" id="ID_UNGEON_ARCHETYPE_FEATURE_COLLEGE_OF_ECHOES_RESONANT_CHAMBER">
+    <element name="Resonant Chamber" type="Archetype Feature" source="Ungeon Masters Guild" id="ID_UNGEON_ARCHETYPE_FEATURE_COLLEGE_OF_ECHOES_RESONANT_CHAMBER">
         <description>
             <p>At 3rd level, your attunement to the echoes of the Ungeon lets you project your voice as though it reverberates through stone and time. When you cast a bard spell with a verbal component, you can cause your voice to seem to come from any point within 60 feet. You can use this to mask your presence or sow confusion.</p>
             <p class="indent">Additionally, you gain proficiency in the Performance or Deception skill (your choice).</p>
@@ -47,7 +47,7 @@
         </rules>
     </element>
 
-    <element name="Echoing Words" type="Archetype Feature" source="Ungeon Player’s Compendium" id="ID_UNGEON_ARCHETYPE_FEATURE_COLLEGE_OF_ECHOES_ECHOING_WORDS">
+    <element name="Echoing Words" type="Archetype Feature" source="Ungeon Masters Guild" id="ID_UNGEON_ARCHETYPE_FEATURE_COLLEGE_OF_ECHOES_ECHOING_WORDS">
         <description>
             <p>Also at 3rd level, you can expend a use of Bardic Inspiration to whisper a phrase into a target’s mind that repeats endlessly. As a bonus action, choose one creature you can see within 60 feet. The creature must make a Wisdom saving throw (DC equals your spell save DC). On a failure, they are distracted by the echo for 1 minute or until they take damage. While affected, they subtract your Bardic Inspiration die from the first attack roll or saving throw they make each turn.</p>
             <p class="indent">A creature affected this way can repeat the saving throw at the end of each of its turns, ending the effect on a success.</p>
@@ -57,7 +57,7 @@
         </sheet>
     </element>
 
-    <element name="Reverberate" type="Archetype Feature" source="Ungeon Player’s Compendium" id="ID_UNGEON_ARCHETYPE_FEATURE_COLLEGE_OF_ECHOES_REVERBERATE">
+    <element name="Reverberate" type="Archetype Feature" source="Ungeon Masters Guild" id="ID_UNGEON_ARCHETYPE_FEATURE_COLLEGE_OF_ECHOES_REVERBERATE">
         <description>
             <p>Starting at 6th level, the echoes you summon become weapons. When a creature within 30 feet of you fails a saving throw against an enchantment or illusion spell you cast, you can cause them to be rattled by reverberations. Until the end of your next turn, they have disadvantage on saving throws against your spells and opportunity attacks against them are made with advantage.</p>
         </description>
@@ -66,7 +66,7 @@
         </sheet>
     </element>
 
-    <element name="Auditory Mirror" type="Archetype Feature" source="Ungeon Player’s Compendium" id="ID_UNGEON_ARCHETYPE_FEATURE_COLLEGE_OF_ECHOES_AUDITORY_MIRROR">
+    <element name="Auditory Mirror" type="Archetype Feature" source="Ungeon Masters Guild" id="ID_UNGEON_ARCHETYPE_FEATURE_COLLEGE_OF_ECHOES_AUDITORY_MIRROR">
         <description>
             <p>Also at 6th level, you can record a phrase or sentence up to 6 seconds long and replay it as a perfect auditory illusion. As an action, you can reproduce this sound from any point within 60 feet. Creatures that hear the sound must make an Intelligence (Investigation) check (DC equals your spell save DC) to recognize it as an illusion.</p>
             <p class="indent">You can store up to three recordings at once, and can replace one as part of a long rest.</p>
@@ -76,7 +76,7 @@
         </sheet>
     </element>
 
-    <element name="Unreal Crescendo" type="Archetype Feature" source="Ungeon Player’s Compendium" id="ID_UNGEON_ARCHETYPE_FEATURE_COLLEGE_OF_ECHOES_UNREAL_CRESCENDO">
+    <element name="Unreal Crescendo" type="Archetype Feature" source="Ungeon Masters Guild" id="ID_UNGEON_ARCHETYPE_FEATURE_COLLEGE_OF_ECHOES_UNREAL_CRESCENDO">
         <description>
             <p>At 14th level, your songs reach into overlapping realities. As an action, you can unleash an echoing crescendo that fractures the perception of all enemies within 30 feet. Each creature must make a Charisma saving throw or take 4d10 psychic damage and be stunned until the end of their next turn. On a successful save, a creature takes half damage and is deafened instead.</p>
             <p class="indent">Once you use this feature, you can’t use it again until you finish a long rest.</p>
