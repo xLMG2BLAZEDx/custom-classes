@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <elements>
-  <element name="Dwarven Defender" type="Archetype" source="Ramsay's Homebrew" id="ID_HB_ARCHETYPE_FIGHTER_DWARVEN_DEFENDER">
+  <element name="Dwarven Defender" type="Archetype" source="Ungeon Masters Guild" id="ID_HB_ARCHETYPE_FIGHTER_DWARVEN_DEFENDER">
     <supports>Martial Archetype</supports>
     <description>
       <p>Among the greatest of dwarven warriors are those trained to stand unyielding against any threat. The Dwarven Defenders form the immovable bulwark at the heart of dwarven defense lines, shield in hand, braced shoulder to shoulder with their brethren. Forged in stone keeps and honed in tunnel wars, they hold the line while others fall back. Their skill with shields and steadfast nature make them legendary protectors of dwarven strongholds.</p>
