@@ -10,7 +10,7 @@
     </info>
 
 
-  <element name="Necroblade" type="Archetype" source="Ramsay's Homebrew" id="ID_CUSTOM_ARCHETYPE_FIGHTER_NECROBLADE">
+  <element name="Necroblade" type="Archetype" source="Ungeon Masters Guild" id="ID_CUSTOM_ARCHETYPE_FIGHTER_NECROBLADE">
     <supports>Martial Archetype</supports>
     <description>
       <p>The Necroblade is a death-bound warrior who intertwines martial mastery with necromantic power. These knights embrace the magic of bone, blood, and undeath. They focus their study on necromancy and restorative magic, commanding bone-shaping spells and life-draining attacks. A Necroblade is as much feared for their healing resilience as for their power over death itself.</p>
