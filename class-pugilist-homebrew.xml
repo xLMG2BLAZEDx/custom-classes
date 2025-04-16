@@ -24,7 +24,7 @@
 		</setters>
 	</element>
 
-	<element name="Pugilist" type="Class" source="Ramsay's Homebrew" id="ID_DMSG_PUGL_CLASS_PUGILIST">
+	<element name="Pugilist" type="Class" source="Ungeon Masters Guild" id="ID_DMSG_PUGL_CLASS_PUGILIST">
 		<description>
 			<p>Arrows rain down around her as she runs towards the hobgoblins. Desperate to close the distance, the half-orc fights through the sting of a dozen cuts to reach her foes. The pain only makes her stronger. As she descends on the snarling pack she swings wildly, knocking several hobgoblins off their feet and sending the rest scattering before her.</p>
 			<p class="indent">The human braces himself for the impact as the orc rushes him. Then the monster makes a mistake, telegraphing its next move, and that’s all the opening the human needs. He ducks beneath the orc’s wide swing then raises both hands high above his head and brings them down on the orc’s back, forcing the brute to the ground. The dwarf smiles broadly and chuckles as the petty noble raises his hand to strike him for the impudent remark. Quick as a flash, the dwarf shatters the bottle in his hand against the bar and brandishes it before the noble. The young dandy flinches, stumbles backward, and runs away as the dwarf turns back to the bar to order another round.</p>
@@ -278,7 +278,7 @@
 			<stat name="bloodied:health" value="level:pugilist"/>
 		</rules>
 	</element>
-	<element name="Fight Club" type="Class Feature" source="Ramsay's Homebrew" id="ID_DMSG_PUGL_CLASS_FEATURE_FIGHTCLUB">
+	<element name="Fight Club" type="Class Feature" source="Ungeon Masters Guild" id="ID_DMSG_PUGL_CLASS_FEATURE_FIGHTCLUB">
 		<description>
 			<p>Starting at 3rd level, you choose a fight club that best exemplifies your style: Arena Royale, Bloodhound Bruisers, Dog and Hound, Salt and Vinegar, the Squared Circle, or the Sweet Science, all detailed at the end of the class description. Your fight club grants you features at 3rd level and again at 6th, 11th, and 17th level.</p>
 		</description>
@@ -1091,7 +1091,7 @@
 			You can move through other creatures. You can use your reaction when you move through a creature one size larger than you or smaller to make a shove attack against that creature.</description>
 		</sheet>
 	</element>
-<element name="Beast Blood Brawlers" type="Archetype" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_ARCHETYPE_WEREGORILLA">
+<element name="Beast Blood Brawlers" type="Archetype" source="Ungeon Masters Guild" id="ID_CUSTOM_PUGL_ARCHETYPE_WEREGORILLA">
     <supports>Fight Club</supports>
     <description>
         <p>Pugilists who belong to the Beast Blood Brawlers fight club have awakened a primal force within them, allowing them to channel the strength and fury of a mighty weregorilla. Through instinct and raw power, these brawlers become brutal and relentless combatants when transformed.</p>
@@ -1145,7 +1145,7 @@
     <sheet>
         <description>While transformed, gain resistance to non-magical B/P/S damage and crit on unarmed strikes on 19-20.</description>
     </sheet>
-</element><element name="Fists of the Elements" type="Archetype" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_ARCHETYPE_ELEMENTAL">
+</element><element name="Fists of the Elements" type="Archetype" source="Ungeon Masters Guild" id="ID_CUSTOM_PUGL_ARCHETYPE_ELEMENTAL">
         <supports>Fight Club</supports>
         <description>
             <p>Pugilists who join the Fists of the Elements fight club have learned to channel elemental forces through their fists. Whether by mystical awakening, ancient training, or chaotic exposure to raw elemental power, they combine brute strength with primal fury.</p>
@@ -1201,7 +1201,7 @@
             <description>Change your element as a bonus action. On crit with unarmed strike, cause 10-ft radius elemental explosion (elemental die + Con, Dex save for half, DC 8 + prof + Con). Elemental damage ignores resistance.</description>
         </sheet>
     </element>
-	<element name="Shadow Beast" type="Archetype" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_ARCHETYPE_SHADOW_BEAST">
+	<element name="Shadow Beast" type="Archetype" source="Ungeon Masters Guild" id="ID_CUSTOM_PUGL_ARCHETYPE_SHADOW_BEAST">
 <supports>Fight Club</supports>
 <description>
 <p>Pugilists in the Shadow Beast fight club draw upon a hidden, shadowy essence that transforms them into a monstrous being of darkness. When they embrace the beast within, they become terrifying figures that blur the line between man and monster.</p>
@@ -1262,7 +1262,7 @@ spell (no spell required, once per turn).
 <stat name="veil of terror:dc" value="constitution:modifier"/>
 </rules>
 </element>
-	<element name="Hands of Mercy" type="Archetype" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_ARCHETYPE_HANDS_MERCY">
+	<element name="Hands of Mercy" type="Archetype" source="Ungeon Masters Guild" id="ID_CUSTOM_PUGL_ARCHETYPE_HANDS_MERCY">
     <supports>Fight Club</supports>
     <description>
         <p>Members of the Hands of Mercy fight club walk the fine line between bone-breaking and bone-setting. Trained in alleyway triage and fueled by sheer determination, these pugilists don't just fight to win — they fight to keep others standing. Whether rescuing allies from the brink or stitching wounds between blows, a Hands of Mercy brawler is always ready with a knuckle sandwich in one hand and a healing salve in the other.</p>
@@ -1320,7 +1320,7 @@ spell (no spell required, once per turn).
         <description>When you use Brace Up, all allies within 30 feet regain 1d{{fisticuff:die}} + Con HP.</description>
     </sheet>
   </element>
-	<element name="Circle of the Verdant Veil" type="Archetype" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_ARCHETYPE_VERDANT_VEIL">
+	<element name="Circle of the Verdant Veil" type="Archetype" source="Ungeon Masters Guild" id="ID_CUSTOM_PUGL_ARCHETYPE_VERDANT_VEIL">
     <supports>Fight Club</supports>
     <description>
         <p>Pugilists of the Circle of the Verdant Veil act as caretakers of sacred borders — places where the material world brushes against the Feywild, Shadowfell, and the realm of spirits. These pugilists draw upon ancient groves and half-hidden glades where spectral fauna and luminous vines mark the edges of reality. Though peaceful at heart, they unleash nature’s wrath when balance is threatened, guided by veiled ancestral protectors who echo through the trees.</p>
@@ -1403,7 +1403,7 @@ spell (no spell required, once per turn).
         <description>When a creature within 30 ft drops to 0 HP, use your reaction to reduce them to 1 HP and give them temp HP equal to Pugilist level + Wis mod.</description>
     </sheet>
   </element>
-	<element name="Iron Instinct" type="Archetype" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_ARCHETYPE_IRON_INSTINCT">
+	<element name="Iron Instinct" type="Archetype" source="Ungeon Masters Guild" id="ID_CUSTOM_PUGL_ARCHETYPE_IRON_INSTINCT">
     <supports>Fight Club</supports>
     <description>
         <p>Pugilists who follow the Iron Instinct fight club believe survival is the greatest show of strength. They transform their bodies into walls of endurance, shrugging off strikes and standing tall through sheer grit. With practiced reflexes and stone-hard will, they protect their allies and turn the tide of battle by being the last one standing.</p>
@@ -1460,7 +1460,7 @@ spell (no spell required, once per turn).
         <description>When reduced to 0 HP, spend 2 moxie to drop to 1 HP instead and gain temp HP equal to your level. Usable once per long rest.</description>
     </sheet>
   </element>
-	<element name="Arcane Pistoleer" type="Archetype" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_ARCHETYPE_ARCANE_PISTOLEER">
+	<element name="Arcane Pistoleer" type="Archetype" source="Ungeon Masters Guild" id="ID_CUSTOM_PUGL_ARCHETYPE_ARCANE_PISTOLEER">
     <supports>Fight Club</supports>
     <description>
         <p>Pugilists in the Arcane Pistoleer fight club shape arcane force into spectral pistols, blending magic with raw physicality. Their summoned weapons strike with deadly precision, growing more volatile as their connection to magic deepens. Some Pistoleers were artificers once, others war mages — all have learned how to channel magic into gunfire.</p>
@@ -1522,7 +1522,7 @@ spell (no spell required, once per turn).
         <description>Spend 3 moxie to cause all creatures in 30 ft to make Dex save (DC = 8 + prof + Con). Fail: 6d6 force. Success: Half.</description>
     </sheet>
   </element>
- <element name="Hands of the Ungeon" type="Archetype" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_ARCHETYPE_UNGEON">
+ <element name="Hands of the Ungeon" type="Archetype" source="Ungeon Masters Guild" id="ID_CUSTOM_PUGL_ARCHETYPE_UNGEON">
     <supports>Fight Club</supports>
     <description>
         <p>The Hands of the Ungeon fight club draws their strength from the deep arcane mysteries of the Ungeon, a liminal space of living stone and whispering walls. These pugilists strike with fists imbued with reality-warping magic, using raw force twisted through dimensional flux to pummel foes and phase through harm. As they grow in power, their connection to the Ungeon manifests in punches that blur the line between flesh and spell.</p>
