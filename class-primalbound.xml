@@ -7,7 +7,7 @@
 <file name="class-primalbound.xml" url="https://github.com/xLMG2BLAZEDx/custom-classes/edit/main/class-primalbound.xml"/>
 </update>
 </info>
-<element name="Primalbound" type="Class" source="Ramsay's Homebrew" id="ID_WILLIAM_CLASS_PRIMALBOUND">
+<element name="Primalbound" type="Class" source="Ungeon Masters Guild" id="ID_WILLIAM_CLASS_PRIMALBOUND">
 <sheet display="false">
 <description>A fierce warrior of primitive background who can enter a battle rage.</description>
 </sheet>
