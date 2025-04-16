@@ -2401,7 +2401,7 @@ The Torpor Grave Warden servant is a
 <stat name="siphon life:hp" value="level:grave warden"/>
 </rules>
 </element>
-<element name="Requiem of the Hollow" type="Archetype" source="Ramsay's Homebrew" id="ID_DMSG_GPGW_ARCHETYPE_GRAVE_WARDEN_REQUIEM_OF_THE_HOLLOW">
+<element name="Requiem of the Hollow" type="Archetype" source="Ungeon Masters Guild" id="ID_DMSG_GPGW_ARCHETYPE_GRAVE_WARDEN_REQUIEM_OF_THE_HOLLOW">
 <supports>Grave Warden Requiem of Souls</supports>
 <description>
 <p>Grave Wardens who follow the Requiem of the Hollow attune themselves to ancient crypts and the mystical Ungeon deep beneath the earth. These wardens do not merely raise the dead—they bind spirits and reshape the halls of their lair through arcane force and whispering knowledge.</p>
