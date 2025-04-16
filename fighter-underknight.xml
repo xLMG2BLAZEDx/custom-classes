@@ -9,7 +9,7 @@
         </update>
     </info>
 
-    <element name="Ungeonblade" type="Archetype" source="Ramsay's Homebrew" id="ID_CUSTOM_ARCHETYPE_FIGHTER_UNGEONBLADE">
+    <element name="Ungeonblade" type="Archetype" source="Ungeon Masters Guild" id="ID_CUSTOM_ARCHETYPE_FIGHTER_UNGEONBLADE">
         <supports>Martial Archetype</supports>
         <description>
             <p>The Ungeonblade is a death-bound warrior shaped by the labyrinthine echoes of the Ungeon — a realm of forgotten halls and necrotic magic. These fighters channel unearthly energy into martial skill, commanding spells tied to undeath and the arcane entropy of the deep.</p>
