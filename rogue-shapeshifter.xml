@@ -5,7 +5,7 @@
 <file name="rogue-nightmare.xml" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana/all-the-lights-in-the-sky-are-stars/rogue-nightmare.xml"/>
 </update>
 </info>
-<element id="ID_AEYANA_ATLAS_ARCHETYPE_ROGUE_NIGHTMARE" name="Shapeshifter" source="Ramsay's Homebrew" type="Archetype">
+<element id="ID_AEYANA_ATLAS_ARCHETYPE_ROGUE_NIGHTMARE" name="Shapeshifter" source="Ungeon Masters Guild" type="Archetype">
 <supports>Roguish Archetype</supports>
 <description>
 <p>Rogues of the Shapeshifter archetype are masters of fluid identity. Able to seamlessly alter their appearance, voice, and even posture, they slip past guards, impersonate targets, and sow confusion wherever they go. Whether by innate power or secret training, they shift from face to face and form to form as naturally as breathing. These rogues often work as infiltrators, spies, or uncanny assassins.</p>
