@@ -1604,82 +1604,87 @@ spell (no spell required, once per turn).
   </element>
  <elements>
 <element name="Scale-Bound Tyrant" type="Archetype" source="Ungeon Masters Guild" id="ID_CUSTOM_PUGL_ARCHETYPE_SCALEBOUND_TYRANT">
-<supports>Fight Club</supports>
-<description>
-<p>Pugilists of the Scale-Bound Tyrant fight club channel the might and majesty of ancient dragons. Through latent draconic blood or a mysterious bond with an elder wyrm, they tap into a terrifying transformation that gives them scales, claws, and even a devastating breath weapon. In battle, they become living avatars of draconic wrath, mixing primal instincts with pugilistic discipline.</p>
-<div element="ID_CUSTOM_PUGL_FEATURE_DRACONIC_MANIFESTATION"/>
-<div element="ID_CUSTOM_PUGL_FEATURE_BREATHING_ROOM"/>
-<div element="ID_CUSTOM_PUGL_FEATURE_TYRANT_HIDE"/>
-<div element="ID_CUSTOM_PUGL_FEATURE_DOMINANT_FORM"/>
-<div element="ID_CUSTOM_PUGL_FEATURE_APEX_ASCENT"/>
-</description>
-<sheet display="false">
-<description>These pugilists embody draconic rage and regality, transforming into scale-clad brawlers with breath and brute force.</description>
-</sheet>
-<rules>
-<grant type="Archetype Feature" id="ID_CUSTOM_PUGL_FEATURE_DRACONIC_MANIFESTATION" level="3"/>
-<grant type="Archetype Feature" id="ID_CUSTOM_PUGL_FEATURE_BREATHING_ROOM" level="5"/>
-<grant type="Archetype Feature" id="ID_CUSTOM_PUGL_FEATURE_TYRANT_HIDE" level="9"/>
-<grant type="Archetype Feature" id="ID_CUSTOM_PUGL_FEATURE_DOMINANT_FORM" level="13"/>
-<grant type="Archetype Feature" id="ID_CUSTOM_PUGL_FEATURE_APEX_ASCENT" level="17"/>
-</rules>
+ <supports>Fight Club</supports>
+ <description>
+     <p>Pugilists of the Scale-Bound Tyrant fight club channel the might and majesty of ancient dragons. Through latent draconic blood or a mysterious bond with an elder wyrm, they tap into a terrifying transformation that gives them scales, claws, and even a devastating breath weapon. In battle, they become living avatars of draconic wrath, mixing primal instincts with pugilistic discipline.</p>
+     <div element="ID_CUSTOM_PUGL_FEATURE_DRACONIC_MANIFESTATION"/>
+     <div element="ID_CUSTOM_PUGL_FEATURE_BREATHING_ROOM"/>
+     <div element="ID_CUSTOM_PUGL_FEATURE_TYRANT_HIDE"/>
+     <div element="ID_CUSTOM_PUGL_FEATURE_DOMINANT_FORM"/>
+     <div element="ID_CUSTOM_PUGL_FEATURE_APEX_ASCENT"/>
+ </description>
+ <sheet display="false">
+     <description>These pugilists embody draconic rage and regality, transforming into scale-clad brawlers with breath and brute force.</description>
+ </sheet>
+ <rules>
+     <grant type="Archetype Feature" id="ID_CUSTOM_PUGL_FEATURE_DRACONIC_MANIFESTATION" level="3"/>
+     <grant type="Archetype Feature" id="ID_CUSTOM_PUGL_FEATURE_BREATHING_ROOM" level="5"/>
+     <grant type="Archetype Feature" id="ID_CUSTOM_PUGL_FEATURE_TYRANT_HIDE" level="9"/>
+     <grant type="Archetype Feature" id="ID_CUSTOM_PUGL_FEATURE_DOMINANT_FORM" level="13"/>
+     <grant type="Archetype Feature" id="ID_CUSTOM_PUGL_FEATURE_APEX_ASCENT" level="17"/>
+ </rules>
 </element>
+	 
 <element name="Draconic Manifestation" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_FEATURE_DRACONIC_MANIFESTATION">
-<description>
-<p>At 3rd level, you can unleash your draconic form as a bonus action for 1 minute. While transformed:</p>
-<ul>
-<li>You grow scaled claws. Your unarmed strikes deal your Fisticuff die + Strength modifier and count as magical slashing damage.</li>
-<li>You gain temporary hit points equal to twice your Constitution modifier at the start of the transformation.</li>
-<li>You add your Constitution modifier to your AC while not wearing medium or heavy armor.</li>
-</ul>
-<p>You can use this feature once per short or long rest.</p>
-</description>
-<sheet usage="1/Short Rest" action="Bonus Action">
-<description>Transform into a dragon-like form. Claws deal Fisticuff die + Str (magical slashing), gain temp HP (2 × Con), and gain +Con to AC.</description>
-</sheet>
-</element>
+    <description>
+        <p>At 3rd level, you can unleash your draconic form as a bonus action for 1 minute. While transformed:</p>
+        <ul>
+            <li>You grow scaled claws. Your unarmed strikes deal your Fisticuff die + Strength modifier and count as magical slashing damage.</li>
+            <li>You gain temporary hit points equal to twice your Constitution modifier at the start of the transformation.</li>
+            <li>You add your Constitution modifier to your AC while not wearing medium or heavy armor.</li>
+        </ul>
+        <p>You can use this feature once per short or long rest.</p>
+    </description>
+    <sheet usage="1/Short Rest" action="Bonus Action">
+        <description>Transform into a dragon-like form. Claws deal Fisticuff die + Str (magical slashing), gain temp HP (2 × Con), and gain +Con to AC.</description>
+    </sheet>
+ </element>
+
 <element name="Breathing Room" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_FEATURE_BREATHING_ROOM">
-<description>
-<p>While transformed, you can exhale a breath weapon as an action once per transformation. Choose one damage type when you gain this feature: fire, cold, lightning, acid, or poison.</p>
-<p>Each creature in a 15-foot cone must make a Dexterity saving throw (DC = 8 + proficiency + Constitution modifier). On a failed save, a creature takes 3d6 damage of the chosen type, or half as much on a success.</p>
-<p>Damage increases to 4d6 at level 9, 6d6 at level 11 and 8d6 at level 17.</p>
-</description>
-<sheet action="Action">
-<description>While transformed, exhale 15-ft cone breath weapon (DC 8 + prof + Con). Deals 3d6 damage (type chosen at 5th level). Increases at higher levels.</description>
-</sheet>
-</element>
+    <description>
+       <p>While transformed, you can exhale a breath weapon as an action once per transformation. Choose one damage type when you gain this feature: fire, cold, lightning, acid, or poison.</p>
+       <p>Each creature in a 15-foot cone must make a Dexterity saving throw (DC = 8 + proficiency + Constitution modifier). On a failed save, a creature takes 3d6 damage of the chosen type, or half as much on a success.</p>
+       <p>Damage increases to 4d6 at level 9, 6d6 at level 11 and 8d6 at level 17.</p>
+   </description>
+   <sheet action="Action">
+       <description>While transformed, exhale 15-ft cone breath weapon (DC 8 + prof + Con). Deals 3d6 damage (type chosen at 5th level). Increases at higher levels.</description>
+   </sheet>
+ </element>
+
 <element name="Tyrant Hide" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_FEATURE_TYRANT_HIDE">
-<description>
-<p>While transformed, you gain resistance to the damage type of your breath weapon. In addition, when you use your Brace Up ability, you gain resistance to all damage until the start of your next turn.</p>
-</description>
-<sheet>
-<description>While transformed, gain resistance to your breath damage type. When using Brace Up, gain resistance to all damage until start of your next turn.</description>
-</sheet>
-</element>
+    <description>
+       <p>While transformed, you gain resistance to the damage type of your breath weapon. In addition, when you use your Brace Up ability, you gain resistance to all damage until the start of your next turn.</p>
+   </description>
+   <sheet>
+       <description>While transformed, gain resistance to your breath damage type. When using Brace Up, gain resistance to all damage until start of your next turn.</description>
+   </sheet>
+ </element>
+
 <element name="Dominant Form" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_FEATURE_DOMINANT_FORM">
-<description>
-<p>At 13th level, your transformation strengthens. While transformed:</p>
-<ul>
-<li>Your movement speed increases by 10 feet.</li>
-<li>You can make an additional unarmed strike as part of the Attack action once per turn.</li>
-<li>Your jump distance is doubled.</li>
-</ul>
-</description>
-<sheet>
-<description>While transformed, gain +10 ft speed, one extra unarmed strike on Attack action, and doubled jump distance.</description>
-</sheet>
-</element>
+    <description>
+       <p>At 13th level, your transformation strengthens. While transformed:</p>
+       <ul>
+           <li>Your movement speed increases by 10 feet.</li>
+           <li>You can make an additional unarmed strike as part of the Attack action once per turn.</li>
+           <li>Your jump distance is doubled.</li>
+       </ul>
+  </description>
+  <sheet>
+       <description>While transformed, gain +10 ft speed, one extra unarmed strike on Attack action, and doubled jump distance.</description>
+    </sheet>
+ </element>
+
 <element name="Apex Ascent" type="Archetype Feature" source="Ramsay's Homebrew" id="ID_CUSTOM_PUGL_FEATURE_APEX_ASCENT">
-<description>
-<p>At 17th level, your draconic form becomes overwhelming. While transformed:</p>
-<ul>
-<li>You gain a fly speed equal to your movement speed.</li>
-<li>Your critical range for unarmed strikes expands to 18-20.</li>
-<li>Once per transformation, when you reduce a creature to 0 hit points, you can use your reaction to immediately make a breath weapon attack without expending its use.</li>
-</ul>
-</description>
-<sheet>
-<description>While transformed: fly speed = move speed, crit on 18-20 with unarmed strikes, and gain a free breath weapon on kill (1/transformation).</description>
-</sheet>
-</element>
-</elements>
+    <description>
+       <p>At 17th level, your draconic form becomes overwhelming. While transformed:</p>
+       <ul>
+           <li>You gain a fly speed equal to your movement speed.</li>
+           <li>Your critical range for unarmed strikes expands to 18-20.</li>
+           <li>Once per transformation, when you reduce a creature to 0 hit points, you can use your reaction to immediately make a breath weapon attack without expending its use.</li>
+       </ul>
+   </description>
+   <sheet>
+       <description>While transformed: fly speed = move speed, crit on 18-20 with unarmed strikes, and gain a free breath weapon on kill (1/transformation).</description>
+    </sheet>
+  </element>
+ </elements>
