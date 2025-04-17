@@ -323,7 +323,7 @@ any simple weapon
 <li>You have advantage on Strength checks and Strength saving throws.</li>
 <li>When you make a melee attack using Strength, you gain a bonus to the damage roll that increases as you gain levels as a primalbound, as shown in the Weregorilla Transformation Damage column of the Barbarian table.</li>
 <li>You have resistance to bludgeoning, piercing, and slashing damage.</li>
-<li>You grow a size from your current, ex: from medium to large, if you are large you do not grow. At 11th level you grow to huge regardless of your size.</li>
+<li>You grow a size from your current, ex: from medium to large. If you are already Large, you do not grow. At 11th level, you grow to Huge regardless of your size.</li>
 </ul>
 <p>If you are able to cast spells, you can’t cast them or concentrate on them while transformed.</p>
 <p class="indent">Your transformation lasts for 1 minute. It ends early if you are knocked unconscious or if your turn ends and you haven’t attacked a hostile creature since your last turn or taken damage since then. You can also end your transformation on your turn as a bonus action.</p>
