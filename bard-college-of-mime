@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name>Bard College of the Mime</name>
+        <update version="1.0.0">
+            <file name="bard-college-of-the-mime.xml" url="https://example.com/custom/college-of-the-mime.xml" />
+        </update>
+    </info>
+
+    <element name="College of the Mime" type="Archetype" source="Ungeon Masters Guild" id="ID_UNGEON_ARCHETYPE_BARD_COLLEGE_OF_THE_MIME">
+        <supports>Bard College</supports>
+        <description>
+            <p>Bards of the College of the Mime reject spoken performance in favor of silence and motion. Trained in the art of invisible force and physical storytelling, these bards shape magic through gesture, expression, and illusory manipulation of space.</p>
+            <p class="indent">Rather than relying on verbal components, Mimes bend reality with pantomime. They can shield allies with unseen walls, trap foes in imaginary boxes, and even mimic the abilities of others through keen observation and performance.</p>
+            <p class="indent">Feared and admired in equal measure, Mime Bards are often seen as enigmatic performers, silent protectors, or illusion-wielders whose actions speak louder than any song.</p>
+            <div element="ID_UNGEON_ARCHETYPE_FEATURE_COLLEGE_OF_THE_MIME_SILENT_PERFORMER" />
+            <div element="ID_UNGEON_ARCHETYPE_FEATURE_COLLEGE_OF_THE_MIME_INVISIBLE_WALL" />
+            <div element="ID_UNGEON_ARCHETYPE_FEATURE_COLLEGE_OF_THE_MIME_TRAPPED_IN_A_BOX" />
+            <div element="ID_UNGEON_ARCHETYPE_FEATURE_COLLEGE_OF_THE_MIME_MIRRORED_MOVEMENT" />
+            <div element="ID_UNGEON_ARCHETYPE_FEATURE_COLLEGE_OF_THE_MIME_SILENT_SPECTACLE" />
+            <div element="ID_UNGEON_ARCHETYPE_FEATURE_COLLEGE_OF_THE_MIME_GRAND_PANTOMIME" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_UNGEON_ARCHETYPE_FEATURE_COLLEGE_OF_THE_MIME_SILENT_PERFORMER" level="3" />
+            <grant type="Archetype Feature" id="ID_UNGEON_ARCHETYPE_FEATURE_COLLEGE_OF_THE_MIME_INVISIBLE_WALL" level="3" />
+            <grant type="Archetype Feature" id="ID_UNGEON_ARCHETYPE_FEATURE_COLLEGE_OF_THE_MIME_TRAPPED_IN_A_BOX" level="6" />
+            <grant type="Archetype Feature" id="ID_UNGEON_ARCHETYPE_FEATURE_COLLEGE_OF_THE_MIME_MIRRORED_MOVEMENT" level="6" />
+            <grant type="Archetype Feature" id="ID_UNGEON_ARCHETYPE_FEATURE_COLLEGE_OF_THE_MIME_SILENT_SPECTACLE" level="11" />
+            <grant type="Archetype Feature" id="ID_UNGEON_ARCHETYPE_FEATURE_COLLEGE_OF_THE_MIME_GRAND_PANTOMIME" level="14" />
+        </rules>
+    </element>
+
+    <element name="Silent Performer" type="Archetype Feature" source="Ungeon Masters Guild" id="ID_UNGEON_ARCHETYPE_FEATURE_COLLEGE_OF_THE_MIME_SILENT_PERFORMER">
+        <description>
+            <p>At 3rd level, you master silent spellcasting. You can ignore the verbal component of bard spells you cast. Additionally, you gain proficiency in Sleight of Hand or Acrobatics (your choice).</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" name="Silent Performer Proficiency" supports="Skill">
+                <option id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+                <option id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+            </select>
+        </rules>
+    </element>
+
+    <element name="Invisible Wall" type="Archetype Feature" source="Ungeon Masters Guild" id="ID_UNGEON_ARCHETYPE_FEATURE_COLLEGE_OF_THE_MIME_INVISIBLE_WALL">
+        <description>
+            <p>Also at 3rd level, you can use a bonus action to create a magical wall of force within 30 feet that is invisible but palpable. The wall is 5 feet wide, 5 feet high, and 1 inch thick, lasting until the start of your next turn or until struck. It provides half cover and blocks small projectiles.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>Create an invisible 5x5x1" wall within 30 ft that provides half cover and blocks small projectiles until the start of your next turn.</description>
+        </sheet>
+    </element>
+
+    <element name="Trapped in a Box" type="Archetype Feature" source="Ungeon Masters Guild" id="ID_UNGEON_ARCHETYPE_FEATURE_COLLEGE_OF_THE_MIME_TRAPPED_IN_A_BOX">
+        <description>
+            <p>At 6th level, you can expend a Bardic Inspiration as an action to trap a creature you can see within 60 feet in a magical cube of force. The creature must succeed on a Dexterity saving throw or be restrained until the end of its next turn. Constructs and creatures immune to being restrained automatically succeed.</p>
+        </description>
+        <sheet action="Action">
+            <description>Expend Bardic Inspiration to restrain a creature in a 5 ft cube. Dex save or restrained until end of next turn. Immune creatures succeed automatically.</description>
+        </sheet>
+    </element>
+
+    <element name="Mirrored Movement" type="Archetype Feature" source="Ungeon Masters Guild" id="ID_UNGEON_ARCHETYPE_FEATURE_COLLEGE_OF_THE_MIME_MIRRORED_MOVEMENT">
+        <description>
+            <p>Also at 6th level, you can mimic the movements of enemies. When a creature you can see within 30 feet uses a feature or ability, you can use your reaction to mimic it. If it’s a spell or ability you can use (e.g., a Dash, Disengage, or non-magical class feature), you may replicate the action on your next turn without expending a resource. You may use this feature a number of times equal to your Charisma modifier per long rest.</p>
+        </description>
+        <sheet action="Reaction" usage="CHA/Long Rest">
+            <description>When a creature within 30 ft uses a feature, use reaction to mimic. On your next turn, replicate it freely if possible. Uses = Charisma mod/long rest.</description>
+        </sheet>
+    </element>
+
+    <element name="Silent Spectacle" type="Archetype Feature" source="Ungeon Masters Guild" id="ID_UNGEON_ARCHETYPE_FEATURE_COLLEGE_OF_THE_MIME_SILENT_SPECTACLE">
+        <description>
+            <p>At 11th level, your mastery of pantomime becomes mesmerizing. As an action, you can perform a 6-second silent act that distracts all creatures of your choice within 30 feet. Each affected creature must succeed on a Wisdom saving throw (DC = your spell save DC) or have disadvantage on attack rolls and ability checks until the start of your next turn. You can use this feature a number of times equal to your Charisma modifier per long rest.</p>
+        </description>
+        <sheet action="Action" usage="CHA/Long Rest">
+            <description>Perform a distracting silent act. Creatures in 30 ft (your choice) make Wis save or suffer disadvantage on attacks/checks until your next turn. Uses = CHA mod/long rest.</description>
+        </sheet>
+    </element>
+
+    <element name="Grand Pantomime" type="Archetype Feature" source="Ungeon Masters Guild" id="ID_UNGEON_ARCHETYPE_FEATURE_COLLEGE_OF_THE_MIME_GRAND_PANTOMIME">
+        <description>
+            <p>At 14th level, your mastery of silent illusion peaks. As an action, you can summon a massive illusory performance within a 20-foot radius centered on you. Choose any number of creatures. Each must succeed on a Wisdom saving throw or be stunned until the start of your next turn and take 4d8 psychic damage. On a success, the creature takes half damage and is blinded until the end of its next turn. Once you use this feature, you can’t do so again until you finish a long rest.</p>
+        </description>
+        <sheet action="Action" usage="1/Long Rest">
+            <description>Unleash illusory pantomime in 20 ft radius. Wis save or take 4d8 psychic and be stunned. Success = half damage and blinded. 1/long rest.</description>
+        </sheet>
+    </element>
+</elements>
